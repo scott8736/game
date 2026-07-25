@@ -1,0 +1,3 @@
+:root{--bg:#04101a;--bg-2:#082234;--fg:#d6f0ff;--dim:#6b93ad;--accent:#23c4ff;--accent-2:#48e0c0;--border:#0f3550;--radius:30px;--card-min:240px;--cols:4;--sec-scale:1.2;--title-scale:1.2;--meta-scale:1.4;--pat-rgb:255,255,255;--head-font:"Orbitron",monospace;--body-font:"Share Tech Mono",monospace;}
+*,*::before,*::after{font-family:'Paperlogy',sans-serif !important;}
+h1,.platform-title,.card-title{font-family:var(--head-font),monospace !important;}

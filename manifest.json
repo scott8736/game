@@ -1,0 +1,15 @@
+{
+  "name": "게임다방",
+  "short_name": "게임다방",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#04101a",
+  "theme_color": "#23c4ff",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
