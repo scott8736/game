@@ -80,7 +80,7 @@ body.is-fullscreen .fullscreen-exit{display:block;}
 body.is-fullscreen .wrap > :not(.game-stage){display:none;}
 footer{margin-top:24px;color:var(--dim);font-size:17px;text-align:center;letter-spacing:1px;}
 footer a{color:var(--accent);text-decoration:none;}
-@media(max-width:700px){body{padding:10px}.wrap{max-width:100%}h1{font-size:25px}.controls{gap:6px}.controls button,.controls select{font-size:12px;padding:7px}.game-stage{overflow:hidden}.game-frame-wrap{max-width:100%}.mobile-notice{font-size:13px}.game-info{font-size:12px}}
+@media(max-width:700px){.mobile-notice{font-size:13px}}
 .ctrl-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.72);z-index:10001;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px);}
 .ctrl-overlay.show{display:flex;}
 .ctrl-box{background:var(--bg-2);border:2px solid var(--accent);max-width:440px;width:100%;max-height:85vh;overflow-y:auto;box-shadow:0 0 50px rgba(255,107,53,0.25);}
@@ -156,7 +156,7 @@ var GID=qp("game");
 var NATIVE_W=640,NATIVE_H=480;
 var frame=document.getElementById("gameFrame");var wrap=document.getElementById("frameWrap");var zoomLabel=document.getElementById("zoomLabel");var scaleInfo=document.getElementById("scaleInfo");
 var zoomMode="auto",zoomModes=["auto","1x","1.5x","2x","fit"];
-function calcAutoScale(){var pad=window.innerWidth<=700?20:48;var availW=Math.min(window.innerWidth-pad,1600);var availH=Math.max(240,window.innerHeight-(window.innerWidth<=700?190:260));return Math.max(.28,Math.min(availW/NATIVE_W,availH/NATIVE_H,3));}
+function calcAutoScale(){var availW=Math.min(window.innerWidth-48,1600);var availH=window.innerHeight-260;return Math.max(1,Math.min(availW/NATIVE_W,availH/NATIVE_H,3));}
 function applyZoom(){if(document.body.classList.contains("is-fullscreen"))return;var s;if(zoomMode==="auto")s=calcAutoScale();else if(zoomMode==="1x")s=1;else if(zoomMode==="1.5x")s=1.5;else if(zoomMode==="2x")s=2;else{s=Math.min((window.innerWidth-48)/NATIVE_W,(window.innerHeight-280)/NATIVE_H);}frame.style.transform="scale("+s+")";wrap.style.height=(NATIVE_H*s)+"px";scaleInfo.textContent=s.toFixed(2)+"x";zoomLabel.textContent=zoomMode.toUpperCase();}
 function cycleZoom(){var i=zoomModes.indexOf(zoomMode);zoomMode=zoomModes[(i+1)%zoomModes.length];applyZoom();}
 function applyFullscreenScale(){var s=Math.min(window.innerWidth/NATIVE_W,window.innerHeight/NATIVE_H);frame.style.transform="translate(-50%,-50%) scale("+s+")";}
