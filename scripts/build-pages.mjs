@@ -155,16 +155,21 @@ function gamePage(g) {
   const sample = seo?.sample;
   const title = escHtml(g.title);
   const koTitle = escHtml(seo?.koTitle || '');
-  const displayTitle = sample ? koTitle : title;
-  const metaDescription = sample ? sample.metaDescription : buildIntro(g);
-  const desc = escHtml(metaDescription);
-  const yearLabel = g.year || '????';
+  const displayTitle = seo ? koTitle : title;
   const genreKo = (g.genre && GENRE_KO[g.genre]) || g.genre || '';
+  const metaDescription = sample
+    ? sample.metaDescription
+    : seo
+      ? `${seo.koTitle}(${seo.enTitle}) ${g.meta.ko}${genreKo ? ` ${genreKo}` : ''} 고전게임을 설치 없이 온라인으로 플레이하세요. 기본 조작법과 관련 게임도 함께 확인할 수 있습니다.`
+      : buildIntro(g);
+  const desc = escHtml(metaDescription);
+  const intro = escHtml(buildIntro(g));
+  const yearLabel = g.year || '????';
   const related = relatedGames(g);
   const relHtml = related.length
     ? `<div class="related"><h2>관련 게임</h2><ul>${related.map((r) => {
       const relatedSeo = seoById.get(r.identifier);
-      const relatedName = sample && relatedSeo ? `${relatedSeo.koTitle} (${r.title})` : r.title;
+      const relatedName = seo && relatedSeo ? `${relatedSeo.koTitle} (${r.title})` : r.title;
       return `<li><a href="${escHtml(r.slug)}.html">${escHtml(relatedName)} (${r.year || '????'})</a></li>`;
     }).join('')}</ul></div>`
     : '';
@@ -177,19 +182,19 @@ function gamePage(g) {
 <h2>초보자 공략</h2>
 <ul class="tips">${sample.tips.map((tip) => `<li>${escHtml(tip)}</li>`).join('')}</ul>
 </article>`
-    : `<article><p>${desc}</p></article>
+    : `<article><p>${intro}</p></article>
 <div class="ctrl-box">🎮 조작법: ${escHtml(g.meta.ctrl || '게임 화면 내 안내를 참고하세요')}</div>`;
-  const pageTitle = sample
-    ? `${seo.koTitle} 게임하기 - ${seo.enTitle} 무료 ${g.meta.ko} 고전게임 | 게임다방`
+  const pageTitle = seo
+    ? `${seo.primaryKeyword} - ${seo.enTitle} | 게임다방`
     : `${g.title} 온라인 무료 플레이 - ${g.meta.ko} ${genreKo} 게임 | 게임다방`;
-  const ogTitle = sample
-    ? `${seo.koTitle} 게임하기 | ${seo.enTitle} 고전게임`
+  const ogTitle = seo
+    ? `${seo.primaryKeyword} | ${seo.enTitle} 고전게임`
     : `${g.title} 온라인 무료 플레이 | 게임다방`;
   const ld = {
     '@context': 'https://schema.org',
     '@type': 'VideoGame',
-    name: sample ? seo.koTitle : g.title,
-    alternateName: sample ? seo.enTitle : undefined,
+    name: seo ? seo.koTitle : g.title,
+    alternateName: seo ? seo.enTitle : undefined,
     genre: genreKo || undefined,
     datePublished: g.year ? String(g.year) : undefined,
     gamePlatform: g.meta.ko,
@@ -210,17 +215,17 @@ function gamePage(g) {
 <meta property="og:image" content="${OG_IMAGE}">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../style.css">
-<style>${PAGE_CSS}${sample ? SAMPLE_CSS : ''}</style>
+<style>${PAGE_CSS}${seo ? SAMPLE_CSS : ''}</style>
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 ${ADSENSE_SNIPPET}
 </head>
 <body>
 <div class="wrap">
 <div class="crumb"><a href="../index.html">홈</a> &rsaquo; <a href="../guide/${g.category}.html">${escHtml(g.meta.ko)}</a> &rsaquo; ${displayTitle}</div>
-<h1>${sample ? `${koTitle} 게임하기` : title}</h1>${sample ? `\n<div class="en-title">${title}</div>` : ''}
+<h1>${seo ? escHtml(seo.primaryKeyword) : title}</h1>${seo ? `\n<div class="en-title">${title}</div>` : ''}
 <div class="meta">${yearLabel} · ${escHtml(g.meta.ko)}${genreKo ? ' · ' + escHtml(genreKo) : ''}</div>
 ${sampleArticle}
-<a class="cta" href="${playHref(g, '../')}">🕹️ ${sample ? `${koTitle} 바로 플레이하기` : '지금 무료로 플레이하기'}</a>
+<a class="cta" href="${playHref(g, '../')}">🕹️ ${seo ? `${koTitle} 바로 플레이하기` : '지금 무료로 플레이하기'}</a>
 ${relHtml}
 <footer><a href="../guide.html">← 게임소개 목록으로</a> · <a href="../index.html">전체 게임 갤러리</a></footer>
 </div>
