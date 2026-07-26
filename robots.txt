@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://game.charry333.workers.dev/sitemap.xml
