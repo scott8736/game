@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const SITE_URL = 'https://game.charry333.workers.dev';
+const SITE_URL = 'https://bamboostand.kr';
 
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'games.json'), 'utf8'));
 const GAMES = data.games;
