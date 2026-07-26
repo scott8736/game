@@ -31,6 +31,8 @@ const PLAT_META = {
 const GENRE_KO = { racing: '레이싱', shooter: '슈팅', maze: '미로', platform: '플랫폼', action: '액션', puzzle: '퍼즐', fighting: '격투', sports: '스포츠', adventure: '어드벤처', simulation: '시뮬레이션', strategy: '전략', rpg: 'RPG' };
 
 const TOP_FEATURED_COUNT = 80;
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+const ADSENSE_SNIPPET = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8646375689901020" crossorigin="anonymous"></script>`;
 
 function escHtml(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
@@ -167,10 +169,12 @@ function gamePage(g) {
 <meta property="og:title" content="${title} 온라인 무료 플레이 | 게임다방">
 <meta property="og:description" content="${desc}">
 <meta property="og:url" content="${url}">
+<meta property="og:image" content="${OG_IMAGE}">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../style.css">
 <style>${PAGE_CSS}</style>
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
+${ADSENSE_SNIPPET}
 </head>
 <body>
 <div class="wrap">
@@ -199,8 +203,12 @@ function guidePlatformPage(cat, list) {
 <title>${escHtml(meta.ko)} 게임 모음 - 무료 온라인 플레이 | 게임다방</title>
 <meta name="description" content="${escHtml(meta.ko)} 레트로 게임 ${list.length}개를 다운로드나 에뮬레이터 설치 없이 브라우저에서 무료로 플레이하세요.">
 <link rel="canonical" href="${SITE_URL}/guide/${cat}.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${escHtml(meta.ko)} 게임 모음 | 게임다방">
+<meta property="og:image" content="${OG_IMAGE}">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../style.css">
+${ADSENSE_SNIPPET}
 <style>${PAGE_CSS}
 ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;}
 li a{display:block;color:var(--fg);text-decoration:none;border:1px solid var(--border);background:var(--bg-2);border-radius:8px;overflow:hidden;}
@@ -233,8 +241,12 @@ function guideIndexPage() {
 <title>게임소개 - 플랫폼별 레트로 게임 목록 | 게임다방</title>
 <meta name="description" content="아케이드, MS-DOS, 세가 제네시스, 플레이스테이션 등 플랫폼별로 정리된 레트로 게임 소개 목록. 다운로드 없이 브라우저에서 무료로 플레이하세요.">
 <link rel="canonical" href="${SITE_URL}/guide.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="게임소개 - 플랫폼별 레트로 게임 목록 | 게임다방">
+<meta property="og:image" content="${OG_IMAGE}">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+${ADSENSE_SNIPPET}
 <style>${PAGE_CSS}
 .wrap{max-width:900px;}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:20px;}
