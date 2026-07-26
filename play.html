@@ -40,6 +40,8 @@ h1.fx-chrome{background:linear-gradient(180deg,#fff,var(--accent-2) 45%,var(--ac
 h1{font-family:var(--head-font);font-size:36px;color:var(--accent);letter-spacing:2px;text-shadow:0 0 12px var(--accent);margin-bottom:4px;}
 .meta{color:var(--dim);font-size:18px;margin-bottom:16px;letter-spacing:1px;}
 .game-stage{position:relative;width:100%;margin:0 auto;display:flex;flex-direction:column;align-items:center;}
+.mobile-notice{display:none;max-width:720px;width:100%;margin:0 auto 14px;padding:14px 16px;border:1px solid var(--accent-2);background:rgba(72,224,192,.08);line-height:1.6;font-size:14px;}
+.mobile-notice.show{display:block}.mobile-notice strong{color:var(--accent-2)}.mobile-notice ul{margin:8px 0 12px;padding-left:22px}.mobile-load{border:0;border-radius:8px;background:var(--accent);color:var(--bg);font:700 15px inherit;padding:11px 18px;cursor:pointer}
 .game-frame{position:relative;width:var(--gw,640px);height:var(--gh,480px);max-width:100%;border:2px solid var(--accent);background:#000;box-shadow:0 0 40px rgba(255,107,53,0.2);overflow:hidden;transform-origin:top center;}
 .game-frame iframe{position:absolute;top:calc(-1 * var(--gnav,0px));left:0;width:var(--gw,640px);height:var(--gih,480px);border:0;display:block;background:#000;}
 .frame-mask{position:absolute;left:0;right:0;bottom:0;height:var(--gmask,0px);background:#000;z-index:3;pointer-events:none;}
@@ -78,6 +80,7 @@ body.is-fullscreen .fullscreen-exit{display:block;}
 body.is-fullscreen .wrap > :not(.game-stage){display:none;}
 footer{margin-top:24px;color:var(--dim);font-size:17px;text-align:center;letter-spacing:1px;}
 footer a{color:var(--accent);text-decoration:none;}
+@media(max-width:700px){body{padding:10px}.wrap{max-width:100%}h1{font-size:25px}.controls{gap:6px}.controls button,.controls select{font-size:12px;padding:7px}.game-stage{overflow:hidden}.game-frame-wrap{max-width:100%}.mobile-notice{font-size:13px}.game-info{font-size:12px}}
 .ctrl-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.72);z-index:10001;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px);}
 .ctrl-overlay.show{display:flex;}
 .ctrl-box{background:var(--bg-2);border:2px solid var(--accent);max-width:440px;width:100%;max-height:85vh;overflow-y:auto;box-shadow:0 0 50px rgba(255,107,53,0.25);}
@@ -100,6 +103,7 @@ footer a{color:var(--accent);text-decoration:none;}
 <div class="meta" id="gMeta"></div>
 <p id="gIntro" style="color:var(--dim);font-size:15px;line-height:1.7;max-width:680px;margin:0 auto 16px;text-align:center;"></p>
 <div id="ps1notice"></div>
+<div class="mobile-notice" id="mobileNotice" role="status"></div>
 <div class="game-stage">
 <div class="game-frame-wrap" id="frameWrap">
 <div class="game-frame fx-none" id="gameFrame">
@@ -152,7 +156,7 @@ var GID=qp("game");
 var NATIVE_W=640,NATIVE_H=480;
 var frame=document.getElementById("gameFrame");var wrap=document.getElementById("frameWrap");var zoomLabel=document.getElementById("zoomLabel");var scaleInfo=document.getElementById("scaleInfo");
 var zoomMode="auto",zoomModes=["auto","1x","1.5x","2x","fit"];
-function calcAutoScale(){var availW=Math.min(window.innerWidth-48,1600);var availH=window.innerHeight-260;return Math.max(1,Math.min(availW/NATIVE_W,availH/NATIVE_H,3));}
+function calcAutoScale(){var pad=window.innerWidth<=700?20:48;var availW=Math.min(window.innerWidth-pad,1600);var availH=Math.max(240,window.innerHeight-(window.innerWidth<=700?190:260));return Math.max(.28,Math.min(availW/NATIVE_W,availH/NATIVE_H,3));}
 function applyZoom(){if(document.body.classList.contains("is-fullscreen"))return;var s;if(zoomMode==="auto")s=calcAutoScale();else if(zoomMode==="1x")s=1;else if(zoomMode==="1.5x")s=1.5;else if(zoomMode==="2x")s=2;else{s=Math.min((window.innerWidth-48)/NATIVE_W,(window.innerHeight-280)/NATIVE_H);}frame.style.transform="scale("+s+")";wrap.style.height=(NATIVE_H*s)+"px";scaleInfo.textContent=s.toFixed(2)+"x";zoomLabel.textContent=zoomMode.toUpperCase();}
 function cycleZoom(){var i=zoomModes.indexOf(zoomMode);zoomMode=zoomModes[(i+1)%zoomModes.length];applyZoom();}
 function applyFullscreenScale(){var s=Math.min(window.innerWidth/NATIVE_W,window.innerHeight/NATIVE_H);frame.style.transform="translate(-50%,-50%) scale("+s+")";}
@@ -171,6 +175,10 @@ function loadFxI(){try{var v=parseFloat(localStorage.getItem("reFxI"));return (v
 function applyFx(v){var f=document.getElementById("gameFrame");if(!f)return;f.className=(f.className.replace(/\bfx-\w+/g,"").replace(/\s+/g," ").trim())+" fx-"+v;}
 function applyFxI(v){document.documentElement.style.setProperty("--fx-i",v);var lbl=document.getElementById("fxIv");if(lbl)lbl.textContent=Math.round(v*100)+"%";}
 function initFx(){var v=loadFx(),iv=loadFxI();var sel=document.getElementById("fxSel"),si=document.getElementById("fxI");if(sel){sel.value=v;sel.onchange=function(){applyFx(sel.value);try{localStorage.setItem("reFx",sel.value);}catch(e){}};}if(si){si.value=Math.round(iv*100);si.oninput=function(){var nv=(+si.value)/100;applyFxI(nv);try{localStorage.setItem("reFxI",nv);}catch(e){}};}applyFxI(iv);applyFx(v);}
+var pendingMobileUrl="";var isMobileDevice=window.matchMedia("(pointer:coarse)").matches||/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+function mobileCapable(cat){return THEATER_CATS.indexOf(cat)>=0&&cat!=="psxgames";}
+function loadMobileGame(){var ifr=document.getElementById("gameIframe");if(pendingMobileUrl){ifr.src=pendingMobileUrl;pendingMobileUrl="";}var b=document.getElementById("mobileLoadBtn");if(b)b.textContent="게임 불러옴";}
+function updateMobileNotice(cat){var box=document.getElementById("mobileNotice");if(!box||!isMobileDevice)return;var portrait=window.innerHeight>window.innerWidth;var status=mobileCapable(cat)?"모바일 화면 지원 · 외부 입력기기 필요":"모바일 조작 미지원 · PC 플레이 권장";box.className="mobile-notice show";box.innerHTML="<strong>📱 "+status+"</strong><ul><li>"+(portrait?"화면을 가로 방향으로 돌려주세요.":"가로 화면으로 이용 중입니다.")+"</li><li>터치 조작은 지원되지 않습니다. PC 키보드를 권장합니다.</li><li>모바일에서는 블루투스 키보드 또는 게임패드를 연결해 주세요.</li></ul><button class=\"mobile-load\" id=\"mobileLoadBtn\" onclick=\"loadMobileGame()\">안내 확인하고 게임 불러오기</button>";}
 function start(g){
   var cat=g.category||"other";CURRENT_CAT=cat;var sz=sizeFor(cat);var isT=isTheater(cat);var nav=isT?THEATER_NAV:0;
   if(isT){var ov=loadAdjust();if(ov.h)sz.h=ov.h;if(ov.nav!=null)nav=ov.nav;}
@@ -183,7 +191,7 @@ function start(g){
   var introTxt=buildIntro(g);document.getElementById("gIntro").textContent=introTxt;setMetaDesc(introTxt);
   if(cat==="psxgames")document.getElementById("ps1notice").innerHTML="<div style=\"max-width:640px;margin:0 auto 12px;padding:8px 12px;font-size:18px;color:var(--accent-2);border:1px solid var(--accent-2);background:rgba(247,201,72,0.10);text-align:center;line-height:1.5;\">⏳ PS1 게임은 디스크 용량이 커서 로딩까지 시간이 다소 걸립니다. 잠시 기다려 주세요.</div>";
   var url=playerUrl(g.identifier,cat);
-  var ifr=document.getElementById("gameIframe");ifr.width=sz.w;ifr.height=ih;ifr.src=url;
+  var ifr=document.getElementById("gameIframe");ifr.width=sz.w;ifr.height=ih;if(isMobileDevice){pendingMobileUrl=url;ifr.removeAttribute("src");updateMobileNotice(cat);}else{ifr.src=url;}
   document.getElementById("resInfo").textContent=sz.w+" × "+sz.h;
   document.getElementById("embedCode").value='<iframe src="'+url+'" width="'+sz.w+'" height="'+sz.h+'" frameborder="0" allowfullscreen></iframe>';
   document.getElementById("archiveBtn").onclick=function(){window.open("https://archive.org/details/"+encodeURIComponent(g.identifier),"_blank");};
@@ -201,6 +209,6 @@ if(GID&&URLCAT){
 }else{document.getElementById("gTitle").textContent="게임이 지정되지 않았습니다";}
 document.addEventListener("keydown",function(e){if(e.key==="Escape"){var ov=document.getElementById("ctrlOverlay");if(ov&&ov.classList.contains("show"))closeCtrl();else if(document.body.classList.contains("is-fullscreen"))toggleFullscreen();}});
 document.addEventListener("fullscreenchange",function(){if(!document.fullscreenElement&&document.body.classList.contains("is-fullscreen")){document.body.classList.remove("is-fullscreen");frame.classList.remove("fullscreen");clearFullscreenScale();applyZoom();}});
-window.addEventListener("resize",function(){if(document.body.classList.contains("is-fullscreen")){applyFullscreenScale();}else if(zoomMode==="auto"||zoomMode==="fit"){applyZoom();}});
+window.addEventListener("resize",function(){if(document.body.classList.contains("is-fullscreen")){applyFullscreenScale();}else if(zoomMode==="auto"||zoomMode==="fit"){applyZoom();}if(isMobileDevice)updateMobileNotice(CURRENT_CAT);});
 </script>
 </body></html>
