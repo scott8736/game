@@ -12,6 +12,8 @@ const SITE_URL = 'https://bamboostand.kr';
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'games.json'), 'utf8'));
 const GAMES = data.games;
 const featured = JSON.parse(fs.readFileSync(path.join(__dirname, 'featured-articles.json'), 'utf8'));
+const seoGames = JSON.parse(fs.readFileSync(path.join(__dirname, 'seo-games.json'), 'utf8'));
+const seoById = new Map(seoGames.map((item) => [item.identifier, item]));
 
 const PLAT_META = {
   internetarcade: { ko: '아케이드', code: 'arcade', ctrl: '방향키로 이동 · Ctrl/Alt/Space로 버튼 · 5로 동전 넣기 · 1로 게임 시작' },
@@ -30,7 +32,6 @@ const PLAT_META = {
 };
 const GENRE_KO = { racing: '레이싱', shooter: '슈팅', maze: '미로', platform: '플랫폼', action: '액션', puzzle: '퍼즐', fighting: '격투', sports: '스포츠', adventure: '어드벤처', simulation: '시뮬레이션', strategy: '전략', rpg: 'RPG' };
 
-const TOP_FEATURED_COUNT = 80;
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
 const ADSENSE_SNIPPET = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8646375689901020" crossorigin="anonymous"></script>`;
 
@@ -67,10 +68,6 @@ const games = GAMES.map((g) => {
   return { ...g, category: cat, meta, slug };
 });
 
-// featured tier: top N by downloads
-const byDownloads = [...games].sort((a, b) => (b.downloads || 0) - (a.downloads || 0));
-const featuredSet = new Set(byDownloads.slice(0, TOP_FEATURED_COUNT).map((g) => g.identifier));
-
 // group by category (in original order) for related-games lookups
 const byCategory = new Map();
 for (const g of games) {
@@ -101,6 +98,11 @@ function buildIntro(g) {
 }
 
 function relatedGames(g) {
+  const seo = seoById.get(g.identifier);
+  if (seo?.relatedIds?.length) {
+    const curated = seo.relatedIds.map((id) => games.find((item) => item.identifier === id)).filter(Boolean);
+    if (curated.length) return curated.slice(0, 4);
+  }
   const list = byCategory.get(g.category) || [];
   if (list.length <= 1) return [];
   const startIdx = list.findIndex((x) => x.identifier === g.identifier);
@@ -137,21 +139,57 @@ article p{line-height:1.8;font-size:15px;margin:0 0 14px;}
 footer{margin-top:30px;color:var(--dim);font-size:12px;text-align:center;line-height:1.6;opacity:0.8;}
 footer a{color:var(--accent);}
 `;
+const SAMPLE_CSS = `
+.en-title{color:var(--dim);font-size:18px;margin:-2px 0 10px;}
+article h2{color:var(--accent-2);font-size:21px;margin:26px 0 10px;}
+.controls{width:100%;border-collapse:collapse;margin:10px 0 18px;}
+.controls th,.controls td{border:1px solid var(--border);padding:9px 12px;text-align:left;font-size:14px;}
+.controls th{width:38%;color:var(--accent-2);background:var(--bg-2);}
+.tips{line-height:1.75;padding-left:22px;margin:8px 0 20px;}
+.tips li{margin-bottom:7px;}
+`;
 
 function gamePage(g) {
   const url = `${SITE_URL}/games/${g.slug}.html`;
+  const seo = seoById.get(g.identifier);
+  const sample = seo?.sample;
   const title = escHtml(g.title);
-  const desc = escHtml(buildIntro(g));
+  const koTitle = escHtml(seo?.koTitle || '');
+  const displayTitle = sample ? koTitle : title;
+  const metaDescription = sample ? sample.metaDescription : buildIntro(g);
+  const desc = escHtml(metaDescription);
   const yearLabel = g.year || '????';
   const genreKo = (g.genre && GENRE_KO[g.genre]) || g.genre || '';
   const related = relatedGames(g);
   const relHtml = related.length
-    ? `<div class="related"><h2>관련 게임</h2><ul>${related.map((r) => `<li><a href="${escHtml(r.slug)}.html">${escHtml(r.title)} (${r.year || '????'})</a></li>`).join('')}</ul></div>`
+    ? `<div class="related"><h2>관련 게임</h2><ul>${related.map((r) => {
+      const relatedSeo = seoById.get(r.identifier);
+      const relatedName = sample && relatedSeo ? `${relatedSeo.koTitle} (${r.title})` : r.title;
+      return `<li><a href="${escHtml(r.slug)}.html">${escHtml(relatedName)} (${r.year || '????'})</a></li>`;
+    }).join('')}</ul></div>`
     : '';
+  const sampleArticle = sample
+    ? `<article>
+<h2>${koTitle} 게임 소개</h2>
+<p>${escHtml(sample.intro)}</p>
+<h2>${koTitle} 조작법</h2>
+<table class="controls"><tbody>${sample.controls.map(([action, key]) => `<tr><th scope="row">${escHtml(action)}</th><td>${escHtml(key)}</td></tr>`).join('')}</tbody></table>
+<h2>초보자 공략</h2>
+<ul class="tips">${sample.tips.map((tip) => `<li>${escHtml(tip)}</li>`).join('')}</ul>
+</article>`
+    : `<article><p>${desc}</p></article>
+<div class="ctrl-box">🎮 조작법: ${escHtml(g.meta.ctrl || '게임 화면 내 안내를 참고하세요')}</div>`;
+  const pageTitle = sample
+    ? `${seo.koTitle} 게임하기 - ${seo.enTitle} 무료 ${g.meta.ko} 고전게임 | 게임다방`
+    : `${g.title} 온라인 무료 플레이 - ${g.meta.ko} ${genreKo} 게임 | 게임다방`;
+  const ogTitle = sample
+    ? `${seo.koTitle} 게임하기 | ${seo.enTitle} 고전게임`
+    : `${g.title} 온라인 무료 플레이 | 게임다방`;
   const ld = {
     '@context': 'https://schema.org',
     '@type': 'VideoGame',
-    name: g.title,
+    name: sample ? seo.koTitle : g.title,
+    alternateName: sample ? seo.enTitle : undefined,
     genre: genreKo || undefined,
     datePublished: g.year ? String(g.year) : undefined,
     gamePlatform: g.meta.ko,
@@ -162,28 +200,27 @@ function gamePage(g) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${title} 온라인 무료 플레이 - ${escHtml(g.meta.ko)} ${escHtml(genreKo)} 게임 | 게임다방</title>
+<title>${escHtml(pageTitle)}</title>
 <meta name="description" content="${desc}">
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="${title} 온라인 무료 플레이 | 게임다방">
+<meta property="og:title" content="${escHtml(ogTitle)}">
 <meta property="og:description" content="${desc}">
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${OG_IMAGE}">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../style.css">
-<style>${PAGE_CSS}</style>
+<style>${PAGE_CSS}${sample ? SAMPLE_CSS : ''}</style>
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 ${ADSENSE_SNIPPET}
 </head>
 <body>
 <div class="wrap">
-<div class="crumb"><a href="../index.html">홈</a> &rsaquo; <a href="../guide/${g.category}.html">${escHtml(g.meta.ko)}</a> &rsaquo; ${title}</div>
-<h1>${title}</h1>
+<div class="crumb"><a href="../index.html">홈</a> &rsaquo; <a href="../guide/${g.category}.html">${escHtml(g.meta.ko)}</a> &rsaquo; ${displayTitle}</div>
+<h1>${sample ? `${koTitle} 게임하기` : title}</h1>${sample ? `\n<div class="en-title">${title}</div>` : ''}
 <div class="meta">${yearLabel} · ${escHtml(g.meta.ko)}${genreKo ? ' · ' + escHtml(genreKo) : ''}</div>
-<article><p>${desc}</p></article>
-<div class="ctrl-box">🎮 조작법: ${escHtml(g.meta.ctrl || '게임 화면 내 안내를 참고하세요')}</div>
-<a class="cta" href="${playHref(g, '../')}">🕹️ 지금 무료로 플레이하기</a>
+${sampleArticle}
+<a class="cta" href="${playHref(g, '../')}">🕹️ ${sample ? `${koTitle} 바로 플레이하기` : '지금 무료로 플레이하기'}</a>
 ${relHtml}
 <footer><a href="../guide.html">← 게임소개 목록으로</a> · <a href="../index.html">전체 게임 갤러리</a></footer>
 </div>
