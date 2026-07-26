@@ -185,7 +185,7 @@ ${ADSENSE_SNIPPET}
 <div class="ctrl-box">🎮 조작법: ${escHtml(g.meta.ctrl || '게임 화면 내 안내를 참고하세요')}</div>
 <a class="cta" href="${playHref(g, '../')}">🕹️ 지금 무료로 플레이하기</a>
 ${relHtml}
-<footer>본 사이트의 게임은 Internet Archive(archive.org) 자료를 임베드한 것으로, 게임 보존·교육을 위한 비영리 페이지입니다. 저작권은 각 권리자에게 있으며 권리자 요청 시 즉시 삭제합니다.<br><a href="../guide.html">← 게임소개 목록으로</a> · <a href="../index.html">전체 게임 갤러리</a></footer>
+<footer><a href="../guide.html">← 게임소개 목록으로</a> · <a href="../index.html">전체 게임 갤러리</a></footer>
 </div>
 </body>
 </html>`;
