@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>게임다방</title>
+<title>게임다방 - 무료 레트로게임 온라인 플레이</title>
+<meta name="description" content="추억의 레트로·고전 게임을 다운로드나 에뮬레이터 설치 없이 브라우저에서 바로 무료로 플레이하세요.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="게임다방 - 무료 레트로게임 온라인 플레이">
+<meta property="og:description" content="추억의 레트로·고전 게임을 다운로드나 에뮬레이터 설치 없이 브라우저에서 바로 무료로 플레이하세요.">
+<meta property="og:image" content="og-image.svg">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://archive.org" crossorigin>
 <link rel="dns-prefetch" href="https://archive.org">
@@ -91,6 +96,7 @@ footer a{color:var(--accent);text-decoration:none;}
 <a class="back" href="index.html">← 갤러리로</a>
 <h1 class="fx-shadow" id="gTitle"></h1>
 <div class="meta" id="gMeta"></div>
+<p id="gIntro" style="color:var(--dim);font-size:15px;line-height:1.7;max-width:680px;margin:0 auto 16px;text-align:center;"></p>
 <div id="ps1notice"></div>
 <div class="game-stage">
 <div class="game-frame-wrap" id="frameWrap">
@@ -129,6 +135,11 @@ Powered by <a href="https://archive.org" target="_blank" id="poweredLink">Intern
 var SITE_TITLE="게임다방";
 var CTRL_DATA={"_default":{"name":"공통 조작","rows":[["이동/방향","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["버튼","<span class=\"ck\">Z</span> <span class=\"ck\">X</span> <span class=\"ck\">C</span> <span class=\"ck\">A</span> <span class=\"ck\">S</span> <span class=\"ck\">D</span>"],["Start","<span class=\"ck\">Enter</span>"],["Select","<span class=\"ck\">Shift</span>"],["안 맞으면","위 키들을 차례로 눌러보세요"]]},"internetarcade":{"name":"아케이드 (MAME)","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["동전 넣기","<span class=\"ck\">5</span>"],["게임 시작","<span class=\"ck\">1</span> (2P <span class=\"ck\">2</span>)"],["버튼 1~4","<span class=\"ck\">Ctrl</span> <span class=\"ck\">Alt</span> <span class=\"ck\">Space</span> <span class=\"ck\">Shift</span>"],["버튼 5~6","<span class=\"ck\">Z</span> <span class=\"ck\">X</span>"],["설정 메뉴","<span class=\"ck\">Tab</span>"],["리셋","<span class=\"ck\">F3</span>"]]},"softwarelibrary_msdos_games":{"name":"MS-DOS","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span> 또는 <span class=\"ck\">W</span> <span class=\"ck\">A</span> <span class=\"ck\">S</span> <span class=\"ck\">D</span>"],["액션","<span class=\"ck\">Ctrl</span> <span class=\"ck\">Alt</span> <span class=\"ck\">Space</span>"],["확인","<span class=\"ck\">Enter</span>"],["마우스 게임","화면을 직접 클릭"],["참고","게임마다 키가 다릅니다"]]},"sega_genesis_library":{"name":"세가 제네시스 / 메가드라이브","rows":[["D-패드","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["A · B · C","<span class=\"ck\">Z</span> <span class=\"ck\">X</span> <span class=\"ck\">C</span>"],["(6버튼) X·Y·Z","<span class=\"ck\">A</span> <span class=\"ck\">S</span> <span class=\"ck\">D</span>"],["Start","<span class=\"ck\">Enter</span>"]]},"sega_sms_library":{"name":"세가 마스터 시스템","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["버튼 1 · 2","<span class=\"ck\">Z</span> <span class=\"ck\">X</span>"],["Start / Pause","<span class=\"ck\">Enter</span>"]]},"gamegear_library":{"name":"게임기어","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["버튼 1 · 2","<span class=\"ck\">Z</span> <span class=\"ck\">X</span>"],["Start","<span class=\"ck\">Enter</span>"]]},"tg16_library":{"name":"PC엔진 / TurboGrafx-16","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["Ⅰ · Ⅱ","<span class=\"ck\">Z</span> <span class=\"ck\">X</span>"],["RUN","<span class=\"ck\">Enter</span>"],["SELECT","<span class=\"ck\">Shift</span>"]]},"atari_2600_library":{"name":"아타리 2600","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["발사(FIRE)","<span class=\"ck\">Space</span> 또는 <span class=\"ck\">Z</span>"],["Reset · Select","<span class=\"ck\">F1</span> <span class=\"ck\">F2</span>"]]},"atari_7800_library":{"name":"아타리 7800","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["버튼","<span class=\"ck\">Z</span> <span class=\"ck\">X</span>"],["Reset · Select","<span class=\"ck\">F1</span> <span class=\"ck\">F2</span>"]]},"atari_5200_library":{"name":"아타리 5200","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["발사","<span class=\"ck\">Space</span> <span class=\"ck\">Z</span>"],["숫자패드","키보드 <span class=\"ck\">0</span>~<span class=\"ck\">9</span>"],["Reset","<span class=\"ck\">F1</span>"]]},"coleco_colecovision_library":{"name":"콜레코비전","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["발사","<span class=\"ck\">Z</span> <span class=\"ck\">X</span>"],["숫자패드","키보드 <span class=\"ck\">1</span>~<span class=\"ck\">9</span> <span class=\"ck\">*</span> <span class=\"ck\">#</span>"]]},"ngp_library":{"name":"네오지오 포켓","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["A · B","<span class=\"ck\">Z</span> <span class=\"ck\">X</span>"],["OPTION","<span class=\"ck\">Enter</span>"]]},"wonderswan-library":{"name":"원더스완","rows":[["이동","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["A · B","<span class=\"ck\">Z</span> <span class=\"ck\">X</span>"],["Start","<span class=\"ck\">Enter</span>"],["참고","세로 화면 게임이 있습니다"]]},"psxgames":{"name":"플레이스테이션 (PS1)","rows":[["D-패드","<span class=\"ck\">←</span> <span class=\"ck\">↑</span> <span class=\"ck\">↓</span> <span class=\"ck\">→</span>"],["✕ ○ □ △","<span class=\"ck\">Z</span> <span class=\"ck\">X</span> <span class=\"ck\">A</span> <span class=\"ck\">S</span>"],["L1 · R1","<span class=\"ck\">Q</span> <span class=\"ck\">W</span>"],["Start · Select","<span class=\"ck\">Enter</span> <span class=\"ck\">Shift</span>"],["참고","로딩이 오래 걸립니다"]]}};
 var CURRENT_CAT="other";
+var GENRE_KO={racing:"레이싱",shooter:"슈팅",maze:"미로",platform:"플랫폼",action:"액션",puzzle:"퍼즐",fighting:"격투",sports:"스포츠",adventure:"어드벤처",simulation:"시뮬레이션",strategy:"전략",rpg:"RPG"};
+var PLAT_INTRO_KO={internetarcade:"아케이드",softwarelibrary_msdos_games:"MS-DOS",sega_genesis_library:"세가 제네시스",sega_sms_library:"세가 마스터 시스템",gamegear_library:"게임기어",tg16_library:"PC엔진",atari_2600_library:"아타리 2600",atari_7800_library:"아타리 7800",atari_5200_library:"아타리 5200",coleco_colecovision_library:"콜레코비전",ngp_library:"네오지오 포켓",'wonderswan-library':"원더스완",psxgames:"플레이스테이션(PS1)"};
+function platLabel(cat){return PLAT_INTRO_KO[cat]||"레트로"; }
+function buildIntro(g){var cat=g.category||"other";var yr=g.year?g.year+"년":"출시연도 미상";var genreKo=(g.genre&&GENRE_KO[g.genre])||g.genre||"";var genrePart=genreKo?genreKo+" 장르의 ":"";return g.title+"("+yr+") 은/는 "+platLabel(cat)+" "+genrePart+"게임입니다. 다운로드나 에뮬레이터 설치 없이 브라우저에서 무료로 온라인 플레이할 수 있습니다.";}
+function setMetaDesc(txt){var m=document.querySelector('meta[name="description"]');if(m)m.setAttribute("content",txt);var og=document.querySelector('meta[property="og:description"]');if(og)og.setAttribute("content",txt);}
 function renderCtrl(cat){var d=CTRL_DATA[cat]||CTRL_DATA._default;var h="";for(var i=0;i<d.rows.length;i++){h+='<div class="ctrl-row"><span class="cl">'+d.rows[i][0]+'</span><span class="cv">'+d.rows[i][1]+'</span></div>';}document.getElementById("ctrlTitle").innerHTML="🎮 "+d.name;document.getElementById("ctrlBody").innerHTML=h;}
 function openCtrl(){renderCtrl(CURRENT_CAT);document.getElementById("ctrlOverlay").classList.add("show");}
 function closeCtrl(){document.getElementById("ctrlOverlay").classList.remove("show");}
@@ -168,9 +179,10 @@ function start(g){
   var ih=isT?(sz.h+nav+330):sz.h;var mask=isT?THEATER_MASK:0;
   NATIVE_W=sz.w;NATIVE_H=sz.h;var rs=document.documentElement.style;
   rs.setProperty("--gw",sz.w+"px");rs.setProperty("--gh",sz.h+"px");rs.setProperty("--gih",ih+"px");rs.setProperty("--gnav",nav+"px");rs.setProperty("--gmask",mask+"px");
-  document.title=g.title+" · "+SITE_TITLE;
+  document.title=g.title+" 온라인 무료 플레이 · "+SITE_TITLE;
   document.getElementById("gTitle").textContent=g.title;
   document.getElementById("gMeta").textContent=(g.year||"????")+" · "+g.identifier;
+  var introTxt=buildIntro(g);document.getElementById("gIntro").textContent=introTxt;setMetaDesc(introTxt);
   if(cat==="psxgames")document.getElementById("ps1notice").innerHTML="<div style=\"max-width:640px;margin:0 auto 12px;padding:8px 12px;font-size:18px;color:var(--accent-2);border:1px solid var(--accent-2);background:rgba(247,201,72,0.10);text-align:center;line-height:1.5;\">⏳ PS1 게임은 디스크 용량이 커서 로딩까지 시간이 다소 걸립니다. 잠시 기다려 주세요.</div>";
   var url=playerUrl(g.identifier,cat);
   var ifr=document.getElementById("gameIframe");ifr.width=sz.w;ifr.height=ih;ifr.src=url;
@@ -182,7 +194,7 @@ function start(g){
   initFx();
   applyZoom();
 }
-function enrichMeta(g){if(!g)return;if(g.title){document.title=g.title+" · "+SITE_TITLE;document.getElementById("gTitle").textContent=g.title;}document.getElementById("gMeta").textContent=((g.year||"????")+" · "+g.identifier);}
+function enrichMeta(g){if(!g)return;if(g.title){document.title=g.title+" 온라인 무료 플레이 · "+SITE_TITLE;document.getElementById("gTitle").textContent=g.title;}document.getElementById("gMeta").textContent=((g.year||"????")+" · "+g.identifier);var introTxt=buildIntro(g);document.getElementById("gIntro").textContent=introTxt;setMetaDesc(introTxt);}
 var URLCAT=qp("cat");
 if(GID&&URLCAT){
   start({identifier:GID,title:qp("t")||GID,year:qp("y")||"",category:URLCAT});
