@@ -1,0 +1,22 @@
+{
+  "best-dos-games": ["msdos_Prince_of_Persia_1990", "msdos_Prehistorik_2_1993", "msdos_Wolfenstein_3D_1992", "Doom-2", "msdos_SimCity_1989", "msdos_Dune_2_-_The_Building_of_a_Dynasty_1992", "CIVILIZATION_201902", "lemmings_original_ms-dos_201705", "monkey_dos", "msdos_Alone_in_the_Dark_1992"],
+  "best-arcade-games": ["arcade_outrun", "arcade_digdug", "arcade_qbert", "arcade_commsega", "arcade_ldrun", "arcade_defender", "arcade_joust", "arcade_paperboy", "arcade_mpatrol", "arcade_tapper"],
+  "free-retro-games-online": ["msdos_Prince_of_Persia_1990", "arcade_outrun", "Sonic_The_Hedgehog_3", "psx_tekken3"],
+  "best-mega-drive-games": ["Sonic_The_Hedgehog_3", "sg_Streets_of_Rage_2_1992_Sega_US", "sg_Road_Rash_1991_Electronic_Arts_EU-US_en", "Castlevania_Bloodlines_USA", "sg_Shinobi_III_Return_of_the_Ninja_Master_1993_Sega_US", "earthworm-jim"],
+  "best-ps1-games": ["psx_tekken3", "psx_revil", "psx_revil3", "psx_traide", "psx_thps2", "psx_nfs3", "psx_megamnx4", "psx_wormsarm"],
+  "retro-games-with-kids": ["tetris_1987", "msdos_Pac-Man_1983", "msdos_BurgerTime_1982", "arcade_digdug", "segasms_Wonder_Boy_Rev_1_1987_Sega", "segasms_Sonic_Chaos_1993_Sega"],
+  "best-retro-racing-games": ["arcade_outrun", "sg_Road_Rash_1991_Electronic_Arts_EU-US_en", "msdos_Stunts_1990", "psx_nfs3"],
+  "best-retro-puzzle-games": ["tetris_1987", "msdos_Arkanoid_II_-_Revenge_of_Doh_1989", "msdos_Bust-A-Move_1997", "lemmings_original_ms-dos_201705"],
+  "prince-of-persia-beginner-guide": ["msdos_Prince_of_Persia_1990"],
+  "pac-man-high-score-guide": ["msdos_Pac-Man_1983", "msdos_Ms._Pac-Man_1983", "atari_2600_pac-man_1982_atari_tod_frye_-_sears_cx2646_-_49-75185"],
+  "best-atari-2600-games": ["atari_2600_frogger_1982_parker_brothers_ed_english_david_lamkins_pb5300", "atari_2600_space_invaders_1980_atari_richard_maurer_-_sears_cx2632_-_49-75153", "atari_2600_river_raid_1982_activision_carol_shaw_ax-020_ax-020-04", "atari_2600_pitfall_1983_cce_c-813", "atari_2600_breakout_-_breakaway_iv_paddle_1978_atari_brad_stewart_-_sears_cx2622_"],
+  "quick-arcade-games": ["arcade_qbert", "arcade_digdug", "arcade_ldrun", "arcade_joust", "arcade_paperboy", "arcade_mpatrol", "arcade_tapper", "arcade_robotron"],
+  "prehistorik-2-beginner-guide": ["msdos_Prehistorik_2_1993"],
+  "simcity-beginner-guide": ["msdos_SimCity_1989"],
+  "wolfenstein-3d-controls-guide": ["msdos_Wolfenstein_3D_1992"],
+  "doom-2-beginner-guide": ["Doom-2", "psx_doom"],
+  "outrun-route-controls-guide": ["arcade_outrun"],
+  "tetris-beginner-stacking-guide": ["tetris_1987"],
+  "frogger-beginner-guide": ["atari_2600_frogger_1982_parker_brothers_ed_english_david_lamkins_pb5300"],
+  "dig-dug-score-guide": ["arcade_digdug"]
+}

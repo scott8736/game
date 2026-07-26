@@ -14,6 +14,19 @@ const GAMES = data.games;
 const featured = JSON.parse(fs.readFileSync(path.join(__dirname, 'featured-articles.json'), 'utf8'));
 const seoGames = JSON.parse(fs.readFileSync(path.join(__dirname, 'seo-games.json'), 'utf8'));
 const seoById = new Map(seoGames.map((item) => [item.identifier, item]));
+const articleGameLinks = JSON.parse(fs.readFileSync(path.join(__dirname, 'article-game-links.json'), 'utf8'));
+const ARTICLE_TITLES = {
+  'best-dos-games': '90년대 도스게임 명작 추천', 'best-arcade-games': '추억의 오락실게임 추천',
+  'free-retro-games-online': '설치 없이 즐기는 무료 고전게임', 'best-mega-drive-games': '메가드라이브 명작 게임 추천',
+  'best-ps1-games': 'PS1 명작 게임 추천', 'retro-games-with-kids': '부모와 아이가 함께하기 좋은 고전게임',
+  'best-retro-racing-games': '고전 레이싱게임 추천', 'best-retro-puzzle-games': '고전 퍼즐게임 추천',
+  'prince-of-persia-beginner-guide': '페르시아의 왕자 조작법과 초보 공략', 'pac-man-high-score-guide': '팩맨 고득점 기본 공략',
+  'best-atari-2600-games': '아타리 2600 대표 게임 추천', 'quick-arcade-games': '짧게 즐기기 좋은 오락실게임',
+  'prehistorik-2-beginner-guide': '고인돌 2 조작법과 숨겨진 요소', 'simcity-beginner-guide': '심시티 초보 도시 운영법',
+  'wolfenstein-3d-controls-guide': '울펜슈타인 3D 기본 조작법', 'doom-2-beginner-guide': '둠 2 초보자 생존 공략',
+  'outrun-route-controls-guide': '아웃런 코스 선택과 조작법', 'tetris-beginner-stacking-guide': '테트리스 초보 블록 쌓기',
+  'frogger-beginner-guide': '프로거 안전하게 길 건너는 법', 'dig-dug-score-guide': '디그더그 초보 점수 공략'
+};
 
 const PLAT_META = {
   internetarcade: { ko: '아케이드', code: 'arcade', ctrl: '방향키로 이동 · Ctrl/Alt/Space로 버튼 · 5로 동전 넣기 · 1로 게임 시작' },
@@ -136,6 +149,10 @@ article p{line-height:1.8;font-size:15px;margin:0 0 14px;}
 .related ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;}
 .related a{color:var(--fg);text-decoration:none;font-size:14px;}
 .related a:hover{color:var(--accent);}
+.article-links{margin-top:20px;border:1px solid var(--border);background:var(--bg-2);padding:14px 16px;}
+.article-links h2{font-size:17px;color:var(--accent-2);margin:0 0 9px;}
+.article-links ul{margin:0;padding-left:20px;line-height:1.8;}
+.article-links a{color:var(--accent);text-decoration:none;}
 footer{margin-top:30px;color:var(--dim);font-size:12px;text-align:center;line-height:1.6;opacity:0.8;}
 footer a{color:var(--accent);}
 `;
@@ -166,6 +183,18 @@ function gamePage(g) {
   const intro = escHtml(buildIntro(g));
   const yearLabel = g.year || '????';
   const related = relatedGames(g);
+  const directArticles = Object.entries(articleGameLinks).filter(([, ids]) => ids.includes(g.identifier)).map(([slug]) => slug);
+  const broadArticles = [];
+  if (g.category === 'softwarelibrary_msdos_games') broadArticles.push('best-dos-games');
+  if (g.category === 'internetarcade') broadArticles.push('best-arcade-games');
+  if (g.category === 'sega_genesis_library') broadArticles.push('best-mega-drive-games');
+  if (g.category === 'psxgames') broadArticles.push('best-ps1-games');
+  if (g.category === 'atari_2600_library') broadArticles.push('best-atari-2600-games');
+  if (g.genre === 'racing') broadArticles.push('best-retro-racing-games');
+  if (g.genre === 'puzzle') broadArticles.push('best-retro-puzzle-games');
+  if (!directArticles.length && !broadArticles.length) broadArticles.push('free-retro-games-online');
+  const articleSlugs = [...new Set([...directArticles, ...broadArticles])].slice(0, 3);
+  const articleHtml = articleSlugs.length ? `<section class="article-links"><h2>${displayTitle} 관련 공략·추천 글</h2><ul>${articleSlugs.map((slug) => `<li><a href="../articles/${slug}.html">${escHtml(ARTICLE_TITLES[slug])}</a></li>`).join('')}</ul></section>` : '';
   const relHtml = related.length
     ? `<div class="related"><h2>관련 게임</h2><ul>${related.map((r) => {
       const relatedSeo = seoById.get(r.identifier);
@@ -185,10 +214,10 @@ function gamePage(g) {
     : `<article><p>${intro}</p></article>
 <div class="ctrl-box">🎮 조작법: ${escHtml(g.meta.ctrl || '게임 화면 내 안내를 참고하세요')}</div>`;
   const pageTitle = seo
-    ? `${seo.primaryKeyword} - ${seo.enTitle} | 게임다방`
+    ? `${seo.primaryKeyword} | ${seo.koTitle} (${seo.enTitle}) - 게임다방`
     : `${g.title} 온라인 무료 플레이 - ${g.meta.ko} ${genreKo} 게임 | 게임다방`;
   const ogTitle = seo
-    ? `${seo.primaryKeyword} | ${seo.enTitle} 고전게임`
+    ? `${seo.primaryKeyword} | ${seo.koTitle} (${seo.enTitle})`
     : `${g.title} 온라인 무료 플레이 | 게임다방`;
   const ld = {
     '@context': 'https://schema.org',
@@ -226,6 +255,7 @@ ${ADSENSE_SNIPPET}
 <div class="meta">${yearLabel} · ${escHtml(g.meta.ko)}${genreKo ? ' · ' + escHtml(genreKo) : ''}</div>
 ${sampleArticle}
 <a class="cta" href="${playHref(g, '../')}">🕹️ ${seo ? `${koTitle} 바로 플레이하기` : '지금 무료로 플레이하기'}</a>
+${articleHtml}
 ${relHtml}
 <footer><a href="../guide.html">← 게임소개 목록으로</a> · <a href="../index.html">전체 게임 갤러리</a></footer>
 </div>
