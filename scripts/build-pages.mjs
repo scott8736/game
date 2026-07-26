@@ -128,7 +128,8 @@ function relatedGames(g) {
 }
 
 function playHref(g, prefix) {
-  return `${prefix}play.html?game=${encodeURIComponent(g.identifier)}&cat=${encodeURIComponent(g.category)}&t=${encodeURIComponent(g.title)}&y=${encodeURIComponent(g.year || '')}`;
+  const seo = seoById.get(g.identifier);
+  return `${prefix}play.html?game=${encodeURIComponent(g.identifier)}&cat=${encodeURIComponent(g.category)}&t=${encodeURIComponent(seo?.koTitle || g.title)}&et=${encodeURIComponent(seo?.enTitle || '')}&y=${encodeURIComponent(g.year || '')}`;
 }
 
 const PAGE_CSS = `
@@ -266,7 +267,7 @@ ${relHtml}
 function guidePlatformPage(cat, list) {
   const meta = PLAT_META[cat] || { ko: '레트로', code: 'retro' };
   const sorted = [...list].sort((a, b) => (b.downloads || 0) - (a.downloads || 0));
-  const items = sorted.map((g) => `<li><a href="../games/${escHtml(g.slug)}.html"><img loading="lazy" src="https://archive.org/services/img/${encodeURIComponent(g.identifier)}" alt="" onerror="this.style.display='none'"><span class="ti">${escHtml(g.title)}</span><span class="yr">${g.year || '????'}</span></a></li>`).join('');
+  const items = sorted.map((g) => { const seo = seoById.get(g.identifier); const label = seo ? `${seo.koTitle} (${seo.enTitle})` : g.title; return `<li><a href="../games/${escHtml(g.slug)}.html"><img loading="lazy" src="https://archive.org/services/img/${encodeURIComponent(g.identifier)}" alt="" onerror="this.style.display='none'"><span class="ti">${escHtml(label)}</span><span class="yr">${g.year || '????'}</span></a></li>`; }).join('');
   return `<!DOCTYPE html>
 <html lang="ko">
 <head>

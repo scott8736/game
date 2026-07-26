@@ -100,6 +100,7 @@ footer a{color:var(--accent);text-decoration:none;}
 <body class="bg-dots"><div class="wrap">
 <a class="back" href="index.html">← 갤러리로</a>
 <h1 class="fx-shadow" id="gTitle"></h1>
+<div id="gEnTitle" style="color:var(--dim);font-size:17px;text-align:center;margin:-4px 0 8px;"></div>
 <div class="meta" id="gMeta"></div>
 <p id="gIntro" style="color:var(--dim);font-size:15px;line-height:1.7;max-width:680px;margin:0 auto 16px;text-align:center;"></p>
 <div id="ps1notice"></div>
@@ -185,8 +186,10 @@ function start(g){
   var ih=isT?(sz.h+nav+330):sz.h;var mask=isT?THEATER_MASK:0;
   NATIVE_W=sz.w;NATIVE_H=sz.h;var rs=document.documentElement.style;
   rs.setProperty("--gw",sz.w+"px");rs.setProperty("--gh",sz.h+"px");rs.setProperty("--gih",ih+"px");rs.setProperty("--gnav",nav+"px");rs.setProperty("--gmask",mask+"px");
-  document.title=g.title+" 온라인 무료 플레이 · "+SITE_TITLE;
-  document.getElementById("gTitle").textContent=g.title;
+  var mainTitle=g.koTitle||g.title;var enTitle=g.enTitle||(g.koTitle?g.title:"");
+  document.title=mainTitle+(enTitle?" ("+enTitle+")":"")+" 온라인 무료 플레이 · "+SITE_TITLE;
+  document.getElementById("gTitle").textContent=mainTitle;
+  document.getElementById("gEnTitle").textContent=enTitle;
   document.getElementById("gMeta").textContent=(g.year||"????")+" · "+g.identifier;
   var introTxt=buildIntro(g);document.getElementById("gIntro").textContent=introTxt;setMetaDesc(introTxt);
   if(cat==="psxgames")document.getElementById("ps1notice").innerHTML="<div style=\"max-width:640px;margin:0 auto 12px;padding:8px 12px;font-size:18px;color:var(--accent-2);border:1px solid var(--accent-2);background:rgba(247,201,72,0.10);text-align:center;line-height:1.5;\">⏳ PS1 게임은 디스크 용량이 커서 로딩까지 시간이 다소 걸립니다. 잠시 기다려 주세요.</div>";
@@ -199,10 +202,10 @@ function start(g){
   initFx();
   applyZoom();
 }
-function enrichMeta(g){if(!g)return;if(g.title){document.title=g.title+" 온라인 무료 플레이 · "+SITE_TITLE;document.getElementById("gTitle").textContent=g.title;}document.getElementById("gMeta").textContent=((g.year||"????")+" · "+g.identifier);var introTxt=buildIntro(g);document.getElementById("gIntro").textContent=introTxt;setMetaDesc(introTxt);}
+function enrichMeta(g){if(!g)return;var currentKo=qp("t"),currentEn=qp("et");if(g.title&&!currentKo){document.title=g.title+" 온라인 무료 플레이 · "+SITE_TITLE;document.getElementById("gTitle").textContent=g.title;}if(currentKo){document.getElementById("gTitle").textContent=currentKo;document.getElementById("gEnTitle").textContent=currentEn||g.title;}document.getElementById("gMeta").textContent=((g.year||"????")+" · "+g.identifier);var introTxt=buildIntro(g);document.getElementById("gIntro").textContent=introTxt;setMetaDesc(introTxt);}
 var URLCAT=qp("cat");
 if(GID&&URLCAT){
-  start({identifier:GID,title:qp("t")||GID,year:qp("y")||"",category:URLCAT});
+  start({identifier:GID,title:qp("et")||qp("t")||GID,koTitle:qp("t")||"",enTitle:qp("et")||"",year:qp("y")||"",category:URLCAT});
   fetch("games.json").then(function(r){return r.json();}).then(function(d){var gs=(d&&d.games)||[];for(var i=0;i<gs.length;i++){if(gs[i].identifier===GID){enrichMeta(gs[i]);break;}}}).catch(function(){});
 }else if(GID){
   fetch("games.json").then(function(r){return r.json();}).then(function(d){var gs=(d&&d.games)||[];var g=null;for(var i=0;i<gs.length;i++){if(gs[i].identifier===GID){g=gs[i];break;}}start(g||{identifier:GID,title:GID,year:"",category:"other"});}).catch(function(){start({identifier:GID,title:GID,year:"",category:"other"});});

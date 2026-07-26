@@ -123,6 +123,7 @@ h1.fx-chrome{background:linear-gradient(180deg,#fff,var(--accent-2) 45%,var(--ac
 .cat-badge{position:absolute;top:8px;left:8px;background:rgba(0,0,0,0.78);color:var(--accent-2);padding:3px 8px;font-size:14px;letter-spacing:1px;border:1px solid var(--accent-2);font-family:"JetBrains Mono",monospace;text-transform:uppercase;z-index:2;white-space:nowrap;font-weight:700;}
 .card-body{padding:12px 14px;}
 .card-title{font-size:calc(13px * var(--title-scale,1));color:var(--fg);margin-bottom:4px;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:34px;}
+.card-en-title{color:var(--dim);font-size:11px;line-height:1.35;margin:-1px 0 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .card-meta{font-size:calc(10px * var(--meta-scale,1));color:var(--dim);letter-spacing:0.5px;}
 .favtoggle{background:var(--bg-2);border:1px solid var(--border);color:var(--dim);padding:10px 14px;font-family:"JetBrains Mono",monospace;font-size:18px;cursor:pointer;border-radius:var(--radius);}
 .favtoggle.on{border-color:var(--accent-2);color:var(--accent-2);}
@@ -233,13 +234,16 @@ var _savedFav=localStorage.getItem(FAV_KEY);
 var favs=new Set(_savedFav?loadArr(FAV_KEY):PRESET_FAVS);
 if(!_savedFav&&PRESET_FAVS.length){saveFavs();}
 var favOnly=false,mobileOnly=false,sortMode="added";
+var SEO_NAMES={};
 var MOBILE_CATS=["internetarcade","sega_genesis_library","sega_sms_library","gamegear_library","tg16_library","atari_2600_library","atari_7800_library","atari_5200_library","coleco_colecovision_library","ngp_library","wonderswan-library"];
 function mobileCapable(g){return MOBILE_CATS.indexOf(g.category||"other")>=0;}
 function saveFavs(){localStorage.setItem(FAV_KEY,JSON.stringify(Array.from(favs)));}
 function toggleFav(id){if(favs.has(id)){favs.delete(id);}else{favs.add(id);}saveFavs();}
 function recordRecent(id){var a=loadArr(REC_KEY).filter(function(x){return x!==id;});a.unshift(id);localStorage.setItem(REC_KEY,JSON.stringify(a.slice(0,12)));}
 function byId(id){for(var i=0;i<GAMES.length;i++){if(GAMES[i].id===id)return GAMES[i];}return null;}
-function playHref(g){return "play.html?game="+encodeURIComponent(g.id)+"&cat="+encodeURIComponent(g.category||"other")+"&t="+encodeURIComponent(g.title||"")+"&y="+encodeURIComponent(g.year||"");}
+function seoName(g){return SEO_NAMES[g.id]||null;}
+function displayTitle(g){var n=seoName(g);return n?n.koTitle:g.title;}
+function playHref(g){var n=seoName(g);return "play.html?game="+encodeURIComponent(g.id)+"&cat="+encodeURIComponent(g.category||"other")+"&t="+encodeURIComponent(n?n.koTitle:(g.title||""))+"&et="+encodeURIComponent(n?n.enTitle:"")+"&y="+encodeURIComponent(g.year||"");}
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 function catLabel(c){var m=CAT_I18N[c];if(m){return m[LANG]||m.ko;}return (CATEGORIES[c]&&CATEGORIES[c].label)||"⭐ Other";}
 function catShort(c){var e=CATEGORIES[c];if(e&&e.short)return e.short;var l=catLabel(c).replace(/^[^A-Za-z0-9]+/,"");return l||"GAME";}
@@ -290,6 +294,7 @@ function buildSidebar(){
 function cardHtml(g){
   var _cc=g.category||"other";var badge='<div class="cat-badge" style="color:'+catColor(_cc)+';border-color:'+catColor(_cc)+'">'+esc(catShort(_cc))+'</div>';
   var mobileBadge=mobileCapable(g)?'<div class="mobile-badge">📱 외부 패드 가능</div>':"";
+  var sn=seoName(g);
   return '<a class="card" href="'+playHref(g)+'">'+
     '<div class="card-thumb-wrap">'+
       badge+
@@ -299,7 +304,8 @@ function cardHtml(g){
       '<div class="card-overlay">'+t("play")+'</div>'+
     '</div>'+
     '<div class="card-body">'+
-      '<div class="card-title">'+esc(g.title)+'</div>'+
+      '<div class="card-title">'+esc(displayTitle(g))+'</div>'+
+      (sn?'<div class="card-en-title">'+esc(sn.enTitle)+'</div>':"")+
       '<div class="card-meta">'+(g.year||"????")+(g.genre?" · "+esc(g.genre):"")+'</div>'+
     '</div></a>';
 }
@@ -360,7 +366,7 @@ function applyFilter(){
     if(mobileOnly&&!mobileCapable(g))return false;
     if(currentCat!=="all"&&(g.category||"other")!==currentCat)return false;
     if(currentGenre){if(currentGenre==="__unclassified__"){if(g.genre)return false;}else if((g.genre||"")!==currentGenre)return false;}
-    if(q){return g.title.toLowerCase().indexOf(q)>=0;}
+    if(q){var n=seoName(g);var hay=(g.title+" "+(n?n.koTitle+" "+n.enTitle:"")).toLowerCase();return hay.indexOf(q)>=0;}
     return true;
   });
   items=items.slice();
@@ -391,7 +397,7 @@ function renderRecent(){
   var rr=document.getElementById("recentRow");var items=loadArr(REC_KEY).map(byId).filter(Boolean);
   if(!items.length){rr.style.display="none";rr.innerHTML="";return;}
   rr.style.display="block";
-  rr.innerHTML='<div class="recent-title">'+t("recent")+'</div><div class="recent-items">'+items.map(function(g){return '<a href="'+playHref(g)+'"><img loading="lazy" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'">'+esc(g.title)+'</a>';}).join("")+'</div>';
+  rr.innerHTML='<div class="recent-title">'+t("recent")+'</div><div class="recent-items">'+items.map(function(g){return '<a href="'+playHref(g)+'"><img loading="lazy" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'">'+esc(displayTitle(g))+'</a>';}).join("")+'</div>';
 }
 grid.addEventListener("click",function(e){
   var fb=e.target.closest?e.target.closest(".fav-btn"):null;
@@ -413,7 +419,7 @@ var _hl=document.getElementById("siteLogoLink");if(_hl)_hl.addEventListener("cli
 function renderDaily(){
   var el=document.getElementById("daily");if(!SHOW_DAILY||!GAMES.length){el.style.display="none";return;}
   var d=new Date();var seed=d.getFullYear()*1000+(d.getMonth()*31+d.getDate());var g=GAMES[seed%GAMES.length];
-  el.innerHTML='<a class="daily" href="'+playHref(g)+'"><img loading="lazy" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'"><div><div class="dl-tag">'+t("daily")+'</div><div class="dl-title">'+esc(g.title)+'</div><div class="dl-meta">'+(g.year||"????")+(g.genre?" · "+esc(g.genre):"")+'</div></div></a>';
+  el.innerHTML='<a class="daily" href="'+playHref(g)+'"><img loading="lazy" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'"><div><div class="dl-tag">'+t("daily")+'</div><div class="dl-title">'+esc(displayTitle(g))+'</div><div class="dl-meta">'+(g.year||"????")+(g.genre?" · "+esc(g.genre):"")+'</div></div></a>';
   el.querySelector("a").addEventListener("click",function(){recordRecent(g.id);});
 }
 function applyLang(){
@@ -428,5 +434,6 @@ function applyLang(){
 document.getElementById("langSel").value=LANG;
 document.getElementById("langSel").addEventListener("change",function(e){LANG=e.target.value;localStorage.setItem("red_lang_"+location.pathname,LANG);applyLang();});
 applyLang();
+fetch("scripts/seo-games.json").then(function(r){return r.json();}).then(function(rows){for(var i=0;i<rows.length;i++)SEO_NAMES[rows[i].identifier]={koTitle:rows[i].koTitle,enTitle:rows[i].enTitle};renderRecent();renderDaily();applyFilter();}).catch(function(){});
 if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}
 </script></body></html>
