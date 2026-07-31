@@ -1,85 +1,5285 @@
 [
-  {"identifier":"msdos_Prince_of_Persia_1990","koTitle":"페르시아의 왕자","enTitle":"Prince of Persia","priority":"A","primaryKeyword":"페르시아의 왕자 게임하기","secondaryKeywords":["페르시아의 왕자 고전게임","페르시아의 왕자 도스게임","페르시아의 왕자 조작법"],"relatedIds":["msdos_Prehistorik_2_1993","msdos_Disneys_Aladdin_1994","sg_Another_World_1992_Delphine_Virgin_EU_en","sg_Flashback_The_Quest_for_Identity_1993_Delphine_U.S._Gold_US_en-fr"],"sample":{"metaDescription":"페르시아의 왕자 고전 도스게임을 설치 없이 온라인으로 플레이하세요. 이동·점프·검술 조작법과 처음 시작할 때 필요한 초보 공략을 함께 확인할 수 있습니다.","intro":"조던 메크너가 제작한 페르시아의 왕자는 사실적인 움직임과 정교한 함정으로 유명한 고전 액션 어드벤처입니다. 60분 안에 감옥을 탈출하고 성을 지나 공주를 구하는 것이 목표입니다. 로토스코핑으로 구현한 부드러운 애니메이션과 긴장감 있는 검술은 이후 시네마틱 플랫폼 게임에 큰 영향을 주었습니다.","controls":[["이동","←·→ 방향키"],["점프·위로 이동","↑ 방향키"],["앉기·아래로 이동","↓ 방향키"],["천천히 걷기·난간 잡기","Shift + 방향키"],["검 꺼내기·공격","Shift"],["일시정지","Esc"]],"tips":["낭떠러지 앞에서는 Shift를 누른 채 천천히 걸어 위치를 확인하세요.","달리다가 ↑를 누르면 더 먼 거리를 뛰어넘을 수 있습니다.","추락할 때 Shift를 누르면 잡을 수 있는 난간에 매달릴 수 있습니다.","검을 든 적에게는 거리를 유지하며 공격과 방어 타이밍을 익히는 것이 좋습니다."]}},
-  {"identifier":"msdos_Prehistorik_2_1993","koTitle":"고인돌2","enTitle":"Prehistorik 2","priority":"A","primaryKeyword":"고인돌2 게임하기","secondaryKeywords":["고인돌2 고전게임","고인돌2 도스게임","고인돌2 조작법"],"relatedIds":["msdos_Prehistorik_1991","msdos_Prince_of_Persia_1990","msdos_Disneys_Aladdin_1994","msdos_Golden_Axe_1990"],"sample":{"metaDescription":"고인돌2(Prehistorik 2) 고전 도스게임을 설치 없이 플레이하세요. 이동·점프·방망이 공격 조작법과 점수를 높이는 초보 팁을 제공합니다.","intro":"고인돌2는 원시인을 움직여 동물과 적을 물리치고 음식과 보석을 모으는 횡스크롤 액션 게임입니다. 밝고 유쾌한 그래픽, 숨겨진 공간, 다양한 보너스 아이템 덕분에 1990년대 국내 PC 이용자에게 특히 잘 알려졌습니다. 각 스테이지의 출구에 도착하는 것뿐 아니라 숨겨진 아이템을 찾아 높은 점수를 얻는 재미가 큽니다.","controls":[["이동","←·→ 방향키"],["점프·위로 이동","↑ 방향키"],["앉기·아래로 이동","↓ 방향키"],["방망이 공격","Space"],["게임 시작·메뉴 확인","Enter"],["일시정지","Esc"]],"tips":["적과 정면으로 부딪치기 전에 방망이의 공격 거리를 먼저 익히세요.","벽이나 지형이 수상한 곳에서는 아래 방향과 점프 키를 시험해 숨겨진 공간을 찾아보세요.","음식과 보석을 연속으로 모으면 점수를 높이기 쉽습니다.","낭떠러지에서는 무리하게 달리지 말고 적의 이동 패턴을 먼저 확인하세요."]}},
-  {"identifier":"msdos_Pac-Man_1983","koTitle":"팩맨","enTitle":"Pac-Man","priority":"A","primaryKeyword":"팩맨 게임하기","secondaryKeywords":["팩맨 무료게임","팩맨 고전게임","팩맨 조작법"],"relatedIds":["msdos_Ms._Pac-Man_1983","arcade_digdug","arcade_mrdo","arcade_ladybug"],"sample":{"metaDescription":"팩맨(Pac-Man) 고전 미로게임을 브라우저에서 무료로 플레이하세요. 방향키 조작법과 유령을 피하며 점수를 높이는 초보 공략을 확인할 수 있습니다.","intro":"팩맨은 미로 안의 점을 모두 먹으면서 네 마리 유령을 피하는 대표적인 고전 아케이드 게임입니다. 파워 펠릿을 먹으면 잠시 유령을 되쫓아 추가 점수를 얻을 수 있습니다. 규칙은 단순하지만 유령마다 움직임 성향이 달라 길을 미리 선택하고 퇴로를 확보하는 판단이 중요합니다.","controls":[["이동","방향키"],["게임 시작·메뉴 확인","Enter"],["일시정지","Esc"],["재시작","게임 화면의 재시작 기능 이용"]],"tips":["막다른 길로 들어가기 전에 반대편으로 빠져나갈 경로를 확인하세요.","파워 펠릿은 위험할 때 탈출하거나 여러 유령을 연속으로 잡을 때 사용하세요.","과일 보너스를 노리더라도 유령이 가까우면 안전한 경로를 우선하세요.","유령을 화면 한쪽으로 유도한 뒤 반대쪽 점을 정리하면 안전합니다."]}},
-  {"identifier":"msdos_SimCity_1989","koTitle":"심시티","enTitle":"SimCity","priority":"A","primaryKeyword":"심시티 고전게임","secondaryKeywords":["심시티 도스게임","심시티 게임하기","심시티 초보 공략"],"relatedIds":["CIVILIZATION_201902","sg_Theme_Park_1995_Bullfrog_Productions_Electronic_Arts_EU-US_M4","msdos_Dune_2_-_The_Building_of_a_Dynasty_1992","msdos_Oregon_Trail_The_1990"],"sample":{"metaDescription":"고전 심시티(SimCity) 도스게임을 온라인으로 플레이하세요. 도시 구역 설정과 전력·교통·예산을 관리하는 기본 조작법과 초보 팁을 제공합니다.","intro":"심시티는 시장이 되어 주거·상업·공업 지역을 배치하고 전력, 교통, 치안과 예산을 관리하는 도시 건설 시뮬레이션입니다. 정해진 결승점보다 도시가 성장하는 과정을 관찰하고 문제를 해결하는 것이 핵심입니다. 이후 수많은 건설·경영 시뮬레이션의 기초가 된 작품으로 평가받습니다.","controls":[["화면 이동","방향키 또는 마우스로 화면 가장자리 이동"],["도구 선택·건설","마우스 클릭"],["메뉴 확인","Enter 또는 마우스 클릭"],["취소","Esc"],["시간 조절","게임 상단 속도 메뉴 이용"]],"tips":["처음부터 도로를 너무 넓게 만들면 유지비 부담이 커질 수 있습니다.","주거·상업·공업 지역은 도로와 전력망에 연결해야 성장합니다.","초기에는 소규모 구역을 만들고 수요 변화에 맞춰 확장하세요.","교통 체증과 범죄가 심해지면 무작정 구역을 늘리기보다 기반시설을 먼저 점검하세요."]}},
-  {"identifier":"arcade_outrun","koTitle":"아웃런","enTitle":"Out Run","priority":"A","primaryKeyword":"아웃런 게임하기","secondaryKeywords":["아웃런 오락실게임","아웃런 고전게임","아웃런 조작법"],"relatedIds":["arcade_hangon","arcade_grchamp","sg_Road_Rash_1991_Electronic_Arts_EU-US_en","sg_Turbo_Out_Run_1992_Sega_EU-JP_en"],"sample":{"metaDescription":"아웃런(Out Run) 추억의 오락실 레이싱게임을 온라인으로 플레이하세요. 동전·시작·가속·브레이크 조작법과 코스 선택 초보 팁을 확인할 수 있습니다.","intro":"아웃런은 페라리풍 스포츠카를 타고 제한 시간 안에 체크포인트를 통과하는 세가의 대표적인 체감형 레이싱게임입니다. 갈림길에서 코스를 직접 선택할 수 있고, 해안도로와 야자수 풍경, 경쾌한 음악이 어우러져 속도감과 여행 분위기를 함께 전달합니다. 충돌을 줄이고 부드럽게 코너를 통과하는 것이 완주의 핵심입니다.","controls":[["동전 넣기","5"],["게임 시작","1"],["좌우 조향","←·→ 방향키"],["가속","Ctrl 또는 Z"],["브레이크","Alt 또는 X"],["일시정지","Esc"]],"tips":["출발 직후부터 급격하게 방향을 꺾기보다 차량을 도로 중앙에 유지하세요.","코너에 진입하기 전에 속도를 줄이고 빠져나오면서 다시 가속하세요.","다른 차량 사이의 좁은 공간을 무리하게 통과하면 충돌로 시간을 크게 잃습니다.","갈림길 직전에는 원하는 방향을 미리 정해 차선을 확보하세요."]}},
-
-  {"identifier":"msdos_Wolfenstein_3D_1992","koTitle":"울펜슈타인 3D","enTitle":"Wolfenstein 3D","priority":"A","primaryKeyword":"울펜슈타인 3D 게임하기","secondaryKeywords":["울펜슈타인 고전게임","울펜슈타인 도스게임"]},
-  {"identifier":"Doom-2","koTitle":"둠2","enTitle":"Doom II","priority":"A","primaryKeyword":"둠2 게임하기","secondaryKeywords":["둠2 고전게임","둠2 도스게임"]},
-  {"identifier":"msdos_Disneys_Aladdin_1994","koTitle":"디즈니 알라딘","enTitle":"Disney's Aladdin","priority":"A","primaryKeyword":"알라딘 고전게임 게임하기","secondaryKeywords":["알라딘 도스게임","알라딘 게임 조작법"]},
-  {"identifier":"msdos_Golden_Axe_1990","koTitle":"황금도끼","enTitle":"Golden Axe","priority":"A","primaryKeyword":"황금도끼 게임하기","secondaryKeywords":["황금도끼 고전게임","황금도끼 도스게임"]},
-  {"identifier":"msdos_Dune_2_-_The_Building_of_a_Dynasty_1992","koTitle":"듄2","enTitle":"Dune II","priority":"A","primaryKeyword":"듄2 게임하기","secondaryKeywords":["듄2 고전게임","듄2 도스게임"]},
-  {"identifier":"msdos_Donkey_Kong_1983","koTitle":"동키콩","enTitle":"Donkey Kong","priority":"A","primaryKeyword":"동키콩 게임하기","secondaryKeywords":["동키콩 고전게임","동키콩 도스게임"]},
-  {"identifier":"arcade_digdug","koTitle":"디그더그","enTitle":"Dig Dug","priority":"A","primaryKeyword":"디그더그 게임하기","secondaryKeywords":["디그더그 오락실게임","디그더그 공략"]},
-  {"identifier":"arcade_qbert","koTitle":"큐버트","enTitle":"Q*bert","priority":"A","primaryKeyword":"큐버트 게임하기","secondaryKeywords":["Qbert 고전게임","큐버트 오락실게임"]},
-  {"identifier":"arcade_commsega","koTitle":"코만도","enTitle":"Commando","priority":"A","primaryKeyword":"코만도 오락실게임","secondaryKeywords":["코만도 게임하기","코만도 고전게임"]},
-  {"identifier":"arcade_ldrun","koTitle":"로드러너","enTitle":"Lode Runner","priority":"A","primaryKeyword":"로드러너 게임하기","secondaryKeywords":["로드러너 고전게임","로드러너 오락실게임"]},
-  {"identifier":"msdos_Bust-A-Move_1997","koTitle":"퍼즐버블","enTitle":"Bust-A-Move","priority":"A","primaryKeyword":"퍼즐버블 게임하기","secondaryKeywords":["버스트 어 무브 고전게임","퍼즐버블 무료게임"]},
-  {"identifier":"msdos_Mortal_Kombat_1993","koTitle":"모탈 컴뱃","enTitle":"Mortal Kombat","priority":"A","primaryKeyword":"모탈 컴뱃 게임하기","secondaryKeywords":["모탈컴뱃 고전게임","모탈컴뱃 도스게임"]},
-  {"identifier":"Sonic_The_Hedgehog_3","koTitle":"소닉 더 헤지혹 3","enTitle":"Sonic the Hedgehog 3","priority":"A","primaryKeyword":"소닉3 게임하기","secondaryKeywords":["소닉 고전게임","소닉 메가드라이브"]},
-  {"identifier":"sg_Streets_of_Rage_2_1992_Sega_US","koTitle":"베어너클2","enTitle":"Streets of Rage 2","priority":"A","primaryKeyword":"베어너클2 게임하기","secondaryKeywords":["스트리트 오브 레이지2","베어너클 고전게임"]},
-  {"identifier":"sg_Road_Rash_1991_Electronic_Arts_EU-US_en","koTitle":"로드래시","enTitle":"Road Rash","priority":"A","primaryKeyword":"로드래시 게임하기","secondaryKeywords":["로드래시 고전게임","로드래시 메가드라이브"]},
-  {"identifier":"Castlevania_Bloodlines_USA","koTitle":"캐슬바니아 블러드라인","enTitle":"Castlevania: Bloodlines","priority":"A","primaryKeyword":"캐슬바니아 블러드라인 게임하기","secondaryKeywords":["악마성 드라큘라 메가드라이브","캐슬바니아 고전게임"]},
-  {"identifier":"Street_Fighter_II_Special_Champion_Edition_USA.md","koTitle":"스트리트 파이터2 대시 플러스","enTitle":"Street Fighter II: Special Champion Edition","priority":"A","primaryKeyword":"스트리트 파이터2 게임하기","secondaryKeywords":["스트리트파이터2 고전게임","스파2 메가드라이브"]},
-  {"identifier":"segasms_Wonder_Boy_Rev_1_1987_Sega","koTitle":"원더보이","enTitle":"Wonder Boy","priority":"A","primaryKeyword":"원더보이 게임하기","secondaryKeywords":["원더보이 고전게임","원더보이 오락실게임"]},
-  {"identifier":"segasms_R-Type_1988_Irem_-_Sega","koTitle":"알타입","enTitle":"R-Type","priority":"A","primaryKeyword":"알타입 게임하기","secondaryKeywords":["R-Type 고전게임","알타입 슈팅게임"]},
-  {"identifier":"psx_tekken3","koTitle":"철권3","enTitle":"Tekken 3","priority":"A","primaryKeyword":"철권3 게임하기","secondaryKeywords":["철권3 PS1","철권3 고전게임"]},
-  {"identifier":"psx_revil3","koTitle":"바이오하자드3 네메시스","enTitle":"Resident Evil 3: Nemesis","priority":"A","primaryKeyword":"바이오하자드3 게임하기","secondaryKeywords":["바이오하자드3 PS1","레지던트 이블3"]},
-  {"identifier":"psx_mslugx","koTitle":"메탈슬러그 X","enTitle":"Metal Slug X","priority":"A","primaryKeyword":"메탈슬러그 X 게임하기","secondaryKeywords":["메탈슬러그 고전게임","메탈슬러그 PS1"]},
-  {"identifier":"psx_traide","koTitle":"툼레이더","enTitle":"Tomb Raider","priority":"A","primaryKeyword":"툼레이더1 게임하기","secondaryKeywords":["툼레이더 PS1","툼레이더 고전게임"]},
-  {"identifier":"psx_thps2","koTitle":"토니 호크 프로 스케이터2","enTitle":"Tony Hawk's Pro Skater 2","priority":"A","primaryKeyword":"토니호크2 게임하기","secondaryKeywords":["토니 호크 PS1","스케이트보드 고전게임"]},
-  {"identifier":"psx_nfs3","koTitle":"니드 포 스피드3 핫 퍼슈트","enTitle":"Need for Speed III: Hot Pursuit","priority":"A","primaryKeyword":"니드포스피드3 게임하기","secondaryKeywords":["니드포스피드 핫퍼슈트 PS1","고전 레이싱게임"]},
-
-  {"identifier":"msdos_Oregon_Trail_The_1990","koTitle":"오리건 트레일","enTitle":"The Oregon Trail","priority":"B","primaryKeyword":"오리건 트레일 게임하기","secondaryKeywords":["오리건 트레일 고전게임","Oregon Trail 온라인"]},
-  {"identifier":"msdos_Where_in_the_World_is_Carmen_Sandiego_Enhanced_1989","koTitle":"카르멘 산디에고","enTitle":"Where in the World Is Carmen Sandiego?","priority":"B","primaryKeyword":"카르멘 산디에고 게임하기","secondaryKeywords":["카르멘 산디에고 고전게임","도스 교육게임"]},
-  {"identifier":"msdos_Stunts_1990","koTitle":"스턴츠","enTitle":"Stunts","priority":"B","primaryKeyword":"스턴츠 게임하기","secondaryKeywords":["Stunts 도스게임","고전 자동차게임"]},
-  {"identifier":"msdos_Ms._Pac-Man_1983","koTitle":"미스 팩맨","enTitle":"Ms. Pac-Man","priority":"B","primaryKeyword":"미스 팩맨 게임하기","secondaryKeywords":["미스팩맨 고전게임","Ms Pac-Man 온라인"]},
-  {"identifier":"msdos_Double_Dragon_1988","koTitle":"더블 드래곤","enTitle":"Double Dragon","priority":"B","primaryKeyword":"더블 드래곤 게임하기","secondaryKeywords":["쌍용권 고전게임","더블드래곤 도스게임"]},
-  {"identifier":"CIVILIZATION_201902","koTitle":"문명1","enTitle":"Sid Meier's Civilization","priority":"B","primaryKeyword":"문명1 게임하기","secondaryKeywords":["문명 고전게임","시드마이어 문명 도스게임"]},
-  {"identifier":"lemmings_original_ms-dos_201705","koTitle":"레밍즈","enTitle":"Lemmings","priority":"B","primaryKeyword":"레밍즈 게임하기","secondaryKeywords":["레밍즈 고전게임","레밍즈 도스게임"]},
-  {"identifier":"monkey_dos","koTitle":"원숭이 섬의 비밀","enTitle":"The Secret of Monkey Island","priority":"B","primaryKeyword":"원숭이 섬의 비밀 게임하기","secondaryKeywords":["원숭이섬 고전게임","몽키 아일랜드 도스게임"]},
-  {"identifier":"msdos_Alone_in_the_Dark_1992","koTitle":"어둠 속에 나 홀로","enTitle":"Alone in the Dark","priority":"B","primaryKeyword":"어둠 속에 나 홀로 게임하기","secondaryKeywords":["Alone in the Dark 고전게임","고전 공포게임"]},
-  {"identifier":"tetris_1987","koTitle":"테트리스","enTitle":"Tetris","priority":"B","primaryKeyword":"테트리스 고전게임","secondaryKeywords":["테트리스 도스게임","테트리스 게임하기"]},
-  {"identifier":"msdos_Arkanoid_II_-_Revenge_of_Doh_1989","koTitle":"알카노이드2","enTitle":"Arkanoid II: Revenge of Doh","priority":"B","primaryKeyword":"알카노이드2 게임하기","secondaryKeywords":["벽돌깨기 고전게임","알카노이드 도스게임"]},
-  {"identifier":"msdos_BurgerTime_1982","koTitle":"버거타임","enTitle":"BurgerTime","priority":"B","primaryKeyword":"버거타임 게임하기","secondaryKeywords":["햄버거 고전게임","버거타임 도스게임"]},
-  {"identifier":"arcade_defender","koTitle":"디펜더","enTitle":"Defender","priority":"B","primaryKeyword":"디펜더 오락실게임","secondaryKeywords":["Defender 고전게임","디펜더 슈팅게임"]},
-  {"identifier":"arcade_joust","koTitle":"자우스트","enTitle":"Joust","priority":"B","primaryKeyword":"자우스트 게임하기","secondaryKeywords":["Joust 오락실게임","자우스트 고전게임"]},
-  {"identifier":"arcade_mrdo","koTitle":"미스터 두","enTitle":"Mr. Do!","priority":"B","primaryKeyword":"미스터 두 게임하기","secondaryKeywords":["미스터도 오락실게임","Mr Do 고전게임"]},
-  {"identifier":"arcade_paperboy","koTitle":"페이퍼보이","enTitle":"Paperboy","priority":"B","primaryKeyword":"페이퍼보이 게임하기","secondaryKeywords":["Paperboy 오락실게임","신문배달 고전게임"]},
-  {"identifier":"arcade_centiped","koTitle":"센티피드","enTitle":"Centipede","priority":"B","primaryKeyword":"센티피드 게임하기","secondaryKeywords":["Centipede 오락실게임","센티피드 고전게임"]},
-  {"identifier":"arcade_zaxxon","koTitle":"잭슨","enTitle":"Zaxxon","priority":"B","primaryKeyword":"잭슨 게임하기","secondaryKeywords":["Zaxxon 오락실게임","잭슨 슈팅게임"]},
-  {"identifier":"arcade_mpatrol","koTitle":"문 패트롤","enTitle":"Moon Patrol","priority":"B","primaryKeyword":"문 패트롤 게임하기","secondaryKeywords":["Moon Patrol 오락실게임","문패트롤 고전게임"]},
-  {"identifier":"arcade_tapper","koTitle":"태퍼","enTitle":"Tapper","priority":"B","primaryKeyword":"태퍼 게임하기","secondaryKeywords":["Tapper 오락실게임","맥주 고전게임"]},
-  {"identifier":"arcade_sharrier","koTitle":"스페이스 해리어","enTitle":"Space Harrier","priority":"B","primaryKeyword":"스페이스 해리어 게임하기","secondaryKeywords":["Space Harrier 고전게임","세가 오락실게임"]},
-  {"identifier":"arcade_missile","koTitle":"미사일 커맨드","enTitle":"Missile Command","priority":"B","primaryKeyword":"미사일 커맨드 게임하기","secondaryKeywords":["Missile Command 고전게임","아타리 오락실게임"]},
-  {"identifier":"arcade_qix","koTitle":"퀵스","enTitle":"Qix","priority":"B","primaryKeyword":"퀵스 게임하기","secondaryKeywords":["Qix 오락실게임","땅따먹기 고전게임"]},
-  {"identifier":"arcade_pitfall2","koTitle":"피트폴2","enTitle":"Pitfall II","priority":"B","primaryKeyword":"피트폴2 게임하기","secondaryKeywords":["Pitfall 고전게임","피트폴 오락실게임"]},
-  {"identifier":"arcade_robotron","koTitle":"로보트론","enTitle":"Robotron","priority":"B","primaryKeyword":"로보트론 게임하기","secondaryKeywords":["Robotron 오락실게임","로보트론 슈팅게임"]},
-  {"identifier":"sg_Shinobi_III_Return_of_the_Ninja_Master_1993_Sega_US","koTitle":"슈퍼 시노비2","enTitle":"Shinobi III: Return of the Ninja Master","priority":"B","primaryKeyword":"슈퍼 시노비2 게임하기","secondaryKeywords":["시노비3 메가드라이브","닌자 고전게임"]},
-  {"identifier":"sg_Another_World_1992_Delphine_Virgin_EU_en","koTitle":"어나더 월드","enTitle":"Another World","priority":"B","primaryKeyword":"어나더 월드 게임하기","secondaryKeywords":["Another World 고전게임","어나더월드 메가드라이브"]},
-  {"identifier":"sg_Flashback_The_Quest_for_Identity_1993_Delphine_U.S._Gold_US_en-fr","koTitle":"플래시백","enTitle":"Flashback: The Quest for Identity","priority":"B","primaryKeyword":"플래시백 게임하기","secondaryKeywords":["Flashback 고전게임","플래시백 메가드라이브"]},
-  {"identifier":"ecco_bin","koTitle":"에코 더 돌핀","enTitle":"Ecco the Dolphin","priority":"B","primaryKeyword":"에코 더 돌핀 게임하기","secondaryKeywords":["Ecco the Dolphin 고전게임","메가드라이브 돌고래게임"]},
-  {"identifier":"earthworm-jim","koTitle":"어스웜 짐","enTitle":"Earthworm Jim","priority":"B","primaryKeyword":"어스웜 짐 게임하기","secondaryKeywords":["Earthworm Jim 고전게임","어스웜짐 메가드라이브"]},
-
-  {"identifier":"atari_2600_frogger_1982_parker_brothers_ed_english_david_lamkins_pb5300","koTitle":"프로거","enTitle":"Frogger","priority":"C","primaryKeyword":"프로거 게임하기","secondaryKeywords":["Frogger 고전게임","개구리 길건너기 게임"]},
-  {"identifier":"atari_2600_space_invaders_1980_atari_richard_maurer_-_sears_cx2632_-_49-75153","koTitle":"스페이스 인베이더","enTitle":"Space Invaders","priority":"C","primaryKeyword":"스페이스 인베이더 게임하기","secondaryKeywords":["Space Invaders 고전게임","아타리 슈팅게임"]},
-  {"identifier":"atari_2600_river_raid_1982_activision_carol_shaw_ax-020_ax-020-04","koTitle":"리버레이드","enTitle":"River Raid","priority":"C","primaryKeyword":"리버레이드 게임하기","secondaryKeywords":["River Raid 고전게임","아타리 비행기게임"]},
-  {"identifier":"atari_2600_pitfall_1983_cce_c-813","koTitle":"피트폴","enTitle":"Pitfall!","priority":"C","primaryKeyword":"피트폴 게임하기","secondaryKeywords":["Pitfall 아타리게임","피트폴 고전게임"]},
-  {"identifier":"atari_2600_breakout_-_breakaway_iv_paddle_1978_atari_brad_stewart_-_sears_cx2622_","koTitle":"브레이크아웃","enTitle":"Breakout","priority":"C","primaryKeyword":"브레이크아웃 게임하기","secondaryKeywords":["벽돌깨기 고전게임","Breakout 아타리"]},
-  {"identifier":"atari_2600_pac-man_1982_atari_tod_frye_-_sears_cx2646_-_49-75185","koTitle":"팩맨 아타리 2600","enTitle":"Pac-Man for Atari 2600","priority":"C","primaryKeyword":"팩맨 아타리 게임하기","secondaryKeywords":["아타리 팩맨","Pac-Man Atari 2600"]},
-  {"identifier":"segasms_Alex_Kidd_in_Shinobi_World_1990_Sega","koTitle":"알렉스 키드 인 시노비 월드","enTitle":"Alex Kidd in Shinobi World","priority":"C","primaryKeyword":"알렉스 키드 시노비 월드 게임하기","secondaryKeywords":["알렉스키드 고전게임","세가 마스터 시스템 게임"]},
-  {"identifier":"segasms_Sonic_Chaos_1993_Sega","koTitle":"소닉 카오스","enTitle":"Sonic Chaos","priority":"C","primaryKeyword":"소닉 카오스 게임하기","secondaryKeywords":["소닉 고전게임","세가 마스터 시스템 소닉"]},
-  {"identifier":"segasms_Golden_Axe_Warrior_1991_Sega","koTitle":"골든 액스 워리어","enTitle":"Golden Axe Warrior","priority":"C","primaryKeyword":"골든 액스 워리어 게임하기","secondaryKeywords":["황금도끼 RPG","세가 마스터 시스템 RPG"]},
-  {"identifier":"segasms_Wonder_Boy_III_1989_Sega","koTitle":"원더보이3 드래곤의 함정","enTitle":"Wonder Boy III: The Dragon's Trap","priority":"C","primaryKeyword":"원더보이3 게임하기","secondaryKeywords":["드래곤의 함정 고전게임","원더보이3 세가"]},
-  {"identifier":"segasms_Mortal_Kombat_II_1994_Acclaim_-_Midway_-_Probe","koTitle":"모탈 컴뱃2","enTitle":"Mortal Kombat II","priority":"C","primaryKeyword":"모탈 컴뱃2 게임하기","secondaryKeywords":["모탈컴뱃2 고전게임","세가 마스터 시스템 격투게임"]},
-  {"identifier":"psx_revil","koTitle":"바이오하자드","enTitle":"Resident Evil","priority":"C","primaryKeyword":"바이오하자드1 게임하기","secondaryKeywords":["Resident Evil PS1","바이오하자드 고전게임"]},
-  {"identifier":"psx_ffantact","koTitle":"파이널 판타지 택틱스","enTitle":"Final Fantasy Tactics","priority":"C","primaryKeyword":"파이널 판타지 택틱스 게임하기","secondaryKeywords":["FFT PS1","파이널판타지 택틱스 고전게임"]},
-  {"identifier":"psx_yugioh","koTitle":"유희왕 봉인된 기억","enTitle":"Yu-Gi-Oh! Forbidden Memories","priority":"C","primaryKeyword":"유희왕 봉인된 기억 게임하기","secondaryKeywords":["유희왕 PS1 게임","Forbidden Memories"]},
-  {"identifier":"psx_twistmt2","koTitle":"트위스티드 메탈2","enTitle":"Twisted Metal 2","priority":"C","primaryKeyword":"트위스티드 메탈2 게임하기","secondaryKeywords":["Twisted Metal 2 PS1","자동차 전투게임"]},
-  {"identifier":"psx_megamnx4","koTitle":"록맨 X4","enTitle":"Mega Man X4","priority":"C","primaryKeyword":"록맨 X4 게임하기","secondaryKeywords":["메가맨 X4 PS1","록맨 고전게임"]},
-  {"identifier":"psx_doom","koTitle":"둠 PS1","enTitle":"Doom for PlayStation","priority":"C","primaryKeyword":"둠 PS1 게임하기","secondaryKeywords":["플레이스테이션 둠","Doom PS1"]},
-  {"identifier":"psx_bombmpty","koTitle":"봄버맨 파티 에디션","enTitle":"Bomberman: Party Edition","priority":"C","primaryKeyword":"봄버맨 파티 에디션 게임하기","secondaryKeywords":["봄버맨 PS1","Bomberman 고전게임"]},
-  {"identifier":"psx_wormsarm","koTitle":"웜즈 아마겟돈","enTitle":"Worms Armageddon","priority":"C","primaryKeyword":"웜즈 아마겟돈 게임하기","secondaryKeywords":["Worms Armageddon PS1","웜즈 고전게임"]},
-  {"identifier":"psx_dune2000","koTitle":"듄 2000","enTitle":"Dune 2000","priority":"C","primaryKeyword":"듄 2000 게임하기","secondaryKeywords":["Dune 2000 PS1","듄 전략게임"]}
+  {
+    "identifier": "msdos_Prince_of_Persia_1990",
+    "koTitle": "페르시아의 왕자",
+    "enTitle": "Prince of Persia",
+    "priority": "A",
+    "primaryKeyword": "페르시아의 왕자 게임하기",
+    "secondaryKeywords": [
+      "페르시아의 왕자 고전게임",
+      "페르시아의 왕자 도스게임",
+      "페르시아의 왕자 조작법"
+    ],
+    "relatedIds": [
+      "msdos_Prehistorik_2_1993",
+      "msdos_Disneys_Aladdin_1994",
+      "sg_Another_World_1992_Delphine_Virgin_EU_en",
+      "sg_Flashback_The_Quest_for_Identity_1993_Delphine_U.S._Gold_US_en-fr"
+    ],
+    "sample": {
+      "metaDescription": "페르시아의 왕자 고전 도스게임을 설치 없이 온라인으로 플레이하세요. 이동·점프·검술 조작법과 처음 시작할 때 필요한 초보 공략을 함께 확인할 수 있습니다.",
+      "intro": "조던 메크너가 제작한 페르시아의 왕자는 사실적인 움직임과 정교한 함정으로 유명한 고전 액션 어드벤처입니다. 60분 안에 감옥을 탈출하고 성을 지나 공주를 구하는 것이 목표입니다. 로토스코핑으로 구현한 부드러운 애니메이션과 긴장감 있는 검술은 이후 시네마틱 플랫폼 게임에 큰 영향을 주었습니다.",
+      "controls": [
+        [
+          "이동",
+          "←·→ 방향키"
+        ],
+        [
+          "점프·위로 이동",
+          "↑ 방향키"
+        ],
+        [
+          "앉기·아래로 이동",
+          "↓ 방향키"
+        ],
+        [
+          "천천히 걷기·난간 잡기",
+          "Shift + 방향키"
+        ],
+        [
+          "검 꺼내기·공격",
+          "Shift"
+        ],
+        [
+          "일시정지",
+          "Esc"
+        ]
+      ],
+      "tips": [
+        "낭떠러지 앞에서는 Shift를 누른 채 천천히 걸어 위치를 확인하세요.",
+        "달리다가 ↑를 누르면 더 먼 거리를 뛰어넘을 수 있습니다.",
+        "추락할 때 Shift를 누르면 잡을 수 있는 난간에 매달릴 수 있습니다.",
+        "검을 든 적에게는 거리를 유지하며 공격과 방어 타이밍을 익히는 것이 좋습니다."
+      ]
+    }
+  },
+  {
+    "identifier": "msdos_Prehistorik_2_1993",
+    "koTitle": "고인돌2",
+    "enTitle": "Prehistorik 2",
+    "priority": "A",
+    "primaryKeyword": "고인돌2 게임하기",
+    "secondaryKeywords": [
+      "고인돌2 고전게임",
+      "고인돌2 도스게임",
+      "고인돌2 조작법"
+    ],
+    "relatedIds": [
+      "msdos_Prehistorik_1991",
+      "msdos_Prince_of_Persia_1990",
+      "msdos_Disneys_Aladdin_1994",
+      "msdos_Golden_Axe_1990"
+    ],
+    "sample": {
+      "metaDescription": "고인돌2(Prehistorik 2) 고전 도스게임을 설치 없이 플레이하세요. 이동·점프·방망이 공격 조작법과 점수를 높이는 초보 팁을 제공합니다.",
+      "intro": "고인돌2는 원시인을 움직여 동물과 적을 물리치고 음식과 보석을 모으는 횡스크롤 액션 게임입니다. 밝고 유쾌한 그래픽, 숨겨진 공간, 다양한 보너스 아이템 덕분에 1990년대 국내 PC 이용자에게 특히 잘 알려졌습니다. 각 스테이지의 출구에 도착하는 것뿐 아니라 숨겨진 아이템을 찾아 높은 점수를 얻는 재미가 큽니다.",
+      "controls": [
+        [
+          "이동",
+          "←·→ 방향키"
+        ],
+        [
+          "점프·위로 이동",
+          "↑ 방향키"
+        ],
+        [
+          "앉기·아래로 이동",
+          "↓ 방향키"
+        ],
+        [
+          "방망이 공격",
+          "Space"
+        ],
+        [
+          "게임 시작·메뉴 확인",
+          "Enter"
+        ],
+        [
+          "일시정지",
+          "Esc"
+        ]
+      ],
+      "tips": [
+        "적과 정면으로 부딪치기 전에 방망이의 공격 거리를 먼저 익히세요.",
+        "벽이나 지형이 수상한 곳에서는 아래 방향과 점프 키를 시험해 숨겨진 공간을 찾아보세요.",
+        "음식과 보석을 연속으로 모으면 점수를 높이기 쉽습니다.",
+        "낭떠러지에서는 무리하게 달리지 말고 적의 이동 패턴을 먼저 확인하세요."
+      ]
+    }
+  },
+  {
+    "identifier": "msdos_Pac-Man_1983",
+    "koTitle": "팩맨",
+    "enTitle": "Pac-Man",
+    "priority": "A",
+    "primaryKeyword": "팩맨 게임하기",
+    "secondaryKeywords": [
+      "팩맨 무료게임",
+      "팩맨 고전게임",
+      "팩맨 조작법"
+    ],
+    "relatedIds": [
+      "msdos_Ms._Pac-Man_1983",
+      "arcade_digdug",
+      "arcade_mrdo",
+      "arcade_ladybug"
+    ],
+    "sample": {
+      "metaDescription": "팩맨(Pac-Man) 고전 미로게임을 브라우저에서 무료로 플레이하세요. 방향키 조작법과 유령을 피하며 점수를 높이는 초보 공략을 확인할 수 있습니다.",
+      "intro": "팩맨은 미로 안의 점을 모두 먹으면서 네 마리 유령을 피하는 대표적인 고전 아케이드 게임입니다. 파워 펠릿을 먹으면 잠시 유령을 되쫓아 추가 점수를 얻을 수 있습니다. 규칙은 단순하지만 유령마다 움직임 성향이 달라 길을 미리 선택하고 퇴로를 확보하는 판단이 중요합니다.",
+      "controls": [
+        [
+          "이동",
+          "방향키"
+        ],
+        [
+          "게임 시작·메뉴 확인",
+          "Enter"
+        ],
+        [
+          "일시정지",
+          "Esc"
+        ],
+        [
+          "재시작",
+          "게임 화면의 재시작 기능 이용"
+        ]
+      ],
+      "tips": [
+        "막다른 길로 들어가기 전에 반대편으로 빠져나갈 경로를 확인하세요.",
+        "파워 펠릿은 위험할 때 탈출하거나 여러 유령을 연속으로 잡을 때 사용하세요.",
+        "과일 보너스를 노리더라도 유령이 가까우면 안전한 경로를 우선하세요.",
+        "유령을 화면 한쪽으로 유도한 뒤 반대쪽 점을 정리하면 안전합니다."
+      ]
+    }
+  },
+  {
+    "identifier": "msdos_SimCity_1989",
+    "koTitle": "심시티",
+    "enTitle": "SimCity",
+    "priority": "A",
+    "primaryKeyword": "심시티 고전게임",
+    "secondaryKeywords": [
+      "심시티 도스게임",
+      "심시티 게임하기",
+      "심시티 초보 공략"
+    ],
+    "relatedIds": [
+      "CIVILIZATION_201902",
+      "sg_Theme_Park_1995_Bullfrog_Productions_Electronic_Arts_EU-US_M4",
+      "msdos_Dune_2_-_The_Building_of_a_Dynasty_1992",
+      "msdos_Oregon_Trail_The_1990"
+    ],
+    "sample": {
+      "metaDescription": "고전 심시티(SimCity) 도스게임을 온라인으로 플레이하세요. 도시 구역 설정과 전력·교통·예산을 관리하는 기본 조작법과 초보 팁을 제공합니다.",
+      "intro": "심시티는 시장이 되어 주거·상업·공업 지역을 배치하고 전력, 교통, 치안과 예산을 관리하는 도시 건설 시뮬레이션입니다. 정해진 결승점보다 도시가 성장하는 과정을 관찰하고 문제를 해결하는 것이 핵심입니다. 이후 수많은 건설·경영 시뮬레이션의 기초가 된 작품으로 평가받습니다.",
+      "controls": [
+        [
+          "화면 이동",
+          "방향키 또는 마우스로 화면 가장자리 이동"
+        ],
+        [
+          "도구 선택·건설",
+          "마우스 클릭"
+        ],
+        [
+          "메뉴 확인",
+          "Enter 또는 마우스 클릭"
+        ],
+        [
+          "취소",
+          "Esc"
+        ],
+        [
+          "시간 조절",
+          "게임 상단 속도 메뉴 이용"
+        ]
+      ],
+      "tips": [
+        "처음부터 도로를 너무 넓게 만들면 유지비 부담이 커질 수 있습니다.",
+        "주거·상업·공업 지역은 도로와 전력망에 연결해야 성장합니다.",
+        "초기에는 소규모 구역을 만들고 수요 변화에 맞춰 확장하세요.",
+        "교통 체증과 범죄가 심해지면 무작정 구역을 늘리기보다 기반시설을 먼저 점검하세요."
+      ]
+    }
+  },
+  {
+    "identifier": "arcade_outrun",
+    "koTitle": "아웃런",
+    "enTitle": "Out Run",
+    "priority": "A",
+    "primaryKeyword": "아웃런 게임하기",
+    "secondaryKeywords": [
+      "아웃런 오락실게임",
+      "아웃런 고전게임",
+      "아웃런 조작법"
+    ],
+    "relatedIds": [
+      "arcade_hangon",
+      "arcade_grchamp",
+      "sg_Road_Rash_1991_Electronic_Arts_EU-US_en",
+      "sg_Turbo_Out_Run_1992_Sega_EU-JP_en"
+    ],
+    "sample": {
+      "metaDescription": "아웃런(Out Run) 추억의 오락실 레이싱게임을 온라인으로 플레이하세요. 동전·시작·가속·브레이크 조작법과 코스 선택 초보 팁을 확인할 수 있습니다.",
+      "intro": "아웃런은 페라리풍 스포츠카를 타고 제한 시간 안에 체크포인트를 통과하는 세가의 대표적인 체감형 레이싱게임입니다. 갈림길에서 코스를 직접 선택할 수 있고, 해안도로와 야자수 풍경, 경쾌한 음악이 어우러져 속도감과 여행 분위기를 함께 전달합니다. 충돌을 줄이고 부드럽게 코너를 통과하는 것이 완주의 핵심입니다.",
+      "controls": [
+        [
+          "동전 넣기",
+          "5"
+        ],
+        [
+          "게임 시작",
+          "1"
+        ],
+        [
+          "좌우 조향",
+          "←·→ 방향키"
+        ],
+        [
+          "가속",
+          "Ctrl 또는 Z"
+        ],
+        [
+          "브레이크",
+          "Alt 또는 X"
+        ],
+        [
+          "일시정지",
+          "Esc"
+        ]
+      ],
+      "tips": [
+        "출발 직후부터 급격하게 방향을 꺾기보다 차량을 도로 중앙에 유지하세요.",
+        "코너에 진입하기 전에 속도를 줄이고 빠져나오면서 다시 가속하세요.",
+        "다른 차량 사이의 좁은 공간을 무리하게 통과하면 충돌로 시간을 크게 잃습니다.",
+        "갈림길 직전에는 원하는 방향을 미리 정해 차선을 확보하세요."
+      ]
+    }
+  },
+  {
+    "identifier": "msdos_Wolfenstein_3D_1992",
+    "koTitle": "울펜슈타인 3D",
+    "enTitle": "Wolfenstein 3D",
+    "priority": "A",
+    "primaryKeyword": "울펜슈타인 3D 게임하기",
+    "secondaryKeywords": [
+      "울펜슈타인 고전게임",
+      "울펜슈타인 도스게임"
+    ]
+  },
+  {
+    "identifier": "Doom-2",
+    "koTitle": "둠2",
+    "enTitle": "Doom II",
+    "priority": "A",
+    "primaryKeyword": "둠2 게임하기",
+    "secondaryKeywords": [
+      "둠2 고전게임",
+      "둠2 도스게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Disneys_Aladdin_1994",
+    "koTitle": "디즈니 알라딘",
+    "enTitle": "Disney's Aladdin",
+    "priority": "A",
+    "primaryKeyword": "알라딘 고전게임 게임하기",
+    "secondaryKeywords": [
+      "알라딘 도스게임",
+      "알라딘 게임 조작법"
+    ]
+  },
+  {
+    "identifier": "msdos_Golden_Axe_1990",
+    "koTitle": "황금도끼",
+    "enTitle": "Golden Axe",
+    "priority": "A",
+    "primaryKeyword": "황금도끼 게임하기",
+    "secondaryKeywords": [
+      "황금도끼 고전게임",
+      "황금도끼 도스게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Dune_2_-_The_Building_of_a_Dynasty_1992",
+    "koTitle": "듄2",
+    "enTitle": "Dune II",
+    "priority": "A",
+    "primaryKeyword": "듄2 게임하기",
+    "secondaryKeywords": [
+      "듄2 고전게임",
+      "듄2 도스게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Donkey_Kong_1983",
+    "koTitle": "동키콩",
+    "enTitle": "Donkey Kong",
+    "priority": "A",
+    "primaryKeyword": "동키콩 게임하기",
+    "secondaryKeywords": [
+      "동키콩 고전게임",
+      "동키콩 도스게임"
+    ]
+  },
+  {
+    "identifier": "arcade_digdug",
+    "koTitle": "디그더그",
+    "enTitle": "Dig Dug",
+    "priority": "A",
+    "primaryKeyword": "디그더그 게임하기",
+    "secondaryKeywords": [
+      "디그더그 오락실게임",
+      "디그더그 공략"
+    ]
+  },
+  {
+    "identifier": "arcade_qbert",
+    "koTitle": "큐버트",
+    "enTitle": "Q*bert",
+    "priority": "A",
+    "primaryKeyword": "큐버트 게임하기",
+    "secondaryKeywords": [
+      "Qbert 고전게임",
+      "큐버트 오락실게임"
+    ]
+  },
+  {
+    "identifier": "arcade_commsega",
+    "koTitle": "코만도",
+    "enTitle": "Commando",
+    "priority": "A",
+    "primaryKeyword": "코만도 오락실게임",
+    "secondaryKeywords": [
+      "코만도 게임하기",
+      "코만도 고전게임"
+    ]
+  },
+  {
+    "identifier": "arcade_ldrun",
+    "koTitle": "로드러너",
+    "enTitle": "Lode Runner",
+    "priority": "A",
+    "primaryKeyword": "로드러너 게임하기",
+    "secondaryKeywords": [
+      "로드러너 고전게임",
+      "로드러너 오락실게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Bust-A-Move_1997",
+    "koTitle": "퍼즐버블",
+    "enTitle": "Bust-A-Move",
+    "priority": "A",
+    "primaryKeyword": "퍼즐버블 게임하기",
+    "secondaryKeywords": [
+      "버스트 어 무브 고전게임",
+      "퍼즐버블 무료게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Mortal_Kombat_1993",
+    "koTitle": "모탈 컴뱃",
+    "enTitle": "Mortal Kombat",
+    "priority": "A",
+    "primaryKeyword": "모탈 컴뱃 게임하기",
+    "secondaryKeywords": [
+      "모탈컴뱃 고전게임",
+      "모탈컴뱃 도스게임"
+    ]
+  },
+  {
+    "identifier": "Sonic_The_Hedgehog_3",
+    "koTitle": "소닉 더 헤지혹 3",
+    "enTitle": "Sonic the Hedgehog 3",
+    "priority": "A",
+    "primaryKeyword": "소닉3 게임하기",
+    "secondaryKeywords": [
+      "소닉 고전게임",
+      "소닉 메가드라이브"
+    ]
+  },
+  {
+    "identifier": "sg_Streets_of_Rage_2_1992_Sega_US",
+    "koTitle": "베어너클2",
+    "enTitle": "Streets of Rage 2",
+    "priority": "A",
+    "primaryKeyword": "베어너클2 게임하기",
+    "secondaryKeywords": [
+      "스트리트 오브 레이지2",
+      "베어너클 고전게임"
+    ]
+  },
+  {
+    "identifier": "sg_Road_Rash_1991_Electronic_Arts_EU-US_en",
+    "koTitle": "로드래시",
+    "enTitle": "Road Rash",
+    "priority": "A",
+    "primaryKeyword": "로드래시 게임하기",
+    "secondaryKeywords": [
+      "로드래시 고전게임",
+      "로드래시 메가드라이브"
+    ]
+  },
+  {
+    "identifier": "Castlevania_Bloodlines_USA",
+    "koTitle": "캐슬바니아 블러드라인",
+    "enTitle": "Castlevania: Bloodlines",
+    "priority": "A",
+    "primaryKeyword": "캐슬바니아 블러드라인 게임하기",
+    "secondaryKeywords": [
+      "악마성 드라큘라 메가드라이브",
+      "캐슬바니아 고전게임"
+    ]
+  },
+  {
+    "identifier": "Street_Fighter_II_Special_Champion_Edition_USA.md",
+    "koTitle": "스트리트 파이터2 대시 플러스",
+    "enTitle": "Street Fighter II: Special Champion Edition",
+    "priority": "A",
+    "primaryKeyword": "스트리트 파이터2 게임하기",
+    "secondaryKeywords": [
+      "스트리트파이터2 고전게임",
+      "스파2 메가드라이브"
+    ]
+  },
+  {
+    "identifier": "segasms_Wonder_Boy_Rev_1_1987_Sega",
+    "koTitle": "원더보이",
+    "enTitle": "Wonder Boy",
+    "priority": "A",
+    "primaryKeyword": "원더보이 게임하기",
+    "secondaryKeywords": [
+      "원더보이 고전게임",
+      "원더보이 오락실게임"
+    ]
+  },
+  {
+    "identifier": "segasms_R-Type_1988_Irem_-_Sega",
+    "koTitle": "알타입",
+    "enTitle": "R-Type",
+    "priority": "A",
+    "primaryKeyword": "알타입 게임하기",
+    "secondaryKeywords": [
+      "R-Type 고전게임",
+      "알타입 슈팅게임"
+    ]
+  },
+  {
+    "identifier": "psx_tekken3",
+    "koTitle": "철권3",
+    "enTitle": "Tekken 3",
+    "priority": "A",
+    "primaryKeyword": "철권3 게임하기",
+    "secondaryKeywords": [
+      "철권3 PS1",
+      "철권3 고전게임"
+    ]
+  },
+  {
+    "identifier": "psx_revil3",
+    "koTitle": "바이오하자드3 네메시스",
+    "enTitle": "Resident Evil 3: Nemesis",
+    "priority": "A",
+    "primaryKeyword": "바이오하자드3 게임하기",
+    "secondaryKeywords": [
+      "바이오하자드3 PS1",
+      "레지던트 이블3"
+    ]
+  },
+  {
+    "identifier": "psx_mslugx",
+    "koTitle": "메탈슬러그 X",
+    "enTitle": "Metal Slug X",
+    "priority": "A",
+    "primaryKeyword": "메탈슬러그 X 게임하기",
+    "secondaryKeywords": [
+      "메탈슬러그 고전게임",
+      "메탈슬러그 PS1"
+    ]
+  },
+  {
+    "identifier": "psx_traide",
+    "koTitle": "툼레이더",
+    "enTitle": "Tomb Raider",
+    "priority": "A",
+    "primaryKeyword": "툼레이더1 게임하기",
+    "secondaryKeywords": [
+      "툼레이더 PS1",
+      "툼레이더 고전게임"
+    ]
+  },
+  {
+    "identifier": "psx_thps2",
+    "koTitle": "토니 호크 프로 스케이터2",
+    "enTitle": "Tony Hawk's Pro Skater 2",
+    "priority": "A",
+    "primaryKeyword": "토니호크2 게임하기",
+    "secondaryKeywords": [
+      "토니 호크 PS1",
+      "스케이트보드 고전게임"
+    ]
+  },
+  {
+    "identifier": "psx_nfs3",
+    "koTitle": "니드 포 스피드3 핫 퍼슈트",
+    "enTitle": "Need for Speed III: Hot Pursuit",
+    "priority": "A",
+    "primaryKeyword": "니드포스피드3 게임하기",
+    "secondaryKeywords": [
+      "니드포스피드 핫퍼슈트 PS1",
+      "고전 레이싱게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Oregon_Trail_The_1990",
+    "koTitle": "오리건 트레일",
+    "enTitle": "The Oregon Trail",
+    "priority": "B",
+    "primaryKeyword": "오리건 트레일 게임하기",
+    "secondaryKeywords": [
+      "오리건 트레일 고전게임",
+      "Oregon Trail 온라인"
+    ]
+  },
+  {
+    "identifier": "msdos_Where_in_the_World_is_Carmen_Sandiego_Enhanced_1989",
+    "koTitle": "카르멘 산디에고",
+    "enTitle": "Where in the World Is Carmen Sandiego?",
+    "priority": "B",
+    "primaryKeyword": "카르멘 산디에고 게임하기",
+    "secondaryKeywords": [
+      "카르멘 산디에고 고전게임",
+      "도스 교육게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Stunts_1990",
+    "koTitle": "스턴츠",
+    "enTitle": "Stunts",
+    "priority": "B",
+    "primaryKeyword": "스턴츠 게임하기",
+    "secondaryKeywords": [
+      "Stunts 도스게임",
+      "고전 자동차게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Ms._Pac-Man_1983",
+    "koTitle": "미스 팩맨",
+    "enTitle": "Ms. Pac-Man",
+    "priority": "B",
+    "primaryKeyword": "미스 팩맨 게임하기",
+    "secondaryKeywords": [
+      "미스팩맨 고전게임",
+      "Ms Pac-Man 온라인"
+    ]
+  },
+  {
+    "identifier": "msdos_Double_Dragon_1988",
+    "koTitle": "더블 드래곤",
+    "enTitle": "Double Dragon",
+    "priority": "B",
+    "primaryKeyword": "더블 드래곤 게임하기",
+    "secondaryKeywords": [
+      "쌍용권 고전게임",
+      "더블드래곤 도스게임"
+    ]
+  },
+  {
+    "identifier": "CIVILIZATION_201902",
+    "koTitle": "문명1",
+    "enTitle": "Sid Meier's Civilization",
+    "priority": "B",
+    "primaryKeyword": "문명1 게임하기",
+    "secondaryKeywords": [
+      "문명 고전게임",
+      "시드마이어 문명 도스게임"
+    ]
+  },
+  {
+    "identifier": "lemmings_original_ms-dos_201705",
+    "koTitle": "레밍즈",
+    "enTitle": "Lemmings",
+    "priority": "B",
+    "primaryKeyword": "레밍즈 게임하기",
+    "secondaryKeywords": [
+      "레밍즈 고전게임",
+      "레밍즈 도스게임"
+    ]
+  },
+  {
+    "identifier": "monkey_dos",
+    "koTitle": "원숭이 섬의 비밀",
+    "enTitle": "The Secret of Monkey Island",
+    "priority": "B",
+    "primaryKeyword": "원숭이 섬의 비밀 게임하기",
+    "secondaryKeywords": [
+      "원숭이섬 고전게임",
+      "몽키 아일랜드 도스게임"
+    ]
+  },
+  {
+    "identifier": "msdos_Alone_in_the_Dark_1992",
+    "koTitle": "어둠 속에 나 홀로",
+    "enTitle": "Alone in the Dark",
+    "priority": "B",
+    "primaryKeyword": "어둠 속에 나 홀로 게임하기",
+    "secondaryKeywords": [
+      "Alone in the Dark 고전게임",
+      "고전 공포게임"
+    ]
+  },
+  {
+    "identifier": "tetris_1987",
+    "koTitle": "테트리스",
+    "enTitle": "Tetris",
+    "priority": "B",
+    "primaryKeyword": "테트리스 고전게임",
+    "secondaryKeywords": [
+      "테트리스 도스게임",
+      "테트리스 게임하기"
+    ]
+  },
+  {
+    "identifier": "msdos_Arkanoid_II_-_Revenge_of_Doh_1989",
+    "koTitle": "알카노이드2",
+    "enTitle": "Arkanoid II: Revenge of Doh",
+    "priority": "B",
+    "primaryKeyword": "알카노이드2 게임하기",
+    "secondaryKeywords": [
+      "벽돌깨기 고전게임",
+      "알카노이드 도스게임"
+    ]
+  },
+  {
+    "identifier": "msdos_BurgerTime_1982",
+    "koTitle": "버거타임",
+    "enTitle": "BurgerTime",
+    "priority": "B",
+    "primaryKeyword": "버거타임 게임하기",
+    "secondaryKeywords": [
+      "햄버거 고전게임",
+      "버거타임 도스게임"
+    ]
+  },
+  {
+    "identifier": "arcade_defender",
+    "koTitle": "디펜더",
+    "enTitle": "Defender",
+    "priority": "B",
+    "primaryKeyword": "디펜더 오락실게임",
+    "secondaryKeywords": [
+      "Defender 고전게임",
+      "디펜더 슈팅게임"
+    ]
+  },
+  {
+    "identifier": "arcade_joust",
+    "koTitle": "자우스트",
+    "enTitle": "Joust",
+    "priority": "B",
+    "primaryKeyword": "자우스트 게임하기",
+    "secondaryKeywords": [
+      "Joust 오락실게임",
+      "자우스트 고전게임"
+    ]
+  },
+  {
+    "identifier": "arcade_mrdo",
+    "koTitle": "미스터 두",
+    "enTitle": "Mr. Do!",
+    "priority": "B",
+    "primaryKeyword": "미스터 두 게임하기",
+    "secondaryKeywords": [
+      "미스터도 오락실게임",
+      "Mr Do 고전게임"
+    ]
+  },
+  {
+    "identifier": "arcade_paperboy",
+    "koTitle": "페이퍼보이",
+    "enTitle": "Paperboy",
+    "priority": "B",
+    "primaryKeyword": "페이퍼보이 게임하기",
+    "secondaryKeywords": [
+      "Paperboy 오락실게임",
+      "신문배달 고전게임"
+    ]
+  },
+  {
+    "identifier": "arcade_centiped",
+    "koTitle": "센티피드",
+    "enTitle": "Centipede",
+    "priority": "B",
+    "primaryKeyword": "센티피드 게임하기",
+    "secondaryKeywords": [
+      "Centipede 오락실게임",
+      "센티피드 고전게임"
+    ]
+  },
+  {
+    "identifier": "arcade_zaxxon",
+    "koTitle": "잭슨",
+    "enTitle": "Zaxxon",
+    "priority": "B",
+    "primaryKeyword": "잭슨 게임하기",
+    "secondaryKeywords": [
+      "Zaxxon 오락실게임",
+      "잭슨 슈팅게임"
+    ]
+  },
+  {
+    "identifier": "arcade_mpatrol",
+    "koTitle": "문 패트롤",
+    "enTitle": "Moon Patrol",
+    "priority": "B",
+    "primaryKeyword": "문 패트롤 게임하기",
+    "secondaryKeywords": [
+      "Moon Patrol 오락실게임",
+      "문패트롤 고전게임"
+    ]
+  },
+  {
+    "identifier": "arcade_tapper",
+    "koTitle": "태퍼",
+    "enTitle": "Tapper",
+    "priority": "B",
+    "primaryKeyword": "태퍼 게임하기",
+    "secondaryKeywords": [
+      "Tapper 오락실게임",
+      "맥주 고전게임"
+    ]
+  },
+  {
+    "identifier": "arcade_sharrier",
+    "koTitle": "스페이스 해리어",
+    "enTitle": "Space Harrier",
+    "priority": "B",
+    "primaryKeyword": "스페이스 해리어 게임하기",
+    "secondaryKeywords": [
+      "Space Harrier 고전게임",
+      "세가 오락실게임"
+    ]
+  },
+  {
+    "identifier": "arcade_missile",
+    "koTitle": "미사일 커맨드",
+    "enTitle": "Missile Command",
+    "priority": "B",
+    "primaryKeyword": "미사일 커맨드 게임하기",
+    "secondaryKeywords": [
+      "Missile Command 고전게임",
+      "아타리 오락실게임"
+    ]
+  },
+  {
+    "identifier": "arcade_qix",
+    "koTitle": "퀵스",
+    "enTitle": "Qix",
+    "priority": "B",
+    "primaryKeyword": "퀵스 게임하기",
+    "secondaryKeywords": [
+      "Qix 오락실게임",
+      "땅따먹기 고전게임"
+    ]
+  },
+  {
+    "identifier": "arcade_pitfall2",
+    "koTitle": "피트폴2",
+    "enTitle": "Pitfall II",
+    "priority": "B",
+    "primaryKeyword": "피트폴2 게임하기",
+    "secondaryKeywords": [
+      "Pitfall 고전게임",
+      "피트폴 오락실게임"
+    ]
+  },
+  {
+    "identifier": "arcade_robotron",
+    "koTitle": "로보트론",
+    "enTitle": "Robotron",
+    "priority": "B",
+    "primaryKeyword": "로보트론 게임하기",
+    "secondaryKeywords": [
+      "Robotron 오락실게임",
+      "로보트론 슈팅게임"
+    ]
+  },
+  {
+    "identifier": "sg_Shinobi_III_Return_of_the_Ninja_Master_1993_Sega_US",
+    "koTitle": "슈퍼 시노비2",
+    "enTitle": "Shinobi III: Return of the Ninja Master",
+    "priority": "B",
+    "primaryKeyword": "슈퍼 시노비2 게임하기",
+    "secondaryKeywords": [
+      "시노비3 메가드라이브",
+      "닌자 고전게임"
+    ]
+  },
+  {
+    "identifier": "sg_Another_World_1992_Delphine_Virgin_EU_en",
+    "koTitle": "어나더 월드",
+    "enTitle": "Another World",
+    "priority": "B",
+    "primaryKeyword": "어나더 월드 게임하기",
+    "secondaryKeywords": [
+      "Another World 고전게임",
+      "어나더월드 메가드라이브"
+    ]
+  },
+  {
+    "identifier": "sg_Flashback_The_Quest_for_Identity_1993_Delphine_U.S._Gold_US_en-fr",
+    "koTitle": "플래시백",
+    "enTitle": "Flashback: The Quest for Identity",
+    "priority": "B",
+    "primaryKeyword": "플래시백 게임하기",
+    "secondaryKeywords": [
+      "Flashback 고전게임",
+      "플래시백 메가드라이브"
+    ]
+  },
+  {
+    "identifier": "ecco_bin",
+    "koTitle": "에코 더 돌핀",
+    "enTitle": "Ecco the Dolphin",
+    "priority": "B",
+    "primaryKeyword": "에코 더 돌핀 게임하기",
+    "secondaryKeywords": [
+      "Ecco the Dolphin 고전게임",
+      "메가드라이브 돌고래게임"
+    ]
+  },
+  {
+    "identifier": "earthworm-jim",
+    "koTitle": "어스웜 짐",
+    "enTitle": "Earthworm Jim",
+    "priority": "B",
+    "primaryKeyword": "어스웜 짐 게임하기",
+    "secondaryKeywords": [
+      "Earthworm Jim 고전게임",
+      "어스웜짐 메가드라이브"
+    ]
+  },
+  {
+    "identifier": "atari_2600_frogger_1982_parker_brothers_ed_english_david_lamkins_pb5300",
+    "koTitle": "프로거",
+    "enTitle": "Frogger",
+    "priority": "C",
+    "primaryKeyword": "프로거 게임하기",
+    "secondaryKeywords": [
+      "Frogger 고전게임",
+      "개구리 길건너기 게임"
+    ]
+  },
+  {
+    "identifier": "atari_2600_space_invaders_1980_atari_richard_maurer_-_sears_cx2632_-_49-75153",
+    "koTitle": "스페이스 인베이더",
+    "enTitle": "Space Invaders",
+    "priority": "C",
+    "primaryKeyword": "스페이스 인베이더 게임하기",
+    "secondaryKeywords": [
+      "Space Invaders 고전게임",
+      "아타리 슈팅게임"
+    ]
+  },
+  {
+    "identifier": "atari_2600_river_raid_1982_activision_carol_shaw_ax-020_ax-020-04",
+    "koTitle": "리버레이드",
+    "enTitle": "River Raid",
+    "priority": "C",
+    "primaryKeyword": "리버레이드 게임하기",
+    "secondaryKeywords": [
+      "River Raid 고전게임",
+      "아타리 비행기게임"
+    ]
+  },
+  {
+    "identifier": "atari_2600_pitfall_1983_cce_c-813",
+    "koTitle": "피트폴",
+    "enTitle": "Pitfall!",
+    "priority": "C",
+    "primaryKeyword": "피트폴 게임하기",
+    "secondaryKeywords": [
+      "Pitfall 아타리게임",
+      "피트폴 고전게임"
+    ]
+  },
+  {
+    "identifier": "atari_2600_breakout_-_breakaway_iv_paddle_1978_atari_brad_stewart_-_sears_cx2622_",
+    "koTitle": "브레이크아웃",
+    "enTitle": "Breakout",
+    "priority": "C",
+    "primaryKeyword": "브레이크아웃 게임하기",
+    "secondaryKeywords": [
+      "벽돌깨기 고전게임",
+      "Breakout 아타리"
+    ]
+  },
+  {
+    "identifier": "atari_2600_pac-man_1982_atari_tod_frye_-_sears_cx2646_-_49-75185",
+    "koTitle": "팩맨 아타리 2600",
+    "enTitle": "Pac-Man for Atari 2600",
+    "priority": "C",
+    "primaryKeyword": "팩맨 아타리 게임하기",
+    "secondaryKeywords": [
+      "아타리 팩맨",
+      "Pac-Man Atari 2600"
+    ]
+  },
+  {
+    "identifier": "segasms_Alex_Kidd_in_Shinobi_World_1990_Sega",
+    "koTitle": "알렉스 키드 인 시노비 월드",
+    "enTitle": "Alex Kidd in Shinobi World",
+    "priority": "C",
+    "primaryKeyword": "알렉스 키드 시노비 월드 게임하기",
+    "secondaryKeywords": [
+      "알렉스키드 고전게임",
+      "세가 마스터 시스템 게임"
+    ]
+  },
+  {
+    "identifier": "segasms_Sonic_Chaos_1993_Sega",
+    "koTitle": "소닉 카오스",
+    "enTitle": "Sonic Chaos",
+    "priority": "C",
+    "primaryKeyword": "소닉 카오스 게임하기",
+    "secondaryKeywords": [
+      "소닉 고전게임",
+      "세가 마스터 시스템 소닉"
+    ]
+  },
+  {
+    "identifier": "segasms_Golden_Axe_Warrior_1991_Sega",
+    "koTitle": "골든 액스 워리어",
+    "enTitle": "Golden Axe Warrior",
+    "priority": "C",
+    "primaryKeyword": "골든 액스 워리어 게임하기",
+    "secondaryKeywords": [
+      "황금도끼 RPG",
+      "세가 마스터 시스템 RPG"
+    ]
+  },
+  {
+    "identifier": "segasms_Wonder_Boy_III_1989_Sega",
+    "koTitle": "원더보이3 드래곤의 함정",
+    "enTitle": "Wonder Boy III: The Dragon's Trap",
+    "priority": "C",
+    "primaryKeyword": "원더보이3 게임하기",
+    "secondaryKeywords": [
+      "드래곤의 함정 고전게임",
+      "원더보이3 세가"
+    ]
+  },
+  {
+    "identifier": "segasms_Mortal_Kombat_II_1994_Acclaim_-_Midway_-_Probe",
+    "koTitle": "모탈 컴뱃2",
+    "enTitle": "Mortal Kombat II",
+    "priority": "C",
+    "primaryKeyword": "모탈 컴뱃2 게임하기",
+    "secondaryKeywords": [
+      "모탈컴뱃2 고전게임",
+      "세가 마스터 시스템 격투게임"
+    ]
+  },
+  {
+    "identifier": "psx_revil",
+    "koTitle": "바이오하자드",
+    "enTitle": "Resident Evil",
+    "priority": "C",
+    "primaryKeyword": "바이오하자드1 게임하기",
+    "secondaryKeywords": [
+      "Resident Evil PS1",
+      "바이오하자드 고전게임"
+    ]
+  },
+  {
+    "identifier": "psx_ffantact",
+    "koTitle": "파이널 판타지 택틱스",
+    "enTitle": "Final Fantasy Tactics",
+    "priority": "C",
+    "primaryKeyword": "파이널 판타지 택틱스 게임하기",
+    "secondaryKeywords": [
+      "FFT PS1",
+      "파이널판타지 택틱스 고전게임"
+    ]
+  },
+  {
+    "identifier": "psx_yugioh",
+    "koTitle": "유희왕 봉인된 기억",
+    "enTitle": "Yu-Gi-Oh! Forbidden Memories",
+    "priority": "C",
+    "primaryKeyword": "유희왕 봉인된 기억 게임하기",
+    "secondaryKeywords": [
+      "유희왕 PS1 게임",
+      "Forbidden Memories"
+    ]
+  },
+  {
+    "identifier": "psx_twistmt2",
+    "koTitle": "트위스티드 메탈2",
+    "enTitle": "Twisted Metal 2",
+    "priority": "C",
+    "primaryKeyword": "트위스티드 메탈2 게임하기",
+    "secondaryKeywords": [
+      "Twisted Metal 2 PS1",
+      "자동차 전투게임"
+    ]
+  },
+  {
+    "identifier": "psx_megamnx4",
+    "koTitle": "록맨 X4",
+    "enTitle": "Mega Man X4",
+    "priority": "C",
+    "primaryKeyword": "록맨 X4 게임하기",
+    "secondaryKeywords": [
+      "메가맨 X4 PS1",
+      "록맨 고전게임"
+    ]
+  },
+  {
+    "identifier": "psx_doom",
+    "koTitle": "둠 PS1",
+    "enTitle": "Doom for PlayStation",
+    "priority": "C",
+    "primaryKeyword": "둠 PS1 게임하기",
+    "secondaryKeywords": [
+      "플레이스테이션 둠",
+      "Doom PS1"
+    ]
+  },
+  {
+    "identifier": "psx_bombmpty",
+    "koTitle": "봄버맨 파티 에디션",
+    "enTitle": "Bomberman: Party Edition",
+    "priority": "C",
+    "primaryKeyword": "봄버맨 파티 에디션 게임하기",
+    "secondaryKeywords": [
+      "봄버맨 PS1",
+      "Bomberman 고전게임"
+    ]
+  },
+  {
+    "identifier": "psx_wormsarm",
+    "koTitle": "웜즈 아마겟돈",
+    "enTitle": "Worms Armageddon",
+    "priority": "C",
+    "primaryKeyword": "웜즈 아마겟돈 게임하기",
+    "secondaryKeywords": [
+      "Worms Armageddon PS1",
+      "웜즈 고전게임"
+    ]
+  },
+  {
+    "identifier": "psx_dune2000",
+    "koTitle": "듄 2000",
+    "enTitle": "Dune 2000",
+    "priority": "C",
+    "primaryKeyword": "듄 2000 게임하기",
+    "secondaryKeywords": [
+      "Dune 2000 PS1",
+      "듄 전략게임"
+    ]
+  },
+  {
+    "identifier": "arcade_astrob",
+    "koTitle": "아스트로 블래스터",
+    "enTitle": "Astro Blaster",
+    "priority": "B",
+    "primaryKeyword": "아스트로 블래스터 게임하기",
+    "secondaryKeywords": [
+      "아스트로 블래스터 고전게임",
+      "아스트로 블래스터 무료게임",
+      "아스트로 블래스터 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_berzerk",
+    "koTitle": "버저크",
+    "enTitle": "Berzerk",
+    "priority": "B",
+    "primaryKeyword": "버저크 게임하기",
+    "secondaryKeywords": [
+      "버저크 고전게임",
+      "버저크 무료게임",
+      "버저크 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_3stooges",
+    "koTitle": "세 얼간이: 신부는 신부",
+    "enTitle": "The Three Stooges In Brides Is Brides",
+    "priority": "B",
+    "primaryKeyword": "세 얼간이: 신부는 신부 게임하기",
+    "secondaryKeywords": [
+      "세 얼간이: 신부는 신부 고전게임",
+      "세 얼간이: 신부는 신부 무료게임",
+      "세 얼간이: 신부는 신부 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_indytemp",
+    "koTitle": "인디아나 존스와 죽음의 사원",
+    "enTitle": "Indiana Jones and the Temple of Doom",
+    "priority": "B",
+    "primaryKeyword": "인디아나 존스와 죽음의 사원 게임하기",
+    "secondaryKeywords": [
+      "인디아나 존스와 죽음의 사원 고전게임",
+      "인디아나 존스와 죽음의 사원 무료게임",
+      "인디아나 존스와 죽음의 사원 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_bagman",
+    "koTitle": "백맨",
+    "enTitle": "Bagman",
+    "priority": "B",
+    "primaryKeyword": "백맨 게임하기",
+    "secondaryKeywords": [
+      "백맨 고전게임",
+      "백맨 무료게임",
+      "백맨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_bioatack",
+    "koTitle": "바이오 어택",
+    "enTitle": "Bio Attack",
+    "priority": "B",
+    "primaryKeyword": "바이오 어택 게임하기",
+    "secondaryKeywords": [
+      "바이오 어택 고전게임",
+      "바이오 어택 무료게임",
+      "바이오 어택 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_champbas",
+    "koTitle": "챔피언 베이스볼",
+    "enTitle": "Champion Baseball",
+    "priority": "B",
+    "primaryKeyword": "챔피언 베이스볼 게임하기",
+    "secondaryKeywords": [
+      "챔피언 베이스볼 고전게임",
+      "챔피언 베이스볼 무료게임",
+      "챔피언 베이스볼 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_bankp",
+    "koTitle": "뱅크 패닉",
+    "enTitle": "Bank Panic",
+    "priority": "B",
+    "primaryKeyword": "뱅크 패닉 게임하기",
+    "secondaryKeywords": [
+      "뱅크 패닉 고전게임",
+      "뱅크 패닉 무료게임",
+      "뱅크 패닉 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_arabian",
+    "koTitle": "아라비안",
+    "enTitle": "Internet Arcade: Arabian",
+    "priority": "B",
+    "primaryKeyword": "아라비안 게임하기",
+    "secondaryKeywords": [
+      "아라비안 고전게임",
+      "아라비안 무료게임",
+      "아라비안 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_atomboy",
+    "koTitle": "아토믹 보이",
+    "enTitle": "Atomic Boy",
+    "priority": "B",
+    "primaryKeyword": "아토믹 보이 게임하기",
+    "secondaryKeywords": [
+      "아토믹 보이 고전게임",
+      "아토믹 보이 무료게임",
+      "아토믹 보이 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_ckong",
+    "koTitle": "크레이지 콩",
+    "enTitle": "Crazy Kong",
+    "priority": "B",
+    "primaryKeyword": "크레이지 콩 게임하기",
+    "secondaryKeywords": [
+      "크레이지 콩 고전게임",
+      "크레이지 콩 무료게임",
+      "크레이지 콩 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_atlantis",
+    "koTitle": "아틀란티스 전투",
+    "enTitle": "Battle of Atlantis",
+    "priority": "B",
+    "primaryKeyword": "아틀란티스 전투 게임하기",
+    "secondaryKeywords": [
+      "아틀란티스 전투 고전게임",
+      "아틀란티스 전투 무료게임",
+      "아틀란티스 전투 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_carnival",
+    "koTitle": "카니발",
+    "enTitle": "Carnival",
+    "priority": "B",
+    "primaryKeyword": "카니발 게임하기",
+    "secondaryKeywords": [
+      "카니발 고전게임",
+      "카니발 무료게임",
+      "카니발 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_tron",
+    "koTitle": "트론",
+    "enTitle": "Tron",
+    "priority": "B",
+    "primaryKeyword": "트론 게임하기",
+    "secondaryKeywords": [
+      "트론 고전게임",
+      "트론 무료게임",
+      "트론 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_aztarac",
+    "koTitle": "아즈타락",
+    "enTitle": "Aztarac",
+    "priority": "B",
+    "primaryKeyword": "아즈타락 게임하기",
+    "secondaryKeywords": [
+      "아즈타락 고전게임",
+      "아즈타락 무료게임",
+      "아즈타락 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_blaster",
+    "koTitle": "블래스터",
+    "enTitle": "Blaster",
+    "priority": "B",
+    "primaryKeyword": "블래스터 게임하기",
+    "secondaryKeywords": [
+      "블래스터 고전게임",
+      "블래스터 무료게임",
+      "블래스터 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_beezer",
+    "koTitle": "비저",
+    "enTitle": "Beezer",
+    "priority": "B",
+    "primaryKeyword": "비저 게임하기",
+    "secondaryKeywords": [
+      "비저 고전게임",
+      "비저 무료게임",
+      "비저 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_bullfgt",
+    "koTitle": "불 파이트",
+    "enTitle": "Bull Fight",
+    "priority": "B",
+    "primaryKeyword": "불 파이트 게임하기",
+    "secondaryKeywords": [
+      "불 파이트 고전게임",
+      "불 파이트 무료게임",
+      "불 파이트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_congo",
+    "koTitle": "콩고 봉고",
+    "enTitle": "Congo Bongo",
+    "priority": "B",
+    "primaryKeyword": "콩고 봉고 게임하기",
+    "secondaryKeywords": [
+      "콩고 봉고 고전게임",
+      "콩고 봉고 무료게임",
+      "콩고 봉고 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_avalnche",
+    "koTitle": "아발란체",
+    "enTitle": "Internet Arcade: Avalanche",
+    "priority": "B",
+    "primaryKeyword": "아발란체 게임하기",
+    "secondaryKeywords": [
+      "아발란체 고전게임",
+      "아발란체 무료게임",
+      "아발란체 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_marble",
+    "koTitle": "마블 매드니스",
+    "enTitle": "Marble Madness",
+    "priority": "B",
+    "primaryKeyword": "마블 매드니스 게임하기",
+    "secondaryKeywords": [
+      "마블 매드니스 고전게임",
+      "마블 매드니스 무료게임",
+      "마블 매드니스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_crush",
+    "koTitle": "크러시 롤러",
+    "enTitle": "Crush Roller",
+    "priority": "B",
+    "primaryKeyword": "크러시 롤러 게임하기",
+    "secondaryKeywords": [
+      "크러시 롤러 고전게임",
+      "크러시 롤러 무료게임",
+      "크러시 롤러 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_dday",
+    "koTitle": "디데이",
+    "enTitle": "D-Day",
+    "priority": "B",
+    "primaryKeyword": "디데이 게임하기",
+    "secondaryKeywords": [
+      "디데이 고전게임",
+      "디데이 무료게임",
+      "디데이 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_bsktball",
+    "koTitle": "바스켓볼",
+    "enTitle": "Internet Arcade: Basketball",
+    "priority": "B",
+    "primaryKeyword": "바스켓볼 게임하기",
+    "secondaryKeywords": [
+      "바스켓볼 고전게임",
+      "바스켓볼 무료게임",
+      "바스켓볼 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_pengo",
+    "koTitle": "펭고",
+    "enTitle": "Pengo",
+    "priority": "B",
+    "primaryKeyword": "펭고 게임하기",
+    "secondaryKeywords": [
+      "펭고 고전게임",
+      "펭고 무료게임",
+      "펭고 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_chboxing",
+    "koTitle": "챔피언 복싱",
+    "enTitle": "Champion Boxing",
+    "priority": "B",
+    "primaryKeyword": "챔피언 복싱 게임하기",
+    "secondaryKeywords": [
+      "챔피언 복싱 고전게임",
+      "챔피언 복싱 무료게임",
+      "챔피언 복싱 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_boggy84",
+    "koTitle": "보기 84",
+    "enTitle": "Boggy '84",
+    "priority": "B",
+    "primaryKeyword": "보기 84 게임하기",
+    "secondaryKeywords": [
+      "보기 84 고전게임",
+      "보기 84 무료게임",
+      "보기 84 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_bounty",
+    "koTitle": "더 바운티",
+    "enTitle": "The Bounty",
+    "priority": "B",
+    "primaryKeyword": "더 바운티 게임하기",
+    "secondaryKeywords": [
+      "더 바운티 고전게임",
+      "더 바운티 무료게임",
+      "더 바운티 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_dotron",
+    "koTitle": "디스크 오브 트론",
+    "enTitle": "Discs of Tron",
+    "priority": "B",
+    "primaryKeyword": "디스크 오브 트론 게임하기",
+    "secondaryKeywords": [
+      "디스크 오브 트론 고전게임",
+      "디스크 오브 트론 무료게임",
+      "디스크 오브 트론 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_cavenger",
+    "koTitle": "코스믹 어벤저",
+    "enTitle": "Cosmic Avenger",
+    "priority": "B",
+    "primaryKeyword": "코스믹 어벤저 게임하기",
+    "secondaryKeywords": [
+      "코스믹 어벤저 고전게임",
+      "코스믹 어벤저 무료게임",
+      "코스믹 어벤저 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_rbtapper",
+    "koTitle": "루트 비어 태퍼",
+    "enTitle": "Root Beer Tapper",
+    "priority": "B",
+    "primaryKeyword": "루트 비어 태퍼 게임하기",
+    "secondaryKeywords": [
+      "루트 비어 태퍼 고전게임",
+      "루트 비어 태퍼 무료게임",
+      "루트 비어 태퍼 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_ccastles",
+    "koTitle": "크리스털 캐슬",
+    "enTitle": "Internet Arcade: Crystal Castles",
+    "priority": "B",
+    "primaryKeyword": "크리스털 캐슬 게임하기",
+    "secondaryKeywords": [
+      "크리스털 캐슬 고전게임",
+      "크리스털 캐슬 무료게임",
+      "크리스털 캐슬 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_hangon",
+    "koTitle": "행온",
+    "enTitle": "Hang-On",
+    "priority": "B",
+    "primaryKeyword": "행온 게임하기",
+    "secondaryKeywords": [
+      "행온 고전게임",
+      "행온 무료게임",
+      "행온 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_canyon",
+    "koTitle": "캐니언 봄버",
+    "enTitle": "Internet Arcade: Canyon Bomber",
+    "priority": "B",
+    "primaryKeyword": "캐니언 봄버 게임하기",
+    "secondaryKeywords": [
+      "캐니언 봄버 고전게임",
+      "캐니언 봄버 무료게임",
+      "캐니언 봄버 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_cosmica",
+    "koTitle": "코스믹 에일리언",
+    "enTitle": "Cosmic Alien",
+    "priority": "B",
+    "primaryKeyword": "코스믹 에일리언 게임하기",
+    "secondaryKeywords": [
+      "코스믹 에일리언 고전게임",
+      "코스믹 에일리언 무료게임",
+      "코스믹 에일리언 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_chinhero",
+    "koTitle": "차이니즈 히어로",
+    "enTitle": "Chinese Hero",
+    "priority": "B",
+    "primaryKeyword": "차이니즈 히어로 게임하기",
+    "secondaryKeywords": [
+      "차이니즈 히어로 고전게임",
+      "차이니즈 히어로 무료게임",
+      "차이니즈 히어로 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_foodf",
+    "koTitle": "푸드 파이트",
+    "enTitle": "Food Fight",
+    "priority": "B",
+    "primaryKeyword": "푸드 파이트 게임하기",
+    "secondaryKeywords": [
+      "푸드 파이트 고전게임",
+      "푸드 파이트 무료게임",
+      "푸드 파이트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_cheekyms",
+    "koTitle": "치키 마우스",
+    "enTitle": "Cheeky Mouse",
+    "priority": "B",
+    "primaryKeyword": "치키 마우스 게임하기",
+    "secondaryKeywords": [
+      "치키 마우스 고전게임",
+      "치키 마우스 무료게임",
+      "치키 마우스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_colony7",
+    "koTitle": "콜로니 7",
+    "enTitle": "Colony 7",
+    "priority": "B",
+    "primaryKeyword": "콜로니 7 게임하기",
+    "secondaryKeywords": [
+      "콜로니 7 고전게임",
+      "콜로니 7 무료게임",
+      "콜로니 7 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_crgolf",
+    "koTitle": "크라운스 골프",
+    "enTitle": "Crowns Golf",
+    "priority": "B",
+    "primaryKeyword": "크라운스 골프 게임하기",
+    "secondaryKeywords": [
+      "크라운스 골프 고전게임",
+      "크라운스 골프 무료게임",
+      "크라운스 골프 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_curvebal",
+    "koTitle": "커브 볼",
+    "enTitle": "Curve Ball",
+    "priority": "B",
+    "primaryKeyword": "커브 볼 게임하기",
+    "secondaryKeywords": [
+      "커브 볼 고전게임",
+      "커브 볼 무료게임",
+      "커브 볼 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_cloak",
+    "koTitle": "클로크 앤 대거",
+    "enTitle": "Internet Arcade: Cloak & Dagger",
+    "priority": "B",
+    "primaryKeyword": "클로크 앤 대거 게임하기",
+    "secondaryKeywords": [
+      "클로크 앤 대거 고전게임",
+      "클로크 앤 대거 무료게임",
+      "클로크 앤 대거 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_cosmos",
+    "koTitle": "코스모스",
+    "enTitle": "Cosmos",
+    "priority": "B",
+    "primaryKeyword": "코스모스 게임하기",
+    "secondaryKeywords": [
+      "코스모스 고전게임",
+      "코스모스 무료게임",
+      "코스모스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_phoenix",
+    "koTitle": "피닉스",
+    "enTitle": "Phoenix",
+    "priority": "B",
+    "primaryKeyword": "피닉스 게임하기",
+    "secondaryKeywords": [
+      "피닉스 고전게임",
+      "피닉스 무료게임",
+      "피닉스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_complexx",
+    "koTitle": "콤플렉스 X",
+    "enTitle": "Complex X",
+    "priority": "B",
+    "primaryKeyword": "콤플렉스 X 게임하기",
+    "secondaryKeywords": [
+      "콤플렉스 X 고전게임",
+      "콤플렉스 X 무료게임",
+      "콤플렉스 X 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_cshift",
+    "koTitle": "치킨 시프트",
+    "enTitle": "Chicken Shift",
+    "priority": "B",
+    "primaryKeyword": "치킨 시프트 게임하기",
+    "secondaryKeywords": [
+      "치킨 시프트 고전게임",
+      "치킨 시프트 무료게임",
+      "치킨 시프트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_cloud9",
+    "koTitle": "클라우드 9",
+    "enTitle": "Internet Arcade: Cloud 9",
+    "priority": "B",
+    "primaryKeyword": "클라우드 9 게임하기",
+    "secondaryKeywords": [
+      "클라우드 9 고전게임",
+      "클라우드 9 무료게임",
+      "클라우드 9 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_frogs",
+    "koTitle": "프로그스",
+    "enTitle": "Frogs",
+    "priority": "B",
+    "primaryKeyword": "프로그스 게임하기",
+    "secondaryKeywords": [
+      "프로그스 고전게임",
+      "프로그스 무료게임",
+      "프로그스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_frenzy",
+    "koTitle": "프렌지",
+    "enTitle": "Frenzy",
+    "priority": "B",
+    "primaryKeyword": "프렌지 게임하기",
+    "secondaryKeywords": [
+      "프렌지 고전게임",
+      "프렌지 무료게임",
+      "프렌지 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_jungleh",
+    "koTitle": "정글 헌트",
+    "enTitle": "Jungle Hunt",
+    "priority": "B",
+    "primaryKeyword": "정글 헌트 게임하기",
+    "secondaryKeywords": [
+      "정글 헌트 고전게임",
+      "정글 헌트 무료게임",
+      "정글 헌트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_cosmicg",
+    "koTitle": "코스믹 게릴라",
+    "enTitle": "Cosmic Guerilla",
+    "priority": "B",
+    "primaryKeyword": "코스믹 게릴라 게임하기",
+    "secondaryKeywords": [
+      "코스믹 게릴라 고전게임",
+      "코스믹 게릴라 무료게임",
+      "코스믹 게릴라 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_darkplnt",
+    "koTitle": "다크 플래닛",
+    "enTitle": "Dark Planet",
+    "priority": "B",
+    "primaryKeyword": "다크 플래닛 게임하기",
+    "secondaryKeywords": [
+      "다크 플래닛 고전게임",
+      "다크 플래닛 무료게임",
+      "다크 플래닛 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_depthch",
+    "koTitle": "뎁스 차지",
+    "enTitle": "Depth Charge",
+    "priority": "B",
+    "primaryKeyword": "뎁스 차지 게임하기",
+    "secondaryKeywords": [
+      "뎁스 차지 고전게임",
+      "뎁스 차지 무료게임",
+      "뎁스 차지 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_ladybug",
+    "koTitle": "레이디 버그",
+    "enTitle": "Lady Bug",
+    "priority": "B",
+    "primaryKeyword": "레이디 버그 게임하기",
+    "secondaryKeywords": [
+      "레이디 버그 고전게임",
+      "레이디 버그 무료게임",
+      "레이디 버그 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_darkwar",
+    "koTitle": "다크 워리어",
+    "enTitle": "Dark Warrior",
+    "priority": "B",
+    "primaryKeyword": "다크 워리어 게임하기",
+    "secondaryKeywords": [
+      "다크 워리어 고전게임",
+      "다크 워리어 무료게임",
+      "다크 워리어 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_startrek",
+    "koTitle": "스타 트렉",
+    "enTitle": "Star Trek",
+    "priority": "B",
+    "primaryKeyword": "스타 트렉 게임하기",
+    "secondaryKeywords": [
+      "스타 트렉 고전게임",
+      "스타 트렉 무료게임",
+      "스타 트렉 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_digger",
+    "koTitle": "디거 아케이드",
+    "enTitle": "Digger",
+    "priority": "B",
+    "primaryKeyword": "디거 아케이드 게임하기",
+    "secondaryKeywords": [
+      "디거 아케이드 고전게임",
+      "디거 아케이드 무료게임",
+      "디거 아케이드 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_devzone",
+    "koTitle": "데빌 존",
+    "enTitle": "Devil Zone",
+    "priority": "B",
+    "primaryKeyword": "데빌 존 게임하기",
+    "secondaryKeywords": [
+      "데빌 존 고전게임",
+      "데빌 존 무료게임",
+      "데빌 존 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_dowild",
+    "koTitle": "미스터 두의 와일드 라이드",
+    "enTitle": "Mr. Do's Wild Ride",
+    "priority": "B",
+    "primaryKeyword": "미스터 두의 와일드 라이드 게임하기",
+    "secondaryKeywords": [
+      "미스터 두의 와일드 라이드 고전게임",
+      "미스터 두의 와일드 라이드 무료게임",
+      "미스터 두의 와일드 라이드 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_dazzler",
+    "koTitle": "대즐러",
+    "enTitle": "Dazzler",
+    "priority": "B",
+    "primaryKeyword": "대즐러 게임하기",
+    "secondaryKeywords": [
+      "대즐러 고전게임",
+      "대즐러 무료게임",
+      "대즐러 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_dorunrun",
+    "koTitle": "두! 런 런",
+    "enTitle": "Do! Run Run",
+    "priority": "B",
+    "primaryKeyword": "두! 런 런 게임하기",
+    "secondaryKeywords": [
+      "두! 런 런 고전게임",
+      "두! 런 런 무료게임",
+      "두! 런 런 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_domino",
+    "koTitle": "도미노 맨",
+    "enTitle": "Domino Man",
+    "priority": "B",
+    "primaryKeyword": "도미노 맨 게임하기",
+    "secondaryKeywords": [
+      "도미노 맨 고전게임",
+      "도미노 맨 무료게임",
+      "도미노 맨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_nibbler",
+    "koTitle": "니블러",
+    "enTitle": "Nibbler",
+    "priority": "B",
+    "primaryKeyword": "니블러 게임하기",
+    "secondaryKeywords": [
+      "니블러 고전게임",
+      "니블러 무료게임",
+      "니블러 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_devilfsh",
+    "koTitle": "데빌 피시",
+    "enTitle": "Devil Fish",
+    "priority": "B",
+    "primaryKeyword": "데빌 피시 게임하기",
+    "secondaryKeywords": [
+      "데빌 피시 고전게임",
+      "데빌 피시 무료게임",
+      "데빌 피시 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_grchamp",
+    "koTitle": "그랜드 챔피언",
+    "enTitle": "Grand Champion",
+    "priority": "B",
+    "primaryKeyword": "그랜드 챔피언 게임하기",
+    "secondaryKeywords": [
+      "그랜드 챔피언 고전게임",
+      "그랜드 챔피언 무료게임",
+      "그랜드 챔피언 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_dodgem",
+    "koTitle": "닷지엠",
+    "enTitle": "Dodg'em",
+    "priority": "B",
+    "primaryKeyword": "닷지엠 게임하기",
+    "secondaryKeywords": [
+      "닷지엠 고전게임",
+      "닷지엠 무료게임",
+      "닷지엠 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_hangman",
+    "koTitle": "행맨",
+    "enTitle": "Hangman",
+    "priority": "B",
+    "primaryKeyword": "행맨 게임하기",
+    "secondaryKeywords": [
+      "행맨 고전게임",
+      "행맨 무료게임",
+      "행맨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_dominos",
+    "koTitle": "도미노",
+    "enTitle": "Internet Arcade: Dominos",
+    "priority": "B",
+    "primaryKeyword": "도미노 게임하기",
+    "secondaryKeywords": [
+      "도미노 고전게임",
+      "도미노 무료게임",
+      "도미노 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_elim2",
+    "koTitle": "엘리미네이터",
+    "enTitle": "Eliminator",
+    "priority": "B",
+    "primaryKeyword": "엘리미네이터 게임하기",
+    "secondaryKeywords": [
+      "엘리미네이터 고전게임",
+      "엘리미네이터 무료게임",
+      "엘리미네이터 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_elecyoyo",
+    "koTitle": "일렉트릭 요요",
+    "enTitle": "The Electric Yo-Yo",
+    "priority": "B",
+    "primaryKeyword": "일렉트릭 요요 게임하기",
+    "secondaryKeywords": [
+      "일렉트릭 요요 고전게임",
+      "일렉트릭 요요 무료게임",
+      "일렉트릭 요요 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_espial",
+    "koTitle": "에스피얼",
+    "enTitle": "Espial",
+    "priority": "B",
+    "primaryKeyword": "에스피얼 게임하기",
+    "secondaryKeywords": [
+      "에스피얼 고전게임",
+      "에스피얼 무료게임",
+      "에스피얼 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_flicky",
+    "koTitle": "플리키",
+    "enTitle": "Flicky",
+    "priority": "B",
+    "primaryKeyword": "플리키 게임하기",
+    "secondaryKeywords": [
+      "플리키 고전게임",
+      "플리키 무료게임",
+      "플리키 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_eyes",
+    "koTitle": "아이즈",
+    "enTitle": "Eyes",
+    "priority": "B",
+    "primaryKeyword": "아이즈 게임하기",
+    "secondaryKeywords": [
+      "아이즈 고전게임",
+      "아이즈 무료게임",
+      "아이즈 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_fgoal",
+    "koTitle": "필드 골",
+    "enTitle": "Field Goal",
+    "priority": "B",
+    "primaryKeyword": "필드 골 게임하기",
+    "secondaryKeywords": [
+      "필드 골 고전게임",
+      "필드 골 무료게임",
+      "필드 골 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_enigma2",
+    "koTitle": "에니그마 2",
+    "enTitle": "Enigma II",
+    "priority": "B",
+    "primaryKeyword": "에니그마 2 게임하기",
+    "secondaryKeywords": [
+      "에니그마 2 고전게임",
+      "에니그마 2 무료게임",
+      "에니그마 2 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_hattrick",
+    "koTitle": "해트트릭",
+    "enTitle": "Hat Trick",
+    "priority": "B",
+    "primaryKeyword": "해트트릭 게임하기",
+    "secondaryKeywords": [
+      "해트트릭 고전게임",
+      "해트트릭 무료게임",
+      "해트트릭 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_fireone",
+    "koTitle": "파이어 원",
+    "enTitle": "Fire One",
+    "priority": "B",
+    "primaryKeyword": "파이어 원 게임하기",
+    "secondaryKeywords": [
+      "파이어 원 고전게임",
+      "파이어 원 무료게임",
+      "파이어 원 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_gsword",
+    "koTitle": "그레이트 스워즈맨",
+    "enTitle": "Great Swordsman",
+    "priority": "B",
+    "primaryKeyword": "그레이트 스워즈맨 게임하기",
+    "secondaryKeywords": [
+      "그레이트 스워즈맨 고전게임",
+      "그레이트 스워즈맨 무료게임",
+      "그레이트 스워즈맨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_jedi",
+    "koTitle": "제다이의 귀환",
+    "enTitle": "Internet Arcade: Return of the Jedi",
+    "priority": "B",
+    "primaryKeyword": "제다이의 귀환 게임하기",
+    "secondaryKeywords": [
+      "제다이의 귀환 고전게임",
+      "제다이의 귀환 무료게임",
+      "제다이의 귀환 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_freeze",
+    "koTitle": "프리즈",
+    "enTitle": "Freeze",
+    "priority": "B",
+    "primaryKeyword": "프리즈 게임하기",
+    "secondaryKeywords": [
+      "프리즈 고전게임",
+      "프리즈 무료게임",
+      "프리즈 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_firetrk",
+    "koTitle": "파이어트럭",
+    "enTitle": "Internet Arcade: Firetruck",
+    "priority": "B",
+    "primaryKeyword": "파이어트럭 게임하기",
+    "secondaryKeywords": [
+      "파이어트럭 고전게임",
+      "파이어트럭 무료게임",
+      "파이어트럭 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_huncholy",
+    "koTitle": "헌치백 올림픽",
+    "enTitle": "Hunchback Olympic",
+    "priority": "B",
+    "primaryKeyword": "헌치백 올림픽 게임하기",
+    "secondaryKeywords": [
+      "헌치백 올림픽 고전게임",
+      "헌치백 올림픽 무료게임",
+      "헌치백 올림픽 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_idsoccer",
+    "koTitle": "인도어 사커",
+    "enTitle": "Indoor Soccer",
+    "priority": "B",
+    "primaryKeyword": "인도어 사커 게임하기",
+    "secondaryKeywords": [
+      "인도어 사커 고전게임",
+      "인도어 사커 무료게임",
+      "인도어 사커 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_gghost",
+    "koTitle": "골리 고스트",
+    "enTitle": "Goalie Ghost",
+    "priority": "B",
+    "primaryKeyword": "골리 고스트 게임하기",
+    "secondaryKeywords": [
+      "골리 고스트 고전게임",
+      "골리 고스트 무료게임",
+      "골리 고스트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_hunchbak",
+    "koTitle": "헌치백",
+    "enTitle": "Hunch Back",
+    "priority": "B",
+    "primaryKeyword": "헌치백 게임하기",
+    "secondaryKeywords": [
+      "헌치백 고전게임",
+      "헌치백 무료게임",
+      "헌치백 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_greatgun",
+    "koTitle": "그레이트 건즈",
+    "enTitle": "Great Guns",
+    "priority": "B",
+    "primaryKeyword": "그레이트 건즈 게임하기",
+    "secondaryKeywords": [
+      "그레이트 건즈 고전게임",
+      "그레이트 건즈 무료게임",
+      "그레이트 건즈 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_journey",
+    "koTitle": "저니",
+    "enTitle": "Journey",
+    "priority": "B",
+    "primaryKeyword": "저니 게임하기",
+    "secondaryKeywords": [
+      "저니 고전게임",
+      "저니 무료게임",
+      "저니 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_gravitar",
+    "koTitle": "그래비타",
+    "enTitle": "Internet Arcade: Gravitar",
+    "priority": "B",
+    "primaryKeyword": "그래비타 게임하기",
+    "secondaryKeywords": [
+      "그래비타 고전게임",
+      "그래비타 무료게임",
+      "그래비타 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_gridlee",
+    "koTitle": "그리들리",
+    "enTitle": "Gridlee",
+    "priority": "B",
+    "primaryKeyword": "그리들리 게임하기",
+    "secondaryKeywords": [
+      "그리들리 고전게임",
+      "그리들리 무료게임",
+      "그리들리 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_kick",
+    "koTitle": "킥",
+    "enTitle": "Kick",
+    "priority": "B",
+    "primaryKeyword": "킥 게임하기",
+    "secondaryKeywords": [
+      "킥 고전게임",
+      "킥 무료게임",
+      "킥 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_hoccer",
+    "koTitle": "호커",
+    "enTitle": "Hoccer",
+    "priority": "B",
+    "primaryKeyword": "호커 게임하기",
+    "secondaryKeywords": [
+      "호커 고전게임",
+      "호커 무료게임",
+      "호커 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_hustle",
+    "koTitle": "허슬",
+    "enTitle": "Hustle",
+    "priority": "B",
+    "primaryKeyword": "허슬 게임하기",
+    "secondaryKeywords": [
+      "허슬 고전게임",
+      "허슬 무료게임",
+      "허슬 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_krull",
+    "koTitle": "크럴",
+    "enTitle": "Krull",
+    "priority": "B",
+    "primaryKeyword": "크럴 게임하기",
+    "secondaryKeywords": [
+      "크럴 고전게임",
+      "크럴 무료게임",
+      "크럴 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_minigolf",
+    "koTitle": "센테 미니 골프",
+    "enTitle": "Sente Mini Golf",
+    "priority": "B",
+    "primaryKeyword": "센테 미니 골프 게임하기",
+    "secondaryKeywords": [
+      "센테 미니 골프 고전게임",
+      "센테 미니 골프 무료게임",
+      "센테 미니 골프 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_sinistar",
+    "koTitle": "시니스타",
+    "enTitle": "Sinistar",
+    "priority": "B",
+    "primaryKeyword": "시니스타 게임하기",
+    "secondaryKeywords": [
+      "시니스타 고전게임",
+      "시니스타 무료게임",
+      "시니스타 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_ixion",
+    "koTitle": "익시온",
+    "enTitle": "Ixion",
+    "priority": "B",
+    "primaryKeyword": "익시온 게임하기",
+    "secondaryKeywords": [
+      "익시온 고전게임",
+      "익시온 무료게임",
+      "익시온 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_inferno",
+    "koTitle": "인페르노",
+    "enTitle": "Inferno",
+    "priority": "B",
+    "primaryKeyword": "인페르노 게임하기",
+    "secondaryKeywords": [
+      "인페르노 고전게임",
+      "인페르노 무료게임",
+      "인페르노 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_jackrabt",
+    "koTitle": "잭 래빗",
+    "enTitle": "Jack Rabbit",
+    "priority": "B",
+    "primaryKeyword": "잭 래빗 게임하기",
+    "secondaryKeywords": [
+      "잭 래빗 고전게임",
+      "잭 래빗 무료게임",
+      "잭 래빗 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_igmo",
+    "koTitle": "이그모",
+    "enTitle": "IGMO",
+    "priority": "B",
+    "primaryKeyword": "이그모 게임하기",
+    "secondaryKeywords": [
+      "이그모 고전게임",
+      "이그모 무료게임",
+      "이그모 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_jumpshot",
+    "koTitle": "점프 샷",
+    "enTitle": "Jump Shot",
+    "priority": "B",
+    "primaryKeyword": "점프 샷 게임하기",
+    "secondaryKeywords": [
+      "점프 샷 고전게임",
+      "점프 샷 무료게임",
+      "점프 샷 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_irobot",
+    "koTitle": "아이, 로봇",
+    "enTitle": "Internet Arcade: I, Robot",
+    "priority": "B",
+    "primaryKeyword": "아이, 로봇 게임하기",
+    "secondaryKeywords": [
+      "아이, 로봇 고전게임",
+      "아이, 로봇 무료게임",
+      "아이, 로봇 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_intrepid",
+    "koTitle": "인트레피드",
+    "enTitle": "Intrepid",
+    "priority": "B",
+    "primaryKeyword": "인트레피드 게임하기",
+    "secondaryKeywords": [
+      "인트레피드 고전게임",
+      "인트레피드 무료게임",
+      "인트레피드 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mtrap",
+    "koTitle": "마우스 트랩",
+    "enTitle": "Mouse Trap",
+    "priority": "B",
+    "primaryKeyword": "마우스 트랩 게임하기",
+    "secondaryKeywords": [
+      "마우스 트랩 고전게임",
+      "마우스 트랩 무료게임",
+      "마우스 트랩 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_jumpbug",
+    "koTitle": "점프 버그",
+    "enTitle": "Jump Bug",
+    "priority": "B",
+    "primaryKeyword": "점프 버그 게임하기",
+    "secondaryKeywords": [
+      "점프 버그 고전게임",
+      "점프 버그 무료게임",
+      "점프 버그 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_kncljoe",
+    "koTitle": "너클 조",
+    "enTitle": "Knuckle Joe",
+    "priority": "B",
+    "primaryKeyword": "너클 조 게임하기",
+    "secondaryKeywords": [
+      "너클 조 고전게임",
+      "너클 조 무료게임",
+      "너클 조 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_jack",
+    "koTitle": "잭 더 자이언트 킬러",
+    "enTitle": "Jack the Giant Killer",
+    "priority": "B",
+    "primaryKeyword": "잭 더 자이언트 킬러 게임하기",
+    "secondaryKeywords": [
+      "잭 더 자이언트 킬러 고전게임",
+      "잭 더 자이언트 킬러 무료게임",
+      "잭 더 자이언트 킬러 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_invinco",
+    "koTitle": "인빈코",
+    "enTitle": "Invinco",
+    "priority": "B",
+    "primaryKeyword": "인빈코 게임하기",
+    "secondaryKeywords": [
+      "인빈코 고전게임",
+      "인빈코 무료게임",
+      "인빈코 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_kingofb",
+    "koTitle": "킹 오브 복서",
+    "enTitle": "King of Boxer",
+    "priority": "B",
+    "primaryKeyword": "킹 오브 복서 게임하기",
+    "secondaryKeywords": [
+      "킹 오브 복서 고전게임",
+      "킹 오브 복서 무료게임",
+      "킹 오브 복서 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_kaos",
+    "koTitle": "카오스",
+    "enTitle": "Kaos",
+    "priority": "B",
+    "primaryKeyword": "카오스 게임하기",
+    "secondaryKeywords": [
+      "카오스 고전게임",
+      "카오스 무료게임",
+      "카오스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_kangaroo",
+    "koTitle": "캥거루",
+    "enTitle": "Internet Arcade: Kangaroo",
+    "priority": "B",
+    "primaryKeyword": "캥거루 게임하기",
+    "secondaryKeywords": [
+      "캥거루 고전게임",
+      "캥거루 무료게임",
+      "캥거루 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_shollow",
+    "koTitle": "사탄스 할로",
+    "enTitle": "Satan's Hollow",
+    "priority": "B",
+    "primaryKeyword": "사탄스 할로 게임하기",
+    "secondaryKeywords": [
+      "사탄스 할로 고전게임",
+      "사탄스 할로 무료게임",
+      "사탄스 할로 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_sqbert",
+    "koTitle": "더 빠르고 더 어려운 큐버트",
+    "enTitle": "Faster, Harder, More Challenging Q*bert",
+    "priority": "B",
+    "primaryKeyword": "더 빠르고 더 어려운 큐버트 게임하기",
+    "secondaryKeywords": [
+      "더 빠르고 더 어려운 큐버트 고전게임",
+      "더 빠르고 더 어려운 큐버트 무료게임",
+      "더 빠르고 더 어려운 큐버트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_killcom",
+    "koTitle": "킬러 코멧",
+    "enTitle": "Killer Comet",
+    "priority": "B",
+    "primaryKeyword": "킬러 코멧 게임하기",
+    "secondaryKeywords": [
+      "킬러 코멧 고전게임",
+      "킬러 코멧 무료게임",
+      "킬러 코멧 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_kickridr",
+    "koTitle": "킥 라이더",
+    "enTitle": "Kick Rider",
+    "priority": "B",
+    "primaryKeyword": "킥 라이더 게임하기",
+    "secondaryKeywords": [
+      "킥 라이더 고전게임",
+      "킥 라이더 무료게임",
+      "킥 라이더 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_kroozr",
+    "koTitle": "코즈믹 크루저",
+    "enTitle": "Kozmik Kroozr",
+    "priority": "B",
+    "primaryKeyword": "코즈믹 크루저 게임하기",
+    "secondaryKeywords": [
+      "코즈믹 크루저 고전게임",
+      "코즈믹 크루저 무료게임",
+      "코즈믹 크루저 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_milliped",
+    "koTitle": "밀리피드",
+    "enTitle": "Internet Arcade: Millipede",
+    "priority": "B",
+    "primaryKeyword": "밀리피드 게임하기",
+    "secondaryKeywords": [
+      "밀리피드 고전게임",
+      "밀리피드 무료게임",
+      "밀리피드 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_losttomb",
+    "koTitle": "로스트 툼",
+    "enTitle": "Lost Tomb",
+    "priority": "B",
+    "primaryKeyword": "로스트 툼 게임하기",
+    "secondaryKeywords": [
+      "로스트 툼 고전게임",
+      "로스트 툼 무료게임",
+      "로스트 툼 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_lizwiz",
+    "koTitle": "리저드 위저드",
+    "enTitle": "Lizard Wizard",
+    "priority": "B",
+    "primaryKeyword": "리저드 위저드 게임하기",
+    "secondaryKeywords": [
+      "리저드 위저드 고전게임",
+      "리저드 위저드 무료게임",
+      "리저드 위저드 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_machomou",
+    "koTitle": "마초 마우스",
+    "enTitle": "Macho Mouse",
+    "priority": "B",
+    "primaryKeyword": "마초 마우스 게임하기",
+    "secondaryKeywords": [
+      "마초 마우스 고전게임",
+      "마초 마우스 무료게임",
+      "마초 마우스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_looping",
+    "koTitle": "루핑",
+    "enTitle": "Looping",
+    "priority": "B",
+    "primaryKeyword": "루핑 게임하기",
+    "secondaryKeywords": [
+      "루핑 고전게임",
+      "루핑 무료게임",
+      "루핑 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_pepper2",
+    "koTitle": "페퍼 2",
+    "enTitle": "Pepper II",
+    "priority": "B",
+    "primaryKeyword": "페퍼 2 게임하기",
+    "secondaryKeywords": [
+      "페퍼 2 고전게임",
+      "페퍼 2 무료게임",
+      "페퍼 2 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_nyny",
+    "koTitle": "뉴욕! 뉴욕!",
+    "enTitle": "New York! New York!",
+    "priority": "B",
+    "primaryKeyword": "뉴욕! 뉴욕! 게임하기",
+    "secondaryKeywords": [
+      "뉴욕! 뉴욕! 고전게임",
+      "뉴욕! 뉴욕! 무료게임",
+      "뉴욕! 뉴욕! 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_leprechn",
+    "koTitle": "레프러콘",
+    "enTitle": "Leprechaun",
+    "priority": "B",
+    "primaryKeyword": "레프러콘 게임하기",
+    "secondaryKeywords": [
+      "레프러콘 고전게임",
+      "레프러콘 무료게임",
+      "레프러콘 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_panic",
+    "koTitle": "스페이스 패닉",
+    "enTitle": "Space Panic",
+    "priority": "B",
+    "primaryKeyword": "스페이스 패닉 게임하기",
+    "secondaryKeywords": [
+      "스페이스 패닉 고전게임",
+      "스페이스 패닉 무료게임",
+      "스페이스 패닉 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_monsterb",
+    "koTitle": "몬스터 배시",
+    "enTitle": "Monster Bash",
+    "priority": "B",
+    "primaryKeyword": "몬스터 배시 게임하기",
+    "secondaryKeywords": [
+      "몬스터 배시 고전게임",
+      "몬스터 배시 무료게임",
+      "몬스터 배시 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_liberatr",
+    "koTitle": "리버레이터",
+    "enTitle": "Internet Arcade: Liberator",
+    "priority": "B",
+    "primaryKeyword": "리버레이터 게임하기",
+    "secondaryKeywords": [
+      "리버레이터 고전게임",
+      "리버레이터 무료게임",
+      "리버레이터 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_motorace",
+    "koTitle": "모토레이스 USA",
+    "enTitle": "MotoRace USA",
+    "priority": "B",
+    "primaryKeyword": "모토레이스 USA 게임하기",
+    "secondaryKeywords": [
+      "모토레이스 USA 고전게임",
+      "모토레이스 USA 무료게임",
+      "모토레이스 USA 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_ponpoko",
+    "koTitle": "폰포코",
+    "enTitle": "Ponpoko",
+    "priority": "B",
+    "primaryKeyword": "폰포코 게임하기",
+    "secondaryKeywords": [
+      "폰포코 고전게임",
+      "폰포코 무료게임",
+      "폰포코 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mazerbla",
+    "koTitle": "메이저 블레이저",
+    "enTitle": "Mazer Blazer",
+    "priority": "B",
+    "primaryKeyword": "메이저 블레이저 게임하기",
+    "secondaryKeywords": [
+      "메이저 블레이저 고전게임",
+      "메이저 블레이저 무료게임",
+      "메이저 블레이저 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mayday",
+    "koTitle": "메이데이",
+    "enTitle": "Mayday",
+    "priority": "B",
+    "primaryKeyword": "메이데이 게임하기",
+    "secondaryKeywords": [
+      "메이데이 고전게임",
+      "메이데이 무료게임",
+      "메이데이 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mhavoc",
+    "koTitle": "메이저 해벅",
+    "enTitle": "Internet Arcade: Major Havoc",
+    "priority": "B",
+    "primaryKeyword": "메이저 해벅 게임하기",
+    "secondaryKeywords": [
+      "메이저 해벅 고전게임",
+      "메이저 해벅 무료게임",
+      "메이저 해벅 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_magspot",
+    "koTitle": "매지컬 스팟",
+    "enTitle": "Magical Spot",
+    "priority": "B",
+    "primaryKeyword": "매지컬 스팟 게임하기",
+    "secondaryKeywords": [
+      "매지컬 스팟 고전게임",
+      "매지컬 스팟 무료게임",
+      "매지컬 스팟 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_megatack",
+    "koTitle": "메가택",
+    "enTitle": "Megatack",
+    "priority": "B",
+    "primaryKeyword": "메가택 게임하기",
+    "secondaryKeywords": [
+      "메가택 고전게임",
+      "메가택 무료게임",
+      "메가택 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mjleague",
+    "koTitle": "메이저 리그",
+    "enTitle": "Major League",
+    "priority": "B",
+    "primaryKeyword": "메이저 리그 게임하기",
+    "secondaryKeywords": [
+      "메이저 리그 고전게임",
+      "메이저 리그 무료게임",
+      "메이저 리그 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_minefld",
+    "koTitle": "마인필드",
+    "enTitle": "Minefield",
+    "priority": "B",
+    "primaryKeyword": "마인필드 게임하기",
+    "secondaryKeywords": [
+      "마인필드 고전게임",
+      "마인필드 무료게임",
+      "마인필드 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mplanets",
+    "koTitle": "매드 플래닛",
+    "enTitle": "Mad Planets",
+    "priority": "B",
+    "primaryKeyword": "매드 플래닛 게임하기",
+    "secondaryKeywords": [
+      "매드 플래닛 고전게임",
+      "매드 플래닛 무료게임",
+      "매드 플래닛 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mrviking",
+    "koTitle": "미스터 바이킹",
+    "enTitle": "Mister Viking",
+    "priority": "B",
+    "primaryKeyword": "미스터 바이킹 게임하기",
+    "secondaryKeywords": [
+      "미스터 바이킹 고전게임",
+      "미스터 바이킹 무료게임",
+      "미스터 바이킹 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_ringking",
+    "koTitle": "링 킹",
+    "enTitle": "Ring King",
+    "priority": "B",
+    "primaryKeyword": "링 킹 게임하기",
+    "secondaryKeywords": [
+      "링 킹 고전게임",
+      "링 킹 무료게임",
+      "링 킹 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_moonwar",
+    "koTitle": "문 워",
+    "enTitle": "Moonwar",
+    "priority": "B",
+    "primaryKeyword": "문 워 게임하기",
+    "secondaryKeywords": [
+      "문 워 고전게임",
+      "문 워 무료게임",
+      "문 워 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_roadrunn",
+    "koTitle": "로드 러너",
+    "enTitle": "Road Runner",
+    "priority": "B",
+    "primaryKeyword": "로드 러너 게임하기",
+    "secondaryKeywords": [
+      "로드 러너 고전게임",
+      "로드 러너 무료게임",
+      "로드 러너 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_monymony",
+    "koTitle": "머니 머니",
+    "enTitle": "Money Money",
+    "priority": "B",
+    "primaryKeyword": "머니 머니 게임하기",
+    "secondaryKeywords": [
+      "머니 머니 고전게임",
+      "머니 머니 무료게임",
+      "머니 머니 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_myhero",
+    "koTitle": "마이 히어로",
+    "enTitle": "My Hero",
+    "priority": "B",
+    "primaryKeyword": "마이 히어로 게임하기",
+    "secondaryKeywords": [
+      "마이 히어로 고전게임",
+      "마이 히어로 무료게임",
+      "마이 히어로 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mrflea",
+    "koTitle": "미스터 F. 리의 놀라운 모험",
+    "enTitle": "The Amazing Adventures of Mr. F. Lea",
+    "priority": "B",
+    "primaryKeyword": "미스터 F. 리의 놀라운 모험 게임하기",
+    "secondaryKeywords": [
+      "미스터 F. 리의 놀라운 모험 고전게임",
+      "미스터 F. 리의 놀라운 모험 무료게임",
+      "미스터 F. 리의 놀라운 모험 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_natodef",
+    "koTitle": "나토 디펜스",
+    "enTitle": "Nato Defense",
+    "priority": "B",
+    "primaryKeyword": "나토 디펜스 게임하기",
+    "secondaryKeywords": [
+      "나토 디펜스 고전게임",
+      "나토 디펜스 무료게임",
+      "나토 디펜스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_venture",
+    "koTitle": "벤처",
+    "enTitle": "Venture",
+    "priority": "B",
+    "primaryKeyword": "벤처 게임하기",
+    "secondaryKeywords": [
+      "벤처 고전게임",
+      "벤처 무료게임",
+      "벤처 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_mysticm",
+    "koTitle": "미스틱 마라톤",
+    "enTitle": "Mystic Marathon",
+    "priority": "B",
+    "primaryKeyword": "미스틱 마라톤 게임하기",
+    "secondaryKeywords": [
+      "미스틱 마라톤 고전게임",
+      "미스틱 마라톤 무료게임",
+      "미스틱 마라톤 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_otwalls",
+    "koTitle": "오프 더 월",
+    "enTitle": "Off the Wall",
+    "priority": "B",
+    "primaryKeyword": "오프 더 월 게임하기",
+    "secondaryKeywords": [
+      "오프 더 월 고전게임",
+      "오프 더 월 무료게임",
+      "오프 더 월 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_pulsar",
+    "koTitle": "펄서",
+    "enTitle": "Pulsar",
+    "priority": "B",
+    "primaryKeyword": "펄서 게임하기",
+    "secondaryKeywords": [
+      "펄서 고전게임",
+      "펄서 무료게임",
+      "펄서 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_toobin",
+    "koTitle": "투빈",
+    "enTitle": "Toobin'",
+    "priority": "B",
+    "primaryKeyword": "투빈 게임하기",
+    "secondaryKeywords": [
+      "투빈 고전게임",
+      "투빈 무료게임",
+      "투빈 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_sbagman",
+    "koTitle": "슈퍼 백맨",
+    "enTitle": "Super Bagman",
+    "priority": "B",
+    "primaryKeyword": "슈퍼 백맨 게임하기",
+    "secondaryKeywords": [
+      "슈퍼 백맨 고전게임",
+      "슈퍼 백맨 무료게임",
+      "슈퍼 백맨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_quasar",
+    "koTitle": "퀘이사",
+    "enTitle": "Quasar",
+    "priority": "B",
+    "primaryKeyword": "퀘이사 게임하기",
+    "secondaryKeywords": [
+      "퀘이사 고전게임",
+      "퀘이사 무료게임",
+      "퀘이사 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_olibochu",
+    "koTitle": "올리부추",
+    "enTitle": "Oli-Boo-Chu",
+    "priority": "B",
+    "primaryKeyword": "올리부추 게임하기",
+    "secondaryKeywords": [
+      "올리부추 고전게임",
+      "올리부추 무료게임",
+      "올리부추 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_newsin7",
+    "koTitle": "뉴 신밧드 7",
+    "enTitle": "New Sinbad 7",
+    "priority": "B",
+    "primaryKeyword": "뉴 신밧드 7 게임하기",
+    "secondaryKeywords": [
+      "뉴 신밧드 7 고전게임",
+      "뉴 신밧드 7 무료게임",
+      "뉴 신밧드 7 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_piratetr",
+    "koTitle": "파이리트 트레저",
+    "enTitle": "Pirate Treasure",
+    "priority": "B",
+    "primaryKeyword": "파이리트 트레저 게임하기",
+    "secondaryKeywords": [
+      "파이리트 트레저 고전게임",
+      "파이리트 트레저 무료게임",
+      "파이리트 트레저 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_pleiads",
+    "koTitle": "플레이아데스",
+    "enTitle": "Internet Arcade: Pleiads",
+    "priority": "B",
+    "primaryKeyword": "플레이아데스 게임하기",
+    "secondaryKeywords": [
+      "플레이아데스 고전게임",
+      "플레이아데스 무료게임",
+      "플레이아데스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_polyplay",
+    "koTitle": "폴리 플레이",
+    "enTitle": "Poly-Play",
+    "priority": "B",
+    "primaryKeyword": "폴리 플레이 게임하기",
+    "secondaryKeywords": [
+      "폴리 플레이 고전게임",
+      "폴리 플레이 무료게임",
+      "폴리 플레이 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_orbit",
+    "koTitle": "오빗",
+    "enTitle": "Internet Arcade: Orbit",
+    "priority": "B",
+    "primaryKeyword": "오빗 게임하기",
+    "secondaryKeywords": [
+      "오빗 고전게임",
+      "오빗 무료게임",
+      "오빗 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_porky",
+    "koTitle": "포키",
+    "enTitle": "Porky",
+    "priority": "B",
+    "primaryKeyword": "포키 게임하기",
+    "secondaryKeywords": [
+      "포키 고전게임",
+      "포키 무료게임",
+      "포키 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_poolshrk",
+    "koTitle": "풀 샤크",
+    "enTitle": "Internet Arcade: Pool Shark",
+    "priority": "B",
+    "primaryKeyword": "풀 샤크 게임하기",
+    "secondaryKeywords": [
+      "풀 샤크 고전게임",
+      "풀 샤크 무료게임",
+      "풀 샤크 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_sdungeon",
+    "koTitle": "스페이스 던전",
+    "enTitle": "Space Dungeon",
+    "priority": "B",
+    "primaryKeyword": "스페이스 던전 게임하기",
+    "secondaryKeywords": [
+      "스페이스 던전 고전게임",
+      "스페이스 던전 무료게임",
+      "스페이스 던전 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_stargate",
+    "koTitle": "스타게이트",
+    "enTitle": "Stargate",
+    "priority": "B",
+    "primaryKeyword": "스타게이트 게임하기",
+    "secondaryKeywords": [
+      "스타게이트 고전게임",
+      "스타게이트 무료게임",
+      "스타게이트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_quantum",
+    "koTitle": "퀀텀",
+    "enTitle": "Quantum",
+    "priority": "B",
+    "primaryKeyword": "퀀텀 게임하기",
+    "secondaryKeywords": [
+      "퀀텀 고전게임",
+      "퀀텀 무료게임",
+      "퀀텀 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_sharkatt",
+    "koTitle": "샤크 어택",
+    "enTitle": "Shark Attack",
+    "priority": "B",
+    "primaryKeyword": "샤크 어택 게임하기",
+    "secondaryKeywords": [
+      "샤크 어택 고전게임",
+      "샤크 어택 무료게임",
+      "샤크 어택 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_qbertqub",
+    "koTitle": "큐버트의 큐브",
+    "enTitle": "Q*bert's Qubes",
+    "priority": "B",
+    "primaryKeyword": "큐버트의 큐브 게임하기",
+    "secondaryKeywords": [
+      "큐버트의 큐브 고전게임",
+      "큐버트의 큐브 무료게임",
+      "큐버트의 큐브 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_portrait",
+    "koTitle": "포트레이트",
+    "enTitle": "Portraits",
+    "priority": "B",
+    "primaryKeyword": "포트레이트 게임하기",
+    "secondaryKeywords": [
+      "포트레이트 고전게임",
+      "포트레이트 무료게임",
+      "포트레이트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_szaxxon",
+    "koTitle": "슈퍼 잭슨",
+    "enTitle": "Super Zaxxon",
+    "priority": "B",
+    "primaryKeyword": "슈퍼 잭슨 게임하기",
+    "secondaryKeywords": [
+      "슈퍼 잭슨 고전게임",
+      "슈퍼 잭슨 무료게임",
+      "슈퍼 잭슨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_supertnk",
+    "koTitle": "슈퍼 탱크",
+    "enTitle": "Super Tank",
+    "priority": "B",
+    "primaryKeyword": "슈퍼 탱크 게임하기",
+    "secondaryKeywords": [
+      "슈퍼 탱크 고전게임",
+      "슈퍼 탱크 무료게임",
+      "슈퍼 탱크 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_radarzon",
+    "koTitle": "레이더 존",
+    "enTitle": "Radar Zone",
+    "priority": "B",
+    "primaryKeyword": "레이더 존 게임하기",
+    "secondaryKeywords": [
+      "레이더 존 고전게임",
+      "레이더 존 무료게임",
+      "레이더 존 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_starcrus",
+    "koTitle": "스타 크루저",
+    "enTitle": "Star Cruiser",
+    "priority": "B",
+    "primaryKeyword": "스타 크루저 게임하기",
+    "secondaryKeywords": [
+      "스타 크루저 고전게임",
+      "스타 크루저 무료게임",
+      "스타 크루저 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_redalert",
+    "koTitle": "레드 얼럿",
+    "enTitle": "Red Alert",
+    "priority": "B",
+    "primaryKeyword": "레드 얼럿 게임하기",
+    "secondaryKeywords": [
+      "레드 얼럿 고전게임",
+      "레드 얼럿 무료게임",
+      "레드 얼럿 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_samurai",
+    "koTitle": "사무라이",
+    "enTitle": "Samurai",
+    "priority": "B",
+    "primaryKeyword": "사무라이 게임하기",
+    "secondaryKeywords": [
+      "사무라이 고전게임",
+      "사무라이 무료게임",
+      "사무라이 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_redclash",
+    "koTitle": "레드 클래시",
+    "enTitle": "Red Clash",
+    "priority": "B",
+    "primaryKeyword": "레드 클래시 게임하기",
+    "secondaryKeywords": [
+      "레드 클래시 고전게임",
+      "레드 클래시 무료게임",
+      "레드 클래시 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_targ",
+    "koTitle": "타그",
+    "enTitle": "Targ",
+    "priority": "B",
+    "primaryKeyword": "타그 게임하기",
+    "secondaryKeywords": [
+      "타그 고전게임",
+      "타그 무료게임",
+      "타그 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_ringfgt",
+    "koTitle": "링 파이터",
+    "enTitle": "Ring Fighter",
+    "priority": "B",
+    "primaryKeyword": "링 파이터 게임하기",
+    "secondaryKeywords": [
+      "링 파이터 고전게임",
+      "링 파이터 무료게임",
+      "링 파이터 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_spacfury",
+    "koTitle": "스페이스 퓨리",
+    "enTitle": "Space Fury",
+    "priority": "B",
+    "primaryKeyword": "스페이스 퓨리 게임하기",
+    "secondaryKeywords": [
+      "스페이스 퓨리 고전게임",
+      "스페이스 퓨리 무료게임",
+      "스페이스 퓨리 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_superbik",
+    "koTitle": "슈퍼바이크",
+    "enTitle": "Superbike",
+    "priority": "B",
+    "primaryKeyword": "슈퍼바이크 게임하기",
+    "secondaryKeywords": [
+      "슈퍼바이크 고전게임",
+      "슈퍼바이크 무료게임",
+      "슈퍼바이크 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_skylancr",
+    "koTitle": "스카이 랜서",
+    "enTitle": "Sky Lancer",
+    "priority": "B",
+    "primaryKeyword": "스카이 랜서 게임하기",
+    "secondaryKeywords": [
+      "스카이 랜서 고전게임",
+      "스카이 랜서 무료게임",
+      "스카이 랜서 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_spaceod",
+    "koTitle": "스페이스 오디세이",
+    "enTitle": "Space Odyssey",
+    "priority": "B",
+    "primaryKeyword": "스페이스 오디세이 게임하기",
+    "secondaryKeywords": [
+      "스페이스 오디세이 고전게임",
+      "스페이스 오디세이 무료게임",
+      "스페이스 오디세이 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_rescue",
+    "koTitle": "레스큐",
+    "enTitle": "Rescue",
+    "priority": "B",
+    "primaryKeyword": "레스큐 게임하기",
+    "secondaryKeywords": [
+      "레스큐 고전게임",
+      "레스큐 무료게임",
+      "레스큐 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_snakjack",
+    "koTitle": "스낵스 앤 잭슨",
+    "enTitle": "Snacks'n Jaxson",
+    "priority": "B",
+    "primaryKeyword": "스낵스 앤 잭슨 게임하기",
+    "secondaryKeywords": [
+      "스낵스 앤 잭슨 고전게임",
+      "스낵스 앤 잭슨 무료게임",
+      "스낵스 앤 잭슨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_starfire",
+    "koTitle": "스타파이어",
+    "enTitle": "Starfire",
+    "priority": "B",
+    "primaryKeyword": "스타파이어 게임하기",
+    "secondaryKeywords": [
+      "스타파이어 고전게임",
+      "스타파이어 무료게임",
+      "스타파이어 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "arcade_regulus",
+    "koTitle": "레굴루스",
+    "enTitle": "Regulus",
+    "priority": "B",
+    "primaryKeyword": "레굴루스 게임하기",
+    "secondaryKeywords": [
+      "레굴루스 고전게임",
+      "레굴루스 무료게임",
+      "레굴루스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Oregon_Trail_Deluxe_The_1992",
+    "koTitle": "오리건 트레일 디럭스",
+    "enTitle": "Oregon Trail Deluxe, The",
+    "priority": "B",
+    "primaryKeyword": "오리건 트레일 디럭스 게임하기",
+    "secondaryKeywords": [
+      "오리건 트레일 디럭스 고전게임",
+      "오리건 트레일 디럭스 무료게임",
+      "오리건 트레일 디럭스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "die_siedler_2_151",
+    "koTitle": "세틀러 2 골드 에디션",
+    "enTitle": "Die Siedler 2 – Gold Edition",
+    "priority": "B",
+    "primaryKeyword": "세틀러 2 골드 에디션 게임하기",
+    "secondaryKeywords": [
+      "세틀러 2 골드 에디션 고전게임",
+      "세틀러 2 골드 에디션 무료게임",
+      "세틀러 2 골드 에디션 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_4D_Prince_of_Persia_1994",
+    "koTitle": "4D 페르시아의 왕자",
+    "enTitle": "4D Prince of Persia",
+    "priority": "B",
+    "primaryKeyword": "4D 페르시아의 왕자 게임하기",
+    "secondaryKeywords": [
+      "4D 페르시아의 왕자 고전게임",
+      "4D 페르시아의 왕자 무료게임",
+      "4D 페르시아의 왕자 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Scorched_Earth_1991",
+    "koTitle": "스코치드 어스",
+    "enTitle": "Scorched Earth",
+    "priority": "B",
+    "primaryKeyword": "스코치드 어스 게임하기",
+    "secondaryKeywords": [
+      "스코치드 어스 고전게임",
+      "스코치드 어스 무료게임",
+      "스코치드 어스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Leisure_Suit_Larry_1_-_Land_of_the_Lounge_Lizards_1987",
+    "koTitle": "레저 슈트 래리 1: 라운지 리저드의 땅",
+    "enTitle": "Leisure Suit Larry 1 - Land of the Lounge Lizards",
+    "priority": "B",
+    "primaryKeyword": "레저 슈트 래리 1: 라운지 리저드의 땅 게임하기",
+    "secondaryKeywords": [
+      "레저 슈트 래리 1: 라운지 리저드의 땅 고전게임",
+      "레저 슈트 래리 1: 라운지 리저드의 땅 무료게임",
+      "레저 슈트 래리 1: 라운지 리저드의 땅 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Batman_Returns_1993",
+    "koTitle": "배트맨 리턴즈",
+    "enTitle": "Batman Returns",
+    "priority": "B",
+    "primaryKeyword": "배트맨 리턴즈 게임하기",
+    "secondaryKeywords": [
+      "배트맨 리턴즈 고전게임",
+      "배트맨 리턴즈 무료게임",
+      "배트맨 리턴즈 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Mario_Brothers_VGA_1990",
+    "koTitle": "마리오 브라더스 VGA",
+    "enTitle": "Mario Brothers VGA",
+    "priority": "B",
+    "primaryKeyword": "마리오 브라더스 VGA 게임하기",
+    "secondaryKeywords": [
+      "마리오 브라더스 VGA 고전게임",
+      "마리오 브라더스 VGA 무료게임",
+      "마리오 브라더스 VGA 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Number_Munchers_1990",
+    "koTitle": "넘버 먼처스",
+    "enTitle": "Number Munchers",
+    "priority": "B",
+    "primaryKeyword": "넘버 먼처스 게임하기",
+    "secondaryKeywords": [
+      "넘버 먼처스 고전게임",
+      "넘버 먼처스 무료게임",
+      "넘버 먼처스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Indiana_Jones_and_The_Last_Crusade_1989",
+    "koTitle": "인디아나 존스와 최후의 성전",
+    "enTitle": "Indiana Jones and The Last Crusade",
+    "priority": "B",
+    "primaryKeyword": "인디아나 존스와 최후의 성전 게임하기",
+    "secondaryKeywords": [
+      "인디아나 존스와 최후의 성전 고전게임",
+      "인디아나 존스와 최후의 성전 무료게임",
+      "인디아나 존스와 최후의 성전 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_European_Championship_1992_1992",
+    "koTitle": "유러피언 챔피언십 1992",
+    "enTitle": "European Championship 1992",
+    "priority": "B",
+    "primaryKeyword": "유러피언 챔피언십 1992 게임하기",
+    "secondaryKeywords": [
+      "유러피언 챔피언십 1992 고전게임",
+      "유러피언 챔피언십 1992 무료게임",
+      "유러피언 챔피언십 1992 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Master_of_Orion_1993",
+    "koTitle": "마스터 오브 오리온",
+    "enTitle": "Master of Orion",
+    "priority": "B",
+    "primaryKeyword": "마스터 오브 오리온 게임하기",
+    "secondaryKeywords": [
+      "마스터 오브 오리온 고전게임",
+      "마스터 오브 오리온 무료게임",
+      "마스터 오브 오리온 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Test_Drive_III_The_Passion_1990",
+    "koTitle": "테스트 드라이브 3: 더 패션",
+    "enTitle": "Test Drive III The Passion",
+    "priority": "B",
+    "primaryKeyword": "테스트 드라이브 3: 더 패션 게임하기",
+    "secondaryKeywords": [
+      "테스트 드라이브 3: 더 패션 고전게임",
+      "테스트 드라이브 3: 더 패션 무료게임",
+      "테스트 드라이브 3: 더 패션 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Ferrari_Formula_One_1989",
+    "koTitle": "페라리 포뮬러 원",
+    "enTitle": "Ferrari Formula One",
+    "priority": "B",
+    "primaryKeyword": "페라리 포뮬러 원 게임하기",
+    "secondaryKeywords": [
+      "페라리 포뮬러 원 고전게임",
+      "페라리 포뮬러 원 무료게임",
+      "페라리 포뮬러 원 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Centurion_-_Defender_of_Rome_1990",
+    "koTitle": "센추리온: 로마의 수호자",
+    "enTitle": "Centurion - Defender of Rome",
+    "priority": "B",
+    "primaryKeyword": "센추리온: 로마의 수호자 게임하기",
+    "secondaryKeywords": [
+      "센추리온: 로마의 수호자 고전게임",
+      "센추리온: 로마의 수호자 무료게임",
+      "센추리온: 로마의 수호자 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Castle_Wolfenstein_1984",
+    "koTitle": "캐슬 울펜슈타인",
+    "enTitle": "Castle Wolfenstein",
+    "priority": "B",
+    "primaryKeyword": "캐슬 울펜슈타인 게임하기",
+    "secondaryKeywords": [
+      "캐슬 울펜슈타인 고전게임",
+      "캐슬 울펜슈타인 무료게임",
+      "캐슬 울펜슈타인 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Crosscountry_Canada_1991",
+    "koTitle": "크로스컨트리 캐나다",
+    "enTitle": "Crosscountry Canada",
+    "priority": "B",
+    "primaryKeyword": "크로스컨트리 캐나다 게임하기",
+    "secondaryKeywords": [
+      "크로스컨트리 캐나다 고전게임",
+      "크로스컨트리 캐나다 무료게임",
+      "크로스컨트리 캐나다 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Monopoly_Deluxe_1992",
+    "koTitle": "모노폴리 디럭스",
+    "enTitle": "Monopoly Deluxe",
+    "priority": "B",
+    "primaryKeyword": "모노폴리 디럭스 게임하기",
+    "secondaryKeywords": [
+      "모노폴리 디럭스 고전게임",
+      "모노폴리 디럭스 무료게임",
+      "모노폴리 디럭스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "fin-dos-games",
+    "koTitle": "핀란드 도스 게임 모음",
+    "enTitle": "Finnish DOS games",
+    "priority": "B",
+    "primaryKeyword": "핀란드 도스 게임 모음 게임하기",
+    "secondaryKeywords": [
+      "핀란드 도스 게임 모음 고전게임",
+      "핀란드 도스 게임 모음 무료게임",
+      "핀란드 도스 게임 모음 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_SimAnt_-_The_Electronic_Ant_Colony_1991",
+    "koTitle": "심앤트: 전자 개미 군락",
+    "enTitle": "SimAnt - The Electronic Ant Colony",
+    "priority": "B",
+    "primaryKeyword": "심앤트: 전자 개미 군락 게임하기",
+    "secondaryKeywords": [
+      "심앤트: 전자 개미 군락 고전게임",
+      "심앤트: 전자 개미 군락 무료게임",
+      "심앤트: 전자 개미 군락 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "oregon-trail-deluxe",
+    "koTitle": "오리건 트레일 디럭스",
+    "enTitle": "Oregon Trail Deluxe",
+    "priority": "B",
+    "primaryKeyword": "오리건 트레일 디럭스 게임하기",
+    "secondaryKeywords": [
+      "오리건 트레일 디럭스 고전게임",
+      "오리건 트레일 디럭스 무료게임",
+      "오리건 트레일 디럭스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Warlords_II_1993",
+    "koTitle": "워로드 2",
+    "enTitle": "Warlords II",
+    "priority": "B",
+    "primaryKeyword": "워로드 2 게임하기",
+    "secondaryKeywords": [
+      "워로드 2 고전게임",
+      "워로드 2 무료게임",
+      "워로드 2 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Where_in_the_World_is_Carmen_Sandiego_Deluxe_1990",
+    "koTitle": "카르멘 샌디에이고는 세계 어디에? 디럭스",
+    "enTitle": "Where in the World is Carmen Sandiego Deluxe",
+    "priority": "B",
+    "primaryKeyword": "카르멘 샌디에이고는 세계 어디에? 디럭스 게임하기",
+    "secondaryKeywords": [
+      "카르멘 샌디에이고는 세계 어디에? 디럭스 고전게임",
+      "카르멘 샌디에이고는 세계 어디에? 디럭스 무료게임",
+      "카르멘 샌디에이고는 세계 어디에? 디럭스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Super_Mario_World_DX_2002",
+    "koTitle": "슈퍼 마리오 월드 DX",
+    "enTitle": "Super Mario World DX",
+    "priority": "B",
+    "primaryKeyword": "슈퍼 마리오 월드 DX 게임하기",
+    "secondaryKeywords": [
+      "슈퍼 마리오 월드 DX 고전게임",
+      "슈퍼 마리오 월드 DX 무료게임",
+      "슈퍼 마리오 월드 DX 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Marios_Game_Gallery_1995",
+    "koTitle": "마리오의 게임 갤러리",
+    "enTitle": "Mario's Game Gallery",
+    "priority": "B",
+    "primaryKeyword": "마리오의 게임 갤러리 게임하기",
+    "secondaryKeywords": [
+      "마리오의 게임 갤러리 고전게임",
+      "마리오의 게임 갤러리 무료게임",
+      "마리오의 게임 갤러리 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Jazz_Jackrabbit_1994",
+    "koTitle": "재즈 잭래빗",
+    "enTitle": "Jazz Jackrabbit",
+    "priority": "B",
+    "primaryKeyword": "재즈 잭래빗 게임하기",
+    "secondaryKeywords": [
+      "재즈 잭래빗 고전게임",
+      "재즈 잭래빗 무료게임",
+      "재즈 잭래빗 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Digger_1983_1983",
+    "koTitle": "디거 도스판",
+    "enTitle": "Digger",
+    "priority": "B",
+    "primaryKeyword": "디거 도스판 게임하기",
+    "secondaryKeywords": [
+      "디거 도스판 고전게임",
+      "디거 도스판 무료게임",
+      "디거 도스판 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Duke_it_out_in_D.C._1997",
+    "koTitle": "듀크 잇 아웃 인 D.C.",
+    "enTitle": "Duke it out in D.C.",
+    "priority": "B",
+    "primaryKeyword": "듀크 잇 아웃 인 D.C. 게임하기",
+    "secondaryKeywords": [
+      "듀크 잇 아웃 인 D.C. 고전게임",
+      "듀크 잇 아웃 인 D.C. 무료게임",
+      "듀크 잇 아웃 인 D.C. 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Maniac_Mansion_1987",
+    "koTitle": "매니악 맨션",
+    "enTitle": "Maniac Mansion",
+    "priority": "B",
+    "primaryKeyword": "매니악 맨션 게임하기",
+    "secondaryKeywords": [
+      "매니악 맨션 고전게임",
+      "매니악 맨션 무료게임",
+      "매니악 맨션 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Doom_-_The_Roguelike_2005",
+    "koTitle": "둠: 로그라이크",
+    "enTitle": "Doom - The Roguelike",
+    "priority": "B",
+    "primaryKeyword": "둠: 로그라이크 게임하기",
+    "secondaryKeywords": [
+      "둠: 로그라이크 고전게임",
+      "둠: 로그라이크 무료게임",
+      "둠: 로그라이크 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Disneys_Duck_Tales_-_The_Quest_for_Gold_1990",
+    "koTitle": "디즈니 덕테일즈: 황금을 찾아서",
+    "enTitle": "Disney's Duck Tales - The Quest for Gold",
+    "priority": "B",
+    "primaryKeyword": "디즈니 덕테일즈: 황금을 찾아서 게임하기",
+    "secondaryKeywords": [
+      "디즈니 덕테일즈: 황금을 찾아서 고전게임",
+      "디즈니 덕테일즈: 황금을 찾아서 무료게임",
+      "디즈니 덕테일즈: 황금을 찾아서 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Championship_Manager_93-94_1993",
+    "koTitle": "챔피언십 매니저 93-94",
+    "enTitle": "Championship Manager 93-94",
+    "priority": "B",
+    "primaryKeyword": "챔피언십 매니저 93-94 게임하기",
+    "secondaryKeywords": [
+      "챔피언십 매니저 93-94 고전게임",
+      "챔피언십 매니저 93-94 무료게임",
+      "챔피언십 매니저 93-94 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Tetris_1986",
+    "koTitle": "테트리스 1986 도스판",
+    "enTitle": "Tetris",
+    "priority": "B",
+    "primaryKeyword": "테트리스 1986 도스판 게임하기",
+    "secondaryKeywords": [
+      "테트리스 1986 도스판 고전게임",
+      "테트리스 1986 도스판 무료게임",
+      "테트리스 1986 도스판 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "battle_chess_1988",
+    "koTitle": "배틀 체스",
+    "enTitle": "Battle Chess",
+    "priority": "B",
+    "primaryKeyword": "배틀 체스 게임하기",
+    "secondaryKeywords": [
+      "배틀 체스 고전게임",
+      "배틀 체스 무료게임",
+      "배틀 체스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Strip_Poker_Professional_rev._B_1995",
+    "koTitle": "스트립 포커 프로페셔널 개정판 B",
+    "enTitle": "Strip Poker Professional rev. B",
+    "priority": "B",
+    "primaryKeyword": "스트립 포커 프로페셔널 개정판 B 게임하기",
+    "secondaryKeywords": [
+      "스트립 포커 프로페셔널 개정판 B 고전게임",
+      "스트립 포커 프로페셔널 개정판 B 무료게임",
+      "스트립 포커 프로페셔널 개정판 B 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "DUKE3D_DOS",
+    "koTitle": "듀크 뉴켐 3D 도스판",
+    "enTitle": "Duke Nukem 3D (DOS)",
+    "priority": "B",
+    "primaryKeyword": "듀크 뉴켐 3D 도스판 게임하기",
+    "secondaryKeywords": [
+      "듀크 뉴켐 3D 도스판 고전게임",
+      "듀크 뉴켐 3D 도스판 무료게임",
+      "듀크 뉴켐 3D 도스판 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "doom_dos",
+    "koTitle": "둠 도스판",
+    "enTitle": "DOOM (MS-DOS)",
+    "priority": "B",
+    "primaryKeyword": "둠 도스판 게임하기",
+    "secondaryKeywords": [
+      "둠 도스판 고전게임",
+      "둠 도스판 무료게임",
+      "둠 도스판 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Leisure_Suit_Larry_5_-_Passionate_Patti_Does_a_Little_Undercover_Work_1991",
+    "koTitle": "레저 슈트 래리 5: 패티의 잠입 작전",
+    "enTitle": "Leisure Suit Larry 5 - Passionate Patti Does a Little Undercover Work",
+    "priority": "B",
+    "primaryKeyword": "레저 슈트 래리 5: 패티의 잠입 작전 게임하기",
+    "secondaryKeywords": [
+      "레저 슈트 래리 5: 패티의 잠입 작전 고전게임",
+      "레저 슈트 래리 5: 패티의 잠입 작전 무료게임",
+      "레저 슈트 래리 5: 패티의 잠입 작전 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "the_incredible_machine_1992",
+    "koTitle": "인크레더블 머신",
+    "enTitle": "The Incredible Machine",
+    "priority": "B",
+    "primaryKeyword": "인크레더블 머신 게임하기",
+    "secondaryKeywords": [
+      "인크레더블 머신 고전게임",
+      "인크레더블 머신 무료게임",
+      "인크레더블 머신 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "tomb_raider_1996",
+    "koTitle": "툼 레이더 1996",
+    "enTitle": "Tomb Raider (1996)",
+    "priority": "B",
+    "primaryKeyword": "툼 레이더 1996 게임하기",
+    "secondaryKeywords": [
+      "툼 레이더 1996 고전게임",
+      "툼 레이더 1996 무료게임",
+      "툼 레이더 1996 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Total_Carnage_1994",
+    "koTitle": "토털 카니지",
+    "enTitle": "Total Carnage",
+    "priority": "B",
+    "primaryKeyword": "토털 카니지 게임하기",
+    "secondaryKeywords": [
+      "토털 카니지 고전게임",
+      "토털 카니지 무료게임",
+      "토털 카니지 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Secret_of_Monkey_Island_The_1990",
+    "koTitle": "원숭이 섬의 비밀",
+    "enTitle": "Secret of Monkey Island, The",
+    "priority": "B",
+    "primaryKeyword": "원숭이 섬의 비밀 게임하기",
+    "secondaryKeywords": [
+      "원숭이 섬의 비밀 고전게임",
+      "원숭이 섬의 비밀 무료게임",
+      "원숭이 섬의 비밀 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Softporn_II_1985",
+    "koTitle": "소프트폰 2",
+    "enTitle": "Softporn II",
+    "priority": "B",
+    "primaryKeyword": "소프트폰 2 게임하기",
+    "secondaryKeywords": [
+      "소프트폰 2 고전게임",
+      "소프트폰 2 무료게임",
+      "소프트폰 2 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Jazz_Jackrabbit_-_Holiday_Hare_1995_1995",
+    "koTitle": "재즈 잭래빗: 홀리데이 헤어 1995",
+    "enTitle": "Jazz Jackrabbit - Holiday Hare 1995",
+    "priority": "B",
+    "primaryKeyword": "재즈 잭래빗: 홀리데이 헤어 1995 게임하기",
+    "secondaryKeywords": [
+      "재즈 잭래빗: 홀리데이 헤어 1995 고전게임",
+      "재즈 잭래빗: 홀리데이 헤어 1995 무료게임",
+      "재즈 잭래빗: 홀리데이 헤어 1995 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_DOOM_1993",
+    "koTitle": "둠",
+    "enTitle": "DOOM",
+    "priority": "B",
+    "primaryKeyword": "둠 게임하기",
+    "secondaryKeywords": [
+      "둠 고전게임",
+      "둠 무료게임",
+      "둠 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Demon_Gate_-_666_New_Levels_for_Doom_and_Doom_II_1995",
+    "koTitle": "데몬 게이트: 둠과 둠 2 신규 666 레벨",
+    "enTitle": "Demon Gate - 666 New Levels for Doom and Doom II",
+    "priority": "B",
+    "primaryKeyword": "데몬 게이트: 둠과 둠 2 신규 666 레벨 게임하기",
+    "secondaryKeywords": [
+      "데몬 게이트: 둠과 둠 2 신규 666 레벨 고전게임",
+      "데몬 게이트: 둠과 둠 2 신규 666 레벨 무료게임",
+      "데몬 게이트: 둠과 둠 2 신규 666 레벨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_SimFarm_1993",
+    "koTitle": "심팜",
+    "enTitle": "SimFarm",
+    "priority": "B",
+    "primaryKeyword": "심팜 게임하기",
+    "secondaryKeywords": [
+      "심팜 고전게임",
+      "심팜 무료게임",
+      "심팜 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Lode_Runner_1983_1983",
+    "koTitle": "로드 러너",
+    "enTitle": "Lode Runner",
+    "priority": "B",
+    "primaryKeyword": "로드 러너 게임하기",
+    "secondaryKeywords": [
+      "로드 러너 고전게임",
+      "로드 러너 무료게임",
+      "로드 러너 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_SimCity_Classic_1994",
+    "koTitle": "심시티 클래식",
+    "enTitle": "SimCity Classic",
+    "priority": "B",
+    "primaryKeyword": "심시티 클래식 게임하기",
+    "secondaryKeywords": [
+      "심시티 클래식 고전게임",
+      "심시티 클래식 무료게임",
+      "심시티 클래식 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Cool_World_1992",
+    "koTitle": "쿨 월드",
+    "enTitle": "Cool World",
+    "priority": "B",
+    "primaryKeyword": "쿨 월드 게임하기",
+    "secondaryKeywords": [
+      "쿨 월드 고전게임",
+      "쿨 월드 무료게임",
+      "쿨 월드 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Alley_Cat_1984",
+    "koTitle": "앨리 캣",
+    "enTitle": "Alley Cat",
+    "priority": "B",
+    "primaryKeyword": "앨리 캣 게임하기",
+    "secondaryKeywords": [
+      "앨리 캣 고전게임",
+      "앨리 캣 무료게임",
+      "앨리 캣 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_3D_Bomber_1998",
+    "koTitle": "3D 봄버",
+    "enTitle": "3D Bomber",
+    "priority": "B",
+    "primaryKeyword": "3D 봄버 게임하기",
+    "secondaryKeywords": [
+      "3D 봄버 고전게임",
+      "3D 봄버 무료게임",
+      "3D 봄버 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "PERSIA_CGA",
+    "koTitle": "페르시아의 왕자 CGA판",
+    "enTitle": "MS-DOS: Prince of Persia (CGA Graphics and PC Speaker)",
+    "priority": "B",
+    "primaryKeyword": "페르시아의 왕자 CGA판 게임하기",
+    "secondaryKeywords": [
+      "페르시아의 왕자 CGA판 고전게임",
+      "페르시아의 왕자 CGA판 무료게임",
+      "페르시아의 왕자 CGA판 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "chenall_dyna",
+    "koTitle": "다이나 블래스터 봄버맨 도스판",
+    "enTitle": "Dyna Blaster (Bomberman) - DOS",
+    "priority": "B",
+    "primaryKeyword": "다이나 블래스터 봄버맨 도스판 게임하기",
+    "secondaryKeywords": [
+      "다이나 블래스터 봄버맨 도스판 고전게임",
+      "다이나 블래스터 봄버맨 도스판 무료게임",
+      "다이나 블래스터 봄버맨 도스판 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Budokan_The_Martial_Spirit_1989",
+    "koTitle": "무도관: 무술의 혼",
+    "enTitle": "Budokan The Martial Spirit",
+    "priority": "B",
+    "primaryKeyword": "무도관: 무술의 혼 게임하기",
+    "secondaryKeywords": [
+      "무도관: 무술의 혼 고전게임",
+      "무도관: 무술의 혼 무료게임",
+      "무도관: 무술의 혼 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Toi_Acid_Game_1989",
+    "koTitle": "토이 애시드 게임",
+    "enTitle": "Toi Acid Game",
+    "priority": "B",
+    "primaryKeyword": "토이 애시드 게임 게임하기",
+    "secondaryKeywords": [
+      "토이 애시드 게임 고전게임",
+      "토이 애시드 게임 무료게임",
+      "토이 애시드 게임 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Volfied_1991",
+    "koTitle": "볼피드",
+    "enTitle": "Volfied",
+    "priority": "B",
+    "primaryKeyword": "볼피드 게임하기",
+    "secondaryKeywords": [
+      "볼피드 고전게임",
+      "볼피드 무료게임",
+      "볼피드 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_President_Elect_-_1988_Edition_1987",
+    "koTitle": "프레지던트 일렉트 1988 에디션",
+    "enTitle": "President Elect - 1988 Edition",
+    "priority": "B",
+    "primaryKeyword": "프레지던트 일렉트 1988 에디션 게임하기",
+    "secondaryKeywords": [
+      "프레지던트 일렉트 1988 에디션 고전게임",
+      "프레지던트 일렉트 1988 에디션 무료게임",
+      "프레지던트 일렉트 1988 에디션 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Executive_Suite_1982",
+    "koTitle": "이그제큐티브 스위트",
+    "enTitle": "Executive Suite",
+    "priority": "B",
+    "primaryKeyword": "이그제큐티브 스위트 게임하기",
+    "secondaryKeywords": [
+      "이그제큐티브 스위트 고전게임",
+      "이그제큐티브 스위트 무료게임",
+      "이그제큐티브 스위트 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Star_Wars_1988",
+    "koTitle": "스타워즈",
+    "enTitle": "Star Wars",
+    "priority": "B",
+    "primaryKeyword": "스타워즈 게임하기",
+    "secondaryKeywords": [
+      "스타워즈 고전게임",
+      "스타워즈 무료게임",
+      "스타워즈 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Empire_Deluxe_1993",
+    "koTitle": "엠파이어 디럭스",
+    "enTitle": "Empire Deluxe",
+    "priority": "B",
+    "primaryKeyword": "엠파이어 디럭스 게임하기",
+    "secondaryKeywords": [
+      "엠파이어 디럭스 고전게임",
+      "엠파이어 디럭스 무료게임",
+      "엠파이어 디럭스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Where_in_the_World_is_Carmen_Sandiego_1985",
+    "koTitle": "카르멘 샌디에이고는 세계 어디에?",
+    "enTitle": "Where in the World is Carmen Sandiego",
+    "priority": "B",
+    "primaryKeyword": "카르멘 샌디에이고는 세계 어디에? 게임하기",
+    "secondaryKeywords": [
+      "카르멘 샌디에이고는 세계 어디에? 고전게임",
+      "카르멘 샌디에이고는 세계 어디에? 무료게임",
+      "카르멘 샌디에이고는 세계 어디에? 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Castle_of_Dr._Brain_1991",
+    "koTitle": "닥터 브레인의 성",
+    "enTitle": "Castle of Dr. Brain",
+    "priority": "B",
+    "primaryKeyword": "닥터 브레인의 성 게임하기",
+    "secondaryKeywords": [
+      "닥터 브레인의 성 고전게임",
+      "닥터 브레인의 성 무료게임",
+      "닥터 브레인의 성 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Cover_Girl_Strip_Poker_1991",
+    "koTitle": "커버 걸 스트립 포커",
+    "enTitle": "Cover Girl Strip Poker",
+    "priority": "B",
+    "primaryKeyword": "커버 걸 스트립 포커 게임하기",
+    "secondaryKeywords": [
+      "커버 걸 스트립 포커 고전게임",
+      "커버 걸 스트립 포커 무료게임",
+      "커버 걸 스트립 포커 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Warlords_II_Deluxe_1995",
+    "koTitle": "워로드 2 디럭스",
+    "enTitle": "Warlords II Deluxe",
+    "priority": "B",
+    "primaryKeyword": "워로드 2 디럭스 게임하기",
+    "secondaryKeywords": [
+      "워로드 2 디럭스 고전게임",
+      "워로드 2 디럭스 무료게임",
+      "워로드 2 디럭스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_World_Circuit_1992",
+    "koTitle": "월드 서킷",
+    "enTitle": "World Circuit",
+    "priority": "B",
+    "primaryKeyword": "월드 서킷 게임하기",
+    "secondaryKeywords": [
+      "월드 서킷 고전게임",
+      "월드 서킷 무료게임",
+      "월드 서킷 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Bubble_Bobble_1988",
+    "koTitle": "버블보블",
+    "enTitle": "Bubble Bobble",
+    "priority": "B",
+    "primaryKeyword": "버블보블 게임하기",
+    "secondaryKeywords": [
+      "버블보블 고전게임",
+      "버블보블 무료게임",
+      "버블보블 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "The_Ultimate_Doom",
+    "koTitle": "얼티밋 둠",
+    "enTitle": "The Ultimate Doom",
+    "priority": "B",
+    "primaryKeyword": "얼티밋 둠 게임하기",
+    "secondaryKeywords": [
+      "얼티밋 둠 고전게임",
+      "얼티밋 둠 무료게임",
+      "얼티밋 둠 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Monkey_Island_2_-_LeChucks_Revenge_1991",
+    "koTitle": "원숭이 섬 2: 르척의 복수",
+    "enTitle": "Monkey Island 2 - LeChuck's Revenge",
+    "priority": "B",
+    "primaryKeyword": "원숭이 섬 2: 르척의 복수 게임하기",
+    "secondaryKeywords": [
+      "원숭이 섬 2: 르척의 복수 고전게임",
+      "원숭이 섬 2: 르척의 복수 무료게임",
+      "원숭이 섬 2: 르척의 복수 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Hugo_3_1995",
+    "koTitle": "휴고 3",
+    "enTitle": "Hugo 3",
+    "priority": "B",
+    "primaryKeyword": "휴고 3 게임하기",
+    "secondaryKeywords": [
+      "휴고 3 고전게임",
+      "휴고 3 무료게임",
+      "휴고 3 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Ski_or_Die_1990",
+    "koTitle": "스키 오어 다이",
+    "enTitle": "Ski or Die",
+    "priority": "B",
+    "primaryKeyword": "스키 오어 다이 게임하기",
+    "secondaryKeywords": [
+      "스키 오어 다이 고전게임",
+      "스키 오어 다이 무료게임",
+      "스키 오어 다이 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Das_Boot_German_U-Boat_Simulation_1990",
+    "koTitle": "다스 부트: 독일 유보트 시뮬레이션",
+    "enTitle": "Das Boot German U-Boat Simulation",
+    "priority": "B",
+    "primaryKeyword": "다스 부트: 독일 유보트 시뮬레이션 게임하기",
+    "secondaryKeywords": [
+      "다스 부트: 독일 유보트 시뮬레이션 고전게임",
+      "다스 부트: 독일 유보트 시뮬레이션 무료게임",
+      "다스 부트: 독일 유보트 시뮬레이션 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_VGA_Miner_1989",
+    "koTitle": "VGA 마이너",
+    "enTitle": "VGA Miner",
+    "priority": "B",
+    "primaryKeyword": "VGA 마이너 게임하기",
+    "secondaryKeywords": [
+      "VGA 마이너 고전게임",
+      "VGA 마이너 무료게임",
+      "VGA 마이너 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Dragons_Lair_1993_1993",
+    "koTitle": "드래곤즈 레어",
+    "enTitle": "Dragon's Lair",
+    "priority": "B",
+    "primaryKeyword": "드래곤즈 레어 게임하기",
+    "secondaryKeywords": [
+      "드래곤즈 레어 고전게임",
+      "드래곤즈 레어 무료게임",
+      "드래곤즈 레어 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Paperboy_2_1991",
+    "koTitle": "페이퍼보이 2",
+    "enTitle": "Paperboy 2",
+    "priority": "B",
+    "primaryKeyword": "페이퍼보이 2 게임하기",
+    "secondaryKeywords": [
+      "페이퍼보이 2 고전게임",
+      "페이퍼보이 2 무료게임",
+      "페이퍼보이 2 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Dangerous_Dave_in_the_Deserted_Pirates_Hideout_1990",
+    "koTitle": "데인저러스 데이브: 버려진 해적 은신처",
+    "enTitle": "Dangerous Dave in the Deserted Pirate's Hideout",
+    "priority": "B",
+    "primaryKeyword": "데인저러스 데이브: 버려진 해적 은신처 게임하기",
+    "secondaryKeywords": [
+      "데인저러스 데이브: 버려진 해적 은신처 고전게임",
+      "데인저러스 데이브: 버려진 해적 은신처 무료게임",
+      "데인저러스 데이브: 버려진 해적 은신처 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "agi_fuck-quest-2",
+    "koTitle": "퍽 퀘스트 2: 로맨싱 더 본",
+    "enTitle": "Fuck Quest 2: Romancing the Bone",
+    "priority": "B",
+    "primaryKeyword": "퍽 퀘스트 2: 로맨싱 더 본 게임하기",
+    "secondaryKeywords": [
+      "퍽 퀘스트 2: 로맨싱 더 본 고전게임",
+      "퍽 퀘스트 2: 로맨싱 더 본 무료게임",
+      "퍽 퀘스트 2: 로맨싱 더 본 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Karateka_1986",
+    "koTitle": "카라테카",
+    "enTitle": "Karateka",
+    "priority": "B",
+    "primaryKeyword": "카라테카 게임하기",
+    "secondaryKeywords": [
+      "카라테카 고전게임",
+      "카라테카 무료게임",
+      "카라테카 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_PC_Futbol_5.0_1996",
+    "koTitle": "PC 풋볼 5.0",
+    "enTitle": "PC Futbol 5.0",
+    "priority": "B",
+    "primaryKeyword": "PC 풋볼 5.0 게임하기",
+    "secondaryKeywords": [
+      "PC 풋볼 5.0 고전게임",
+      "PC 풋볼 5.0 무료게임",
+      "PC 풋볼 5.0 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Nuclear_War_1989",
+    "koTitle": "핵전쟁",
+    "enTitle": "Nuclear War",
+    "priority": "B",
+    "primaryKeyword": "핵전쟁 게임하기",
+    "secondaryKeywords": [
+      "핵전쟁 고전게임",
+      "핵전쟁 무료게임",
+      "핵전쟁 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Back_to_the_Future_Part_III_1991",
+    "koTitle": "백 투 더 퓨처 3",
+    "enTitle": "Back to the Future Part III",
+    "priority": "B",
+    "primaryKeyword": "백 투 더 퓨처 3 게임하기",
+    "secondaryKeywords": [
+      "백 투 더 퓨처 3 고전게임",
+      "백 투 더 퓨처 3 무료게임",
+      "백 투 더 퓨처 3 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Prehistorik_1991",
+    "koTitle": "고인돌",
+    "enTitle": "Prehistorik",
+    "priority": "B",
+    "primaryKeyword": "고인돌 게임하기",
+    "secondaryKeywords": [
+      "고인돌 고전게임",
+      "고인돌 무료게임",
+      "고인돌 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_The_Games_-_Winter_Challenge_1991",
+    "koTitle": "더 게임즈: 윈터 챌린지",
+    "enTitle": "The Games - Winter Challenge",
+    "priority": "B",
+    "primaryKeyword": "더 게임즈: 윈터 챌린지 게임하기",
+    "secondaryKeywords": [
+      "더 게임즈: 윈터 챌린지 고전게임",
+      "더 게임즈: 윈터 챌린지 무료게임",
+      "더 게임즈: 윈터 챌린지 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Rayman_1995",
+    "koTitle": "레이맨",
+    "enTitle": "Rayman",
+    "priority": "B",
+    "primaryKeyword": "레이맨 게임하기",
+    "secondaryKeywords": [
+      "레이맨 고전게임",
+      "레이맨 무료게임",
+      "레이맨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Prince_of_Persia_2_-_The_Shadow__The_Flame_1993",
+    "koTitle": "페르시아의 왕자 2: 그림자와 불꽃",
+    "enTitle": "Prince of Persia 2 - The Shadow & The Flame",
+    "priority": "B",
+    "primaryKeyword": "페르시아의 왕자 2: 그림자와 불꽃 게임하기",
+    "secondaryKeywords": [
+      "페르시아의 왕자 2: 그림자와 불꽃 고전게임",
+      "페르시아의 왕자 2: 그림자와 불꽃 무료게임",
+      "페르시아의 왕자 2: 그림자와 불꽃 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Sex_Vixens_From_Space_1989",
+    "koTitle": "우주에서 온 섹시 빅슨",
+    "enTitle": "Sex Vixens From Space",
+    "priority": "B",
+    "primaryKeyword": "우주에서 온 섹시 빅슨 게임하기",
+    "secondaryKeywords": [
+      "우주에서 온 섹시 빅슨 고전게임",
+      "우주에서 온 섹시 빅슨 무료게임",
+      "우주에서 온 섹시 빅슨 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Dangerous_Dave_in_the_Haunted_Mansion_1991",
+    "koTitle": "데인저러스 데이브: 유령의 저택",
+    "enTitle": "Dangerous Dave in the Haunted Mansion",
+    "priority": "B",
+    "primaryKeyword": "데인저러스 데이브: 유령의 저택 게임하기",
+    "secondaryKeywords": [
+      "데인저러스 데이브: 유령의 저택 고전게임",
+      "데인저러스 데이브: 유령의 저택 무료게임",
+      "데인저러스 데이브: 유령의 저택 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Nam_1965-1975_1991",
+    "koTitle": "베트남 1965-1975",
+    "enTitle": "'Nam 1965-1975",
+    "priority": "B",
+    "primaryKeyword": "베트남 1965-1975 게임하기",
+    "secondaryKeywords": [
+      "베트남 1965-1975 고전게임",
+      "베트남 1965-1975 무료게임",
+      "베트남 1965-1975 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Deluxe_Ski_Jump_2000",
+    "koTitle": "디럭스 스키 점프",
+    "enTitle": "Deluxe Ski Jump",
+    "priority": "B",
+    "primaryKeyword": "디럭스 스키 점프 게임하기",
+    "secondaryKeywords": [
+      "디럭스 스키 점프 고전게임",
+      "디럭스 스키 점프 무료게임",
+      "디럭스 스키 점프 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Rogue_1983",
+    "koTitle": "로그",
+    "enTitle": "Rogue",
+    "priority": "B",
+    "primaryKeyword": "로그 게임하기",
+    "secondaryKeywords": [
+      "로그 고전게임",
+      "로그 무료게임",
+      "로그 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Elfs_Christmas_Adventure_The_1992",
+    "koTitle": "엘프의 크리스마스 모험",
+    "enTitle": "The Elf's Christmas Adventure",
+    "priority": "B",
+    "primaryKeyword": "엘프의 크리스마스 모험 게임하기",
+    "secondaryKeywords": [
+      "엘프의 크리스마스 모험 고전게임",
+      "엘프의 크리스마스 모험 무료게임",
+      "엘프의 크리스마스 모험 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "GorillasQbasic",
+    "koTitle": "고릴라 큐베이직",
+    "enTitle": "GORILLAS QBASIC",
+    "priority": "B",
+    "primaryKeyword": "고릴라 큐베이직 게임하기",
+    "secondaryKeywords": [
+      "고릴라 큐베이직 고전게임",
+      "고릴라 큐베이직 무료게임",
+      "고릴라 큐베이직 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Stunt_Driver_1990",
+    "koTitle": "스턴트 드라이버",
+    "enTitle": "Stunt Driver",
+    "priority": "B",
+    "primaryKeyword": "스턴트 드라이버 게임하기",
+    "secondaryKeywords": [
+      "스턴트 드라이버 고전게임",
+      "스턴트 드라이버 무료게임",
+      "스턴트 드라이버 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Super_Solvers_Gizmos_and_Gadgets_1993",
+    "koTitle": "슈퍼 솔버스: 기즈모와 가젯",
+    "enTitle": "Super Solvers Gizmos and Gadgets",
+    "priority": "B",
+    "primaryKeyword": "슈퍼 솔버스: 기즈모와 가젯 게임하기",
+    "secondaryKeywords": [
+      "슈퍼 솔버스: 기즈모와 가젯 고전게임",
+      "슈퍼 솔버스: 기즈모와 가젯 무료게임",
+      "슈퍼 솔버스: 기즈모와 가젯 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Sid_Meiers_Colonization_1994",
+    "koTitle": "시드 마이어의 콜로니제이션",
+    "enTitle": "Sid Meier's Colonization",
+    "priority": "B",
+    "primaryKeyword": "시드 마이어의 콜로니제이션 게임하기",
+    "secondaryKeywords": [
+      "시드 마이어의 콜로니제이션 고전게임",
+      "시드 마이어의 콜로니제이션 무료게임",
+      "시드 마이어의 콜로니제이션 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Lotus_-_The_Ultimate_Challenge_1993",
+    "koTitle": "로터스: 얼티밋 챌린지",
+    "enTitle": "Lotus - The Ultimate Challenge",
+    "priority": "B",
+    "primaryKeyword": "로터스: 얼티밋 챌린지 게임하기",
+    "secondaryKeywords": [
+      "로터스: 얼티밋 챌린지 고전게임",
+      "로터스: 얼티밋 챌린지 무료게임",
+      "로터스: 얼티밋 챌린지 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "doom_20221019",
+    "koTitle": "얼티밋 둠 1993 도스판",
+    "enTitle": "THE ULTIMATE DOOM (1993) MS-DOS",
+    "priority": "B",
+    "primaryKeyword": "얼티밋 둠 1993 도스판 게임하기",
+    "secondaryKeywords": [
+      "얼티밋 둠 1993 도스판 고전게임",
+      "얼티밋 둠 1993 도스판 무료게임",
+      "얼티밋 둠 1993 도스판 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Carmageddon_Max_Pack_1998",
+    "koTitle": "카마게돈 맥스 팩",
+    "enTitle": "Carmageddon Max Pack",
+    "priority": "B",
+    "primaryKeyword": "카마게돈 맥스 팩 게임하기",
+    "secondaryKeywords": [
+      "카마게돈 맥스 팩 고전게임",
+      "카마게돈 맥스 팩 무료게임",
+      "카마게돈 맥스 팩 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Penthouse_-_Hot_Numbers_Deluxe_1993",
+    "koTitle": "펜트하우스: 핫 넘버스 디럭스",
+    "enTitle": "Penthouse - Hot Numbers Deluxe",
+    "priority": "B",
+    "primaryKeyword": "펜트하우스: 핫 넘버스 디럭스 게임하기",
+    "secondaryKeywords": [
+      "펜트하우스: 핫 넘버스 디럭스 고전게임",
+      "펜트하우스: 핫 넘버스 디럭스 무료게임",
+      "펜트하우스: 핫 넘버스 디럭스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Conquests_of_the_Longbow_-_The_Legend_of_Robin_Hood_1991",
+    "koTitle": "롱보우의 정복: 로빈 후드 전설",
+    "enTitle": "Conquests of the Longbow - The Legend of Robin Hood",
+    "priority": "B",
+    "primaryKeyword": "롱보우의 정복: 로빈 후드 전설 게임하기",
+    "secondaryKeywords": [
+      "롱보우의 정복: 로빈 후드 전설 고전게임",
+      "롱보우의 정복: 로빈 후드 전설 무료게임",
+      "롱보우의 정복: 로빈 후드 전설 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "PERSIA_VGA",
+    "koTitle": "페르시아의 왕자 VGA판",
+    "enTitle": "MS-DOS: Prince of Persia (VGA Graphics and SoundBlaster)",
+    "priority": "B",
+    "primaryKeyword": "페르시아의 왕자 VGA판 게임하기",
+    "secondaryKeywords": [
+      "페르시아의 왕자 VGA판 고전게임",
+      "페르시아의 왕자 VGA판 무료게임",
+      "페르시아의 왕자 VGA판 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "oregon-trail-the-1990_202208",
+    "koTitle": "오리건 트레일 1990",
+    "enTitle": "Oregon Trail The 1990",
+    "priority": "B",
+    "primaryKeyword": "오리건 트레일 1990 게임하기",
+    "secondaryKeywords": [
+      "오리건 트레일 1990 고전게임",
+      "오리건 트레일 1990 무료게임",
+      "오리건 트레일 1990 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Leisure_Suit_Larry_6_-_Shape_Up_or_Slip_Out_1993",
+    "koTitle": "레저 슈트 래리 6: 몸짱이 되거나 탈락하거나",
+    "enTitle": "Leisure Suit Larry 6 - Shape Up or Slip Out",
+    "priority": "B",
+    "primaryKeyword": "레저 슈트 래리 6: 몸짱이 되거나 탈락하거나 게임하기",
+    "secondaryKeywords": [
+      "레저 슈트 래리 6: 몸짱이 되거나 탈락하거나 고전게임",
+      "레저 슈트 래리 6: 몸짱이 되거나 탈락하거나 무료게임",
+      "레저 슈트 래리 6: 몸짱이 되거나 탈락하거나 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Lamborghini_-_American_Challenge_1992",
+    "koTitle": "람보르기니: 아메리칸 챌린지",
+    "enTitle": "Lamborghini - American Challenge",
+    "priority": "B",
+    "primaryKeyword": "람보르기니: 아메리칸 챌린지 게임하기",
+    "secondaryKeywords": [
+      "람보르기니: 아메리칸 챌린지 고전게임",
+      "람보르기니: 아메리칸 챌린지 무료게임",
+      "람보르기니: 아메리칸 챌린지 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Strip_Poker_2_Plus_1988",
+    "koTitle": "스트립 포커 2 플러스",
+    "enTitle": "Strip Poker 2 Plus",
+    "priority": "B",
+    "primaryKeyword": "스트립 포커 2 플러스 게임하기",
+    "secondaryKeywords": [
+      "스트립 포커 2 플러스 고전게임",
+      "스트립 포커 2 플러스 무료게임",
+      "스트립 포커 2 플러스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Supaplex_1991",
+    "koTitle": "수파플렉스",
+    "enTitle": "Supaplex",
+    "priority": "B",
+    "primaryKeyword": "수파플렉스 게임하기",
+    "secondaryKeywords": [
+      "수파플렉스 고전게임",
+      "수파플렉스 무료게임",
+      "수파플렉스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "idos_20190826",
+    "koTitle": "마이 도스박스",
+    "enTitle": "My DosBox",
+    "priority": "B",
+    "primaryKeyword": "마이 도스박스 게임하기",
+    "secondaryKeywords": [
+      "마이 도스박스 고전게임",
+      "마이 도스박스 무료게임",
+      "마이 도스박스 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Zork_I_-_The_Great_Underground_Empire_1980",
+    "koTitle": "조크 1: 위대한 지하 제국",
+    "enTitle": "Zork I - The Great Underground Empire",
+    "priority": "B",
+    "primaryKeyword": "조크 1: 위대한 지하 제국 게임하기",
+    "secondaryKeywords": [
+      "조크 1: 위대한 지하 제국 고전게임",
+      "조크 1: 위대한 지하 제국 무료게임",
+      "조크 1: 위대한 지하 제국 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Emmanuelle_1989",
+    "koTitle": "엠마뉴엘",
+    "enTitle": "Emmanuelle",
+    "priority": "B",
+    "primaryKeyword": "엠마뉴엘 게임하기",
+    "secondaryKeywords": [
+      "엠마뉴엘 고전게임",
+      "엠마뉴엘 무료게임",
+      "엠마뉴엘 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Monikas_Tic_Tac_Toe_2006",
+    "koTitle": "모니카의 틱택토",
+    "enTitle": "Monika's Tic Tac Toe",
+    "priority": "B",
+    "primaryKeyword": "모니카의 틱택토 게임하기",
+    "secondaryKeywords": [
+      "모니카의 틱택토 고전게임",
+      "모니카의 틱택토 무료게임",
+      "모니카의 틱택토 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_F-14_Tomcat_1990",
+    "koTitle": "F-14 톰캣",
+    "enTitle": "F-14 Tomcat",
+    "priority": "B",
+    "primaryKeyword": "F-14 톰캣 게임하기",
+    "secondaryKeywords": [
+      "F-14 톰캣 고전게임",
+      "F-14 톰캣 무료게임",
+      "F-14 톰캣 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Teenage_Mutant_Ninja_Turtles_-_Manhattan_Missions_1991",
+    "koTitle": "닌자 거북이: 맨해튼 미션",
+    "enTitle": "Teenage Mutant Ninja Turtles - Manhattan Missions",
+    "priority": "B",
+    "primaryKeyword": "닌자 거북이: 맨해튼 미션 게임하기",
+    "secondaryKeywords": [
+      "닌자 거북이: 맨해튼 미션 고전게임",
+      "닌자 거북이: 맨해튼 미션 무료게임",
+      "닌자 거북이: 맨해튼 미션 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Vlak_1993",
+    "koTitle": "블락",
+    "enTitle": "Vlak",
+    "priority": "B",
+    "primaryKeyword": "블락 게임하기",
+    "secondaryKeywords": [
+      "블락 고전게임",
+      "블락 무료게임",
+      "블락 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Amazon_Trail_1993",
+    "koTitle": "아마존 트레일",
+    "enTitle": "Amazon Trail",
+    "priority": "B",
+    "primaryKeyword": "아마존 트레일 게임하기",
+    "secondaryKeywords": [
+      "아마존 트레일 고전게임",
+      "아마존 트레일 무료게임",
+      "아마존 트레일 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Microsoft_Flight_Simulator_v5.1_1993",
+    "koTitle": "마이크로소프트 플라이트 시뮬레이터",
+    "enTitle": "Microsoft Flight Simulator",
+    "priority": "B",
+    "primaryKeyword": "마이크로소프트 플라이트 시뮬레이터 게임하기",
+    "secondaryKeywords": [
+      "마이크로소프트 플라이트 시뮬레이터 고전게임",
+      "마이크로소프트 플라이트 시뮬레이터 무료게임",
+      "마이크로소프트 플라이트 시뮬레이터 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_SimEarth_-_The_Living_Planet_1990",
+    "koTitle": "심어스: 살아있는 행성",
+    "enTitle": "SimEarth - The Living Planet",
+    "priority": "B",
+    "primaryKeyword": "심어스: 살아있는 행성 게임하기",
+    "secondaryKeywords": [
+      "심어스: 살아있는 행성 고전게임",
+      "심어스: 살아있는 행성 무료게임",
+      "심어스: 살아있는 행성 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Terminator_2_-_Judgment_Day_1991",
+    "koTitle": "터미네이터 2: 심판의 날",
+    "enTitle": "Terminator 2 - Judgment Day",
+    "priority": "B",
+    "primaryKeyword": "터미네이터 2: 심판의 날 게임하기",
+    "secondaryKeywords": [
+      "터미네이터 2: 심판의 날 고전게임",
+      "터미네이터 2: 심판의 날 무료게임",
+      "터미네이터 2: 심판의 날 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_Pinball_Fantasies_1992",
+    "koTitle": "핀볼 판타지",
+    "enTitle": "Pinball Fantasies",
+    "priority": "B",
+    "primaryKeyword": "핀볼 판타지 게임하기",
+    "secondaryKeywords": [
+      "핀볼 판타지 고전게임",
+      "핀볼 판타지 무료게임",
+      "핀볼 판타지 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  },
+  {
+    "identifier": "msdos_1869_1992",
+    "koTitle": "1869",
+    "enTitle": "1869",
+    "priority": "B",
+    "primaryKeyword": "1869 게임하기",
+    "secondaryKeywords": [
+      "1869 고전게임",
+      "1869 무료게임",
+      "1869 온라인 플레이"
+    ],
+    "relatedIds": [],
+    "localizationBatch": "localization-batch-001"
+  }
 ]
