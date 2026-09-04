@@ -1,15 +1,16 @@
 {
   "name": "게임다방",
   "short_name": "게임다방",
+  "description": "추억의 레트로·고전 게임을 다운로드나 에뮬레이터 설치 없이 브라우저에서 바로 무료로 플레이하세요.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#04101a",
   "theme_color": "#23c4ff",
   "icons": [
-    {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    }
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }

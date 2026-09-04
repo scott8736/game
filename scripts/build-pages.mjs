@@ -416,7 +416,7 @@ ${referenceSections(g, displayName, Boolean(sample), 'detail')}
 <meta property="og:description" content="${desc}">
 <meta property="og:url" content="${canonicalUrl}">
 <meta property="og:image" content="${OG_IMAGE}">
-<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">\n<link rel="apple-touch-icon" href="../icon-192.png">
 <link rel="stylesheet" href="../style.css">
 <style>${PAGE_CSS}${SAMPLE_CSS}</style>
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
@@ -453,7 +453,7 @@ function guidePlatformPage(cat, list) {
 <meta property="og:type" content="website">
 <meta property="og:title" content="${escHtml(meta.ko)} 게임 모음 | 게임다방">
 <meta property="og:image" content="${OG_IMAGE}">
-<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">\n<link rel="apple-touch-icon" href="../icon-192.png">
 <link rel="stylesheet" href="../style.css">
 ${ADSENSE_SNIPPET}
 <style>${PAGE_CSS}
@@ -491,7 +491,7 @@ function guideIndexPage() {
 <meta property="og:type" content="website">
 <meta property="og:title" content="게임소개 - 플랫폼별 레트로 게임 목록 | 게임다방">
 <meta property="og:image" content="${OG_IMAGE}">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">\n<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="stylesheet" href="style.css">
 ${ADSENSE_SNIPPET}
 <style>${PAGE_CSS}
@@ -535,6 +535,27 @@ const urls = [
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${escXml(u)}</loc></url>`).join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
+
+// catalog.json - the gallery data index.html needs, as columnar rows with
+// category/genre dictionaries. index.html used to inline this as 338KB of
+// object literals; the columnar form is 179KB and, fetched rather than
+// inlined, keeps it out of the HTML parse.
+const catCodes = [...new Set(games.map((g) => g.category))];
+const genreCodes = [...new Set(games.map((g) => g.genre || ''))];
+const catalog = {
+  c: catCodes,
+  g: genreCodes,
+  r: games.map((g) => [
+    g.identifier,
+    g.title,
+    g.year || 0,
+    catCodes.indexOf(g.category),
+    genreCodes.indexOf(g.genre || ''),
+    g.downloads || 0,
+    g.fav ? 1 : 0,
+  ]),
+};
+fs.writeFileSync(path.join(ROOT, 'catalog.json'), JSON.stringify(catalog));
 
 // robots.txt
 fs.writeFileSync(path.join(ROOT, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
