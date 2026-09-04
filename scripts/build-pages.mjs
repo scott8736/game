@@ -14,6 +14,8 @@ const GAMES = data.games;
 const featured = JSON.parse(fs.readFileSync(path.join(__dirname, 'featured-articles.json'), 'utf8'));
 const seoGames = JSON.parse(fs.readFileSync(path.join(__dirname, 'seo-games.json'), 'utf8'));
 const seoById = new Map(seoGames.map((item) => [item.identifier, item]));
+import { PLATFORM_INFO, GENRE_INFO, GENERIC_GENRE } from './game-page-content.mjs';
+
 const articleGameLinks = JSON.parse(fs.readFileSync(path.join(__dirname, 'article-game-links.json'), 'utf8'));
 const ARTICLE_TITLES = {
   'best-dos-games': '90년대 도스게임 명작 추천', 'best-arcade-games': '추억의 오락실게임 추천',
@@ -185,6 +187,13 @@ article p{line-height:1.8;font-size:15px;margin:0 0 14px;}
 .article-links h2{font-size:17px;color:var(--accent-2);margin:0 0 9px;}
 .article-links ul{margin:0;padding-left:20px;line-height:1.8;}
 .article-links a{color:var(--accent);text-decoration:none;}
+.spec{width:100%;border-collapse:collapse;margin:4px 0 20px;}
+.spec th,.spec td{border:1px solid var(--border);padding:8px 12px;text-align:left;font-size:14px;}
+.spec th{width:34%;color:var(--accent-2);background:var(--bg-2);font-weight:400;}
+.note{border-left:3px solid var(--accent-2);background:var(--bg-2);padding:10px 14px;margin:0 0 20px;font-size:14px;line-height:1.7;color:var(--dim);}
+.faq{margin:8px 0 20px;}
+.faq dt{color:var(--accent-2);font-size:15px;margin:14px 0 5px;}
+.faq dd{margin:0;padding-left:14px;border-left:1px solid var(--border);line-height:1.75;font-size:14px;}
 footer{margin-top:30px;color:var(--dim);font-size:12px;text-align:center;line-height:1.6;opacity:0.8;}
 footer a{color:var(--accent);}
 `;
@@ -197,6 +206,113 @@ article h2{color:var(--accent-2);font-size:21px;margin:26px 0 10px;}
 .tips{line-height:1.75;padding-left:22px;margin:8px 0 20px;}
 .tips li{margin-bottom:7px;}
 `;
+
+// --- reference sections ---------------------------------------------------
+// Each block below is built from data the catalogue actually holds (year,
+// platform, genre, siblings in the same library) plus the hardware and genre
+// reference in game-page-content.mjs. No per-game claims are invented here.
+
+function specTable(g, seo, genreLabel) {
+  const rows = [
+    seo ? ['한국어 제목', seo.koTitle] : null,
+    ['원제', g.title],
+    ['출시 연도', g.year ? `${g.year}년` : '미상'],
+    ['플랫폼', g.meta.ko],
+    genreLabel ? ['장르', genreLabel] : null,
+    ['자료 출처', `Internet Archive · ${g.identifier}`],
+  ].filter(Boolean);
+  return `<table class="spec"><tbody>${rows
+    .map(([k, v]) => `<tr><th scope="row">${escHtml(k)}</th><td>${escHtml(v)}</td></tr>`)
+    .join('')}</tbody></table>`;
+}
+
+// Where this title sits in its library: how big the library is, and which
+// other games in it came out the same year. Both are read from games.json.
+function libraryContext(g) {
+  const list = byCategory.get(g.category) || [];
+  const parts = [`게임다방에는 ${g.meta.ko} 게임이 ${list.length}개 정리되어 있습니다.`];
+  if (g.year) {
+    const sameYear = list.filter((x) => x.identifier !== g.identifier && x.year === g.year);
+    parts.push(
+      sameYear.length
+        ? `그중 ${g.year}년에 나온 작품은 이 게임을 포함해 ${sameYear.length + 1}개입니다.`
+        : `${g.year}년 작품으로는 이 게임이 유일하게 정리되어 있습니다.`,
+    );
+  }
+  return parts.join(' ');
+}
+
+function faqBlock(g, displayName) {
+  const name = escHtml(displayName);
+  const items = [
+    [
+      `${name}, 설치 없이 바로 할 수 있나요?`,
+      '네. 별도 프로그램이나 에뮬레이터를 내려받지 않아도 브라우저에서 바로 실행됩니다. 다만 첫 실행 때 원본 게임 데이터를 불러오는 시간이 필요합니다.',
+    ],
+    [
+      '휴대폰에서도 되나요?',
+      '화면은 표시되지만 터치 조작은 지원하지 않습니다. 모바일에서 즐기려면 블루투스 키보드나 게임패드를 연결해야 하며, PC 환경을 권장합니다.',
+    ],
+    [
+      '진행 상황이 저장되나요?',
+      '원본 게임이 배터리 백업이나 패스워드 저장을 지원하는 경우에만 저장할 수 있고, 브라우저를 닫으면 초기화될 수 있습니다. 긴 게임이라면 짧은 구간에서 저장이 되는지 먼저 확인해 보세요.',
+    ],
+    [
+      '소리가 나지 않습니다.',
+      '브라우저는 사용자가 페이지를 한 번 클릭하기 전까지 소리를 막습니다. 게임 화면을 한 번 클릭한 뒤 다시 시도해 보세요.',
+    ],
+  ];
+  return `<dl class="faq">${items
+    .map(([q, a]) => `<dt>${q}</dt><dd>${escHtml(a)}</dd>`)
+    .join('')}</dl>`;
+}
+
+// The reference sections shared by every page. Curated pages already carry a
+// hand-written intro, controls table and tips, so those parts are skipped for
+// them and only the platform, library and FAQ sections are added.
+function referenceSections(g, displayName, hasSample, part) {
+  const plat = PLATFORM_INFO[g.category];
+  const genreKey = g.genre && GENRE_INFO[g.genre] ? g.genre : null;
+  const genre = genreKey ? GENRE_INFO[genreKey] : GENERIC_GENRE;
+  const out = [];
+
+  if (part === 'lead') {
+    if (hasSample) return '';
+    out.push(`<h2>${escHtml(displayName)} 기본 정보</h2>`);
+    out.push(specTable(g, seoById.get(g.identifier), genreKey ? genre.label : ''));
+    out.push(`<h2>어떤 게임인가요</h2>`);
+    out.push(`<p>${escHtml(buildIntro(g))}</p>`);
+    out.push(`<p>${escHtml(genre.summary)}</p>`);
+    return out.join('\n');
+  }
+
+  if (plat) {
+    // Appositive rather than a 은/는 particle: the correct particle depends on
+    // whether the platform name ends in a consonant, which varies across these
+    // labels (아타리 2600, PC엔진, 원더스완 ...).
+    out.push(`<h2>${escHtml(plat.label)}, 어떤 기기인가요</h2>`);
+    out.push(`<p>${escHtml(plat.summary)}</p>`);
+    out.push(`<p>${escHtml(libraryContext(g))}</p>`);
+    if (!hasSample) {
+      out.push(`<h2>조작법</h2>`);
+      out.push(
+        `<table class="controls"><tbody>${plat.rows
+          .map(([a, k]) => `<tr><th scope="row">${escHtml(a)}</th><td>${escHtml(k)}</td></tr>`)
+          .join('')}</tbody></table>`,
+      );
+    }
+    out.push(`<p class="note">${escHtml(plat.note)}</p>`);
+  }
+
+  if (!hasSample) {
+    out.push(`<h2>플레이 전 알아두기</h2>`);
+    out.push(`<ul class="tips">${genre.tips.map((t) => `<li>${escHtml(t)}</li>`).join('')}</ul>`);
+  }
+
+  out.push(`<h2>자주 묻는 질문</h2>`);
+  out.push(faqBlock(g, displayName));
+  return out.join('\n');
+}
 
 // A de-duplicated slug is only a near-duplicate when nothing distinguishes it
 // from the primary page; a curated SEO entry has its own keyword and copy.
@@ -241,17 +357,21 @@ function gamePage(g) {
       return `<li><a href="${escHtml(r.slug)}.html">${escHtml(relatedName)} (${r.year || '????'})</a></li>`;
     }).join('')}</ul></div>`
     : '';
-  const sampleArticle = sample
-    ? `<article>
-<h2>${koTitle} 게임 소개</h2>
+  const displayName = seo ? seo.koTitle : g.title;
+  const curated = sample
+    ? `<h2>${koTitle} 게임 소개</h2>
 <p>${escHtml(sample.intro)}</p>
 <h2>${koTitle} 조작법</h2>
 <table class="controls"><tbody>${sample.controls.map(([action, key]) => `<tr><th scope="row">${escHtml(action)}</th><td>${escHtml(key)}</td></tr>`).join('')}</tbody></table>
 <h2>초보자 공략</h2>
-<ul class="tips">${sample.tips.map((tip) => `<li>${escHtml(tip)}</li>`).join('')}</ul>
-</article>`
-    : `<article><p>${intro}</p></article>
-<div class="ctrl-box">🎮 조작법: ${escHtml(g.meta.ctrl || '게임 화면 내 안내를 참고하세요')}</div>`;
+<ul class="tips">${sample.tips.map((tip) => `<li>${escHtml(tip)}</li>`).join('')}</ul>`
+    : '';
+  const leadArticle = `<article>
+${curated}${referenceSections(g, displayName, Boolean(sample), 'lead')}
+</article>`;
+  const detailArticle = `<article>
+${referenceSections(g, displayName, Boolean(sample), 'detail')}
+</article>`;
   const pageTitle = seo
     ? fitTitle(
         [
@@ -298,7 +418,7 @@ function gamePage(g) {
 <meta property="og:image" content="${OG_IMAGE}">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../style.css">
-<style>${PAGE_CSS}${seo ? SAMPLE_CSS : ''}</style>
+<style>${PAGE_CSS}${SAMPLE_CSS}</style>
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 ${ADSENSE_SNIPPET}
 </head>
@@ -307,8 +427,9 @@ ${ADSENSE_SNIPPET}
 <div class="crumb"><a href="../index.html">홈</a> &rsaquo; <a href="../guide/${g.category}.html">${escHtml(g.meta.ko)}</a> &rsaquo; ${displayTitle}</div>
 <h1>${seo ? escHtml(seo.primaryKeyword) : title}</h1>${seo ? `\n<div class="en-title">${title}</div>` : ''}
 <div class="meta">${yearLabel} · ${escHtml(g.meta.ko)}${genreKo ? ' · ' + escHtml(genreKo) : ''}</div>
-${sampleArticle}
+${leadArticle}
 <a class="cta" href="${playHref(g, '../')}">🕹️ ${seo ? `${koTitle} 바로 플레이하기` : '지금 무료로 플레이하기'}</a>
+${detailArticle}
 ${articleHtml}
 ${relHtml}
 <footer><a href="../guide.html">← 게임소개 목록으로</a> · <a href="../index.html">전체 게임 갤러리</a></footer>
