@@ -121,7 +121,8 @@ footer a{color:var(--accent);text-decoration:none;}
 </div>
 <details style="width:100%;margin:12px auto 0;border:1px solid var(--border);padding:8px 12px;font-size:17px;color:var(--dim);"><summary style="cursor:pointer;color:var(--accent-2);">&lt;/&gt; 임베드 코드</summary><textarea id="embedCode" readonly onclick="this.select()" style="width:100%;height:140px;margin-top:8px;background:var(--bg);color:var(--fg);border:1px solid var(--border);font-family:monospace;font-size:17px;"></textarea></details>
 <div class="zoom-info">해상도: <span id="resInfo">-</span> · 배율: <span id="scaleInfo">1.0x</span></div>
-<div id="frameAdjust" style="display:none;max-width:680px;margin:8px auto 0;padding:8px 12px;border:1px solid var(--border);font-size:17px;color:var(--dim);align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;"><span style="color:var(--accent-2);">🖼 화면 맞춤</span><label style="display:flex;align-items:center;gap:6px;">높이 <input id="adjH" type="range" min="380" max="680" step="2" style="width:130px;"><span id="adjHv" style="color:var(--accent-2);min-width:30px;"></span></label><label style="display:flex;align-items:center;gap:6px;">상단 <input id="adjNav" type="range" min="70" max="420" step="2" style="width:110px;"><span id="adjNavv" style="color:var(--accent-2);min-width:28px;"></span></label><button onclick="resetAdjust()" style="background:var(--bg-2);color:var(--accent);border:1px solid var(--accent);padding:3px 10px;font-family:inherit;font-size:17px;cursor:pointer;">초기화</button><span style="opacity:0.7;">상·하가 잘리면 조절하세요 (저장됨)</span></div>
+<div id="frameAdjust" style="display:none;max-width:680px;margin:8px auto 0;padding:8px 12px;border:1px solid var(--border);font-size:17px;color:var(--dim);align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;"><span style="color:var(--accent-2);">🖼 화면 맞춤</span><label style="display:flex;align-items:center;gap:6px;">높이 <input id="adjH" type="range" min="240" max="680" step="2" style="width:130px;"><span id="adjHv" style="color:var(--accent-2);min-width:30px;"></span></label><label style="display:flex;align-items:center;gap:6px;">상단 <input id="adjNav" type="range" min="70" max="420" step="2" style="width:110px;"><span id="adjNavv" style="color:var(--accent-2);min-width:28px;"></span></label><button onclick="resetAdjust()" style="background:var(--bg-2);color:var(--accent);border:1px solid var(--accent);padding:3px 10px;font-family:inherit;font-size:17px;cursor:pointer;">초기화</button><span style="opacity:0.7;">상·하가 잘리면 조절하세요 (저장됨)</span></div>
+<div style="max-width:680px;margin:8px auto 0;font-size:17px;color:var(--dim);text-align:center;">📺 화면 모드 <select id="modeSel" style="background:var(--bg-2);color:var(--fg);border:1px solid var(--border);font-family:inherit;font-size:17px;padding:3px 6px;cursor:pointer;" onchange="setPlayerMode(this.value)"><option value="embed">플레이어만 (기본·화면 큼)</option><option value="theater">아카이브 극장뷰 (예전 방식)</option></select><span style="opacity:0.7;margin-left:10px;">게임이 안 뜨면 극장뷰로 바꿔보세요</span></div>
 <div style="max-width:680px;margin:8px auto 0;font-size:17px;color:var(--dim);text-align:center;">🖥 화면 효과 <select id="fxSel" style="background:var(--bg-2);color:var(--fg);border:1px solid var(--border);font-family:inherit;font-size:17px;padding:3px 6px;cursor:pointer;"><option value="none">없음</option><option value="scanlines">스캔라인</option><option value="crt">CRT</option><option value="crtdeluxe">CRT 디럭스</option><option value="hlsl">HLSL</option><option value="aperture">애퍼처 그릴</option><option value="lcd">LCD 그리드</option><option value="glow">발광(블룸)</option><option value="smooth">부드럽게(HQ·xBR)</option></select><label style="margin-left:12px;display:inline-flex;align-items:center;gap:6px;">강도 <input id="fxI" type="range" min="0" max="120" step="5" style="width:110px;vertical-align:middle;"><span id="fxIv" style="color:var(--accent-2);min-width:34px;"></span></label></div>
 <div class="sound-notice" id="soundNotice">🔊 소리가 안 나면 게임 화면을 <strong>한 번 클릭</strong>한 뒤 다시 시도해 보세요.</div>
 </div>
@@ -152,7 +153,11 @@ var THEATER_NAV_MOBILE=126;
 var THEATER_MASK=0;
 function defaultTheaterNav(){return isMobileDevice?THEATER_NAV_MOBILE:THEATER_NAV;}
 function adjustKey(name){return isMobileDevice?name:name+"PcV2";}
-function isTheater(c){return THEATER_CATS.indexOf(c)>=0;}
+var PLAYER_MODE=(function(){try{return localStorage.getItem("rePlayerMode")==="theater"?"theater":"embed";}catch(e){return "embed";}})();
+// embed = archive.org 플레이어 단독 렌더(페이지 크롬 없음, 기본값)
+// theater = 아카이브 상세 페이지를 잘라내 쓰던 예전 방식(폴백)
+function isTheater(c){return PLAYER_MODE==="theater"&&THEATER_CATS.indexOf(c)>=0;}
+function setPlayerMode(v){try{localStorage.setItem("rePlayerMode",v);}catch(e){}location.reload();}
 function sizeFor(c){return isTheater(c)?{w:1024,h:540}:{w:640,h:480};}
 function playerUrl(id,c){return isTheater(c)?("https://archive.org/details/"+encodeURIComponent(id)+"?view=theater"):("https://archive.org/embed/"+encodeURIComponent(id));}
 function qp(n){var m=new RegExp("[?&]"+n+"=([^&]*)").exec(location.search);return m?decodeURIComponent(m[1].replace(/\+/g," ")):"";}
@@ -178,6 +183,7 @@ function loadFx(){try{var v=localStorage.getItem("reFx")||"none";var M={mask:"ap
 function loadFxI(){try{var v=parseFloat(localStorage.getItem("reFxI"));return (v>=0&&v<=1.2)?v:0.6;}catch(e){return 0.6;}}
 function applyFx(v){var f=document.getElementById("gameFrame");if(!f)return;f.className=(f.className.replace(/\bfx-\w+/g,"").replace(/\s+/g," ").trim())+" fx-"+v;}
 function applyFxI(v){document.documentElement.style.setProperty("--fx-i",v);var lbl=document.getElementById("fxIv");if(lbl)lbl.textContent=Math.round(v*100)+"%";}
+function initMode(){var m=document.getElementById("modeSel");if(m)m.value=PLAYER_MODE;}
 function initFx(){var v=loadFx(),iv=loadFxI();var sel=document.getElementById("fxSel"),si=document.getElementById("fxI");if(sel){sel.value=v;sel.onchange=function(){applyFx(sel.value);try{localStorage.setItem("reFx",sel.value);}catch(e){}};}if(si){si.value=Math.round(iv*100);si.oninput=function(){var nv=(+si.value)/100;applyFxI(nv);try{localStorage.setItem("reFxI",nv);}catch(e){}};}applyFxI(iv);applyFx(v);}
 var pendingMobileUrl="";var isMobileDevice=window.matchMedia("(pointer:coarse)").matches||/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 function mobileCapable(cat){return THEATER_CATS.indexOf(cat)>=0&&cat!=="psxgames";}
@@ -202,6 +208,7 @@ function start(g){
   document.getElementById("embedCode").value='<iframe src="'+url+'" width="'+sz.w+'" height="'+sz.h+'" frameborder="0" allowfullscreen></iframe>';
   document.getElementById("archiveBtn").onclick=function(){window.open("https://archive.org/details/"+encodeURIComponent(g.identifier),"_blank");};
   initAdjust(isT,sz.h,nav);
+  initMode();
   initFx();
   applyZoom();
 }
