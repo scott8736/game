@@ -48,6 +48,32 @@ const GENRE_KO = { racing: '레이싱', shooter: '슈팅', maze: '미로', platf
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
 const ADSENSE_SNIPPET = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8646375689901020" crossorigin="anonymous"></script>`;
 
+// Search results cut titles off past roughly 65 characters, so build a list of
+// progressively shorter forms and take the first that fits (and, for the
+// curated SEO pages, still carries both the Korean and English name).
+const TITLE_MAX = 65;
+function fitTitle(candidates, isValid) {
+  const usable = isValid ? candidates.filter(isValid) : candidates;
+  const pool = usable.length ? usable : candidates;
+  for (const c of pool) if (c.length <= TITLE_MAX) return c;
+  const shortest = pool.reduce((a, b) => (b.length < a.length ? b : a));
+  // A curated page must keep both its Korean and English name, so overrun the
+  // target rather than cut it; auto-generated pages can be trimmed.
+  if (isValid) return shortest;
+  return shortest.slice(0, TITLE_MAX - 1).replace(/[\s\-·|(]+$/, '') + '…';
+}
+const DESC_MIN = 70;
+const DESC_MAX = 160;
+function fitDesc(text, tail) {
+  let d = String(text || '').trim();
+  if (d.length < DESC_MIN && tail) d = `${d} ${tail}`.trim();
+  if (d.length > DESC_MAX) {
+    const cut = d.slice(0, DESC_MAX);
+    const stop = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('다. '));
+    d = (stop > DESC_MIN ? cut.slice(0, stop + 1) : cut.replace(/[\s,·—-]+\S*$/, '') + '…').trim();
+  }
+  return d;
+}
 function escHtml(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
@@ -74,11 +100,16 @@ const games = GAMES.map((g) => {
   const cat = g.category || 'other';
   const meta = PLAT_META[cat] || { ko: '레트로', code: 'retro', ctrl: '' };
   let base = slugify(g.title) || slugify(g.identifier);
-  let slug = `${base}-${meta.code}`;
+  const primarySlug = `${base}-${meta.code}`;
+  let slug = primarySlug;
   const count = usedSlugs.get(slug) || 0;
+  // Same title + platform appears more than once in the Archive libraries (a
+  // second ROM dump of the same game). Those pages are near-duplicates of the
+  // first one, so they get a canonical pointing at it and stay out of the
+  // sitemap instead of competing with it in search.
   if (count > 0) slug = `${slug}-${count + 1}`;
-  usedSlugs.set(base + '-' + meta.code, count + 1);
-  return { ...g, category: cat, meta, slug };
+  usedSlugs.set(primarySlug, count + 1);
+  return { ...g, category: cat, meta, slug, primarySlug, isDuplicate: count > 0 };
 });
 
 // group by category (in original order) for related-games lookups
@@ -167,8 +198,15 @@ article h2{color:var(--accent-2);font-size:21px;margin:26px 0 10px;}
 .tips li{margin-bottom:7px;}
 `;
 
+// A de-duplicated slug is only a near-duplicate when nothing distinguishes it
+// from the primary page; a curated SEO entry has its own keyword and copy.
+function isNearDuplicate(g) {
+  return g.isDuplicate && !seoById.has(g.identifier);
+}
+
 function gamePage(g) {
   const url = `${SITE_URL}/games/${g.slug}.html`;
+  const canonicalUrl = isNearDuplicate(g) ? `${SITE_URL}/games/${g.primarySlug}.html` : url;
   const seo = seoById.get(g.identifier);
   const sample = seo?.sample;
   const title = escHtml(g.title);
@@ -180,7 +218,7 @@ function gamePage(g) {
     : seo
       ? `${seo.koTitle}(${seo.enTitle}) ${g.meta.ko}${genreKo ? ` ${genreKo}` : ''} 고전게임을 설치 없이 온라인으로 플레이하세요. 기본 조작법과 관련 게임도 함께 확인할 수 있습니다.`
       : buildIntro(g);
-  const desc = escHtml(metaDescription);
+  const desc = escHtml(fitDesc(metaDescription, `${g.meta.ko} 레트로 게임을 다운로드나 에뮬레이터 설치 없이 브라우저에서 바로 무료로 플레이하세요.`));
   const intro = escHtml(buildIntro(g));
   const yearLabel = g.year || '????';
   const related = relatedGames(g);
@@ -215,8 +253,23 @@ function gamePage(g) {
     : `<article><p>${intro}</p></article>
 <div class="ctrl-box">🎮 조작법: ${escHtml(g.meta.ctrl || '게임 화면 내 안내를 참고하세요')}</div>`;
   const pageTitle = seo
-    ? `${seo.primaryKeyword} | ${seo.koTitle} (${seo.enTitle}) - 게임다방`
-    : `${g.title} 온라인 무료 플레이 - ${g.meta.ko} ${genreKo} 게임 | 게임다방`;
+    ? fitTitle(
+        [
+          `${seo.primaryKeyword} - ${seo.enTitle} | 게임다방`,
+          `${seo.primaryKeyword} - ${seo.enTitle}`,
+          `${seo.primaryKeyword} | ${seo.koTitle} (${seo.enTitle})`,
+          `${seo.primaryKeyword} | ${seo.koTitle} (${seo.enTitle}) - 게임다방`,
+        ],
+        (t) => t.includes(seo.koTitle) && t.includes(seo.enTitle),
+      )
+    : fitTitle([
+        `${g.title} 온라인 무료 플레이 - ${g.meta.ko} ${genreKo} 게임 | 게임다방`,
+        `${g.title} 온라인 무료 플레이 - ${g.meta.ko} ${genreKo} 게임`,
+        `${g.title} 온라인 무료 플레이 - ${g.meta.ko} 게임`,
+        `${g.title} - ${g.meta.ko} 무료 게임 | 게임다방`,
+        `${g.title} - ${g.meta.ko} 무료 게임`,
+        `${g.title} - ${g.meta.ko}`,
+      ]);
   const ogTitle = seo
     ? `${seo.primaryKeyword} | ${seo.koTitle} (${seo.enTitle})`
     : `${g.title} 온라인 무료 플레이 | 게임다방`;
@@ -228,7 +281,7 @@ function gamePage(g) {
     genre: genreKo || undefined,
     datePublished: g.year ? String(g.year) : undefined,
     gamePlatform: g.meta.ko,
-    url,
+    url: canonicalUrl,
   };
   return `<!DOCTYPE html>
 <html lang="ko">
@@ -237,11 +290,11 @@ function gamePage(g) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${escHtml(pageTitle)}</title>
 <meta name="description" content="${desc}">
-<link rel="canonical" href="${url}">
+<link rel="canonical" href="${canonicalUrl}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${escHtml(ogTitle)}">
 <meta property="og:description" content="${desc}">
-<meta property="og:url" content="${url}">
+<meta property="og:url" content="${canonicalUrl}">
 <meta property="og:image" content="${OG_IMAGE}">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="../style.css">
@@ -357,7 +410,7 @@ const urls = [
   `${SITE_URL}/`,
   `${SITE_URL}/guide.html`,
   ...Object.keys(PLAT_META).map((cat) => `${SITE_URL}/guide/${cat}.html`),
-  ...games.map((g) => `${SITE_URL}/games/${g.slug}.html`),
+  ...games.filter((g) => !isNearDuplicate(g)).map((g) => `${SITE_URL}/games/${g.slug}.html`),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${escXml(u)}</loc></url>`).join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
@@ -365,4 +418,4 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
 // robots.txt
 fs.writeFileSync(path.join(ROOT, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
-console.log(`generated ${games.length} game pages, ${byCategory.size} guide pages, sitemap with ${urls.length} urls`);
+console.log(`generated ${games.length} game pages (${games.filter(isNearDuplicate).length} canonicalised duplicates), ${byCategory.size} guide pages, sitemap with ${urls.length} urls`);
