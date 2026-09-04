@@ -3,3 +3,8 @@
 .gitignore
 .assetsignore
 wrangler.jsonc
+reports
+*.mjs
+scripts/featured-articles.json
+scripts/localization-batch-001.json
+scripts/article-game-links.json
