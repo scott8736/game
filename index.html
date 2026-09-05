@@ -17,6 +17,12 @@
 <meta property="og:title" content="게임다방 - 무료 레트로게임 온라인 | 고전게임 2200개 모음">
 <meta property="og:description" content="아케이드, MS-DOS, 세가 제네시스, 플레이스테이션 등 2200개 이상의 레트로·고전 게임을 다운로드나 에뮬레이터 설치 없이 브라우저에서 무료로 바로 플레이하세요.">
 <meta property="og:image" content="https://bamboostand.kr/og-image.png">
+<meta property="og:site_name" content="게임다방">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:title" content="게임다방 - 무료 레트로게임 온라인 | 고전게임 2200개 모음">
+<meta name="twitter:description" content="아케이드, MS-DOS, 세가 제네시스, 플레이스테이션 등 2200개 이상의 레트로·고전 게임을 다운로드나 에뮬레이터 설치 없이 브라우저에서 무료로 바로 플레이하세요.">
+<meta name="twitter:image" content="https://bamboostand.kr/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"게임다방","url":"https://bamboostand.kr/","description":"아케이드, MS-DOS, 세가 제네시스, 플레이스테이션 등 2200개 이상의 레트로·고전 게임을 다운로드나 에뮬레이터 설치 없이 브라우저에서 무료로 바로 플레이하세요."}</script>
 <meta property="og:url" content="https://bamboostand.kr/">
 <meta name="twitter:card" content="summary_large_image">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8646375689901020"
@@ -301,7 +307,7 @@ function cardHtml(g){
       badge+
       mobileBadge+
       '<button class="fav-btn'+(favs.has(g.id)?" on":"")+'" data-fav="'+g.id+'" aria-label="즐겨찾기 토글">'+(favs.has(g.id)?"★":"☆")+'</button>'+
-      '<img class="card-thumb" loading="lazy" decoding="async" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'">'+
+      '<img class="card-thumb" loading="lazy" decoding="async" alt="'+esc(displayTitle(g))+(g.year?" "+g.year+"년":"")+' '+esc(catShort(_cc))+' 게임 표지" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'">'+
       '<div class="card-overlay">'+t("play")+'</div>'+
     '</div>'+
     '<div class="card-body">'+
@@ -398,7 +404,7 @@ function renderRecent(){
   var rr=document.getElementById("recentRow");var items=loadArr(REC_KEY).map(byId).filter(Boolean);
   if(!items.length){rr.style.display="none";rr.innerHTML="";return;}
   rr.style.display="block";
-  rr.innerHTML='<div class="recent-title">'+t("recent")+'</div><div class="recent-items">'+items.map(function(g){return '<a href="'+playHref(g)+'"><img loading="lazy" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'">'+esc(displayTitle(g))+'</a>';}).join("")+'</div>';
+  rr.innerHTML='<div class="recent-title">'+t("recent")+'</div><div class="recent-items">'+items.map(function(g){return '<a href="'+playHref(g)+'"><img loading="lazy" alt="'+esc(displayTitle(g))+' 게임 표지" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'">'+esc(displayTitle(g))+'</a>';}).join("")+'</div>';
 }
 grid.addEventListener("click",function(e){
   var fb=e.target.closest?e.target.closest(".fav-btn"):null;
@@ -420,7 +426,7 @@ var _hl=document.getElementById("siteLogoLink");if(_hl)_hl.addEventListener("cli
 function renderDaily(){
   var el=document.getElementById("daily");if(!SHOW_DAILY||!GAMES.length){el.style.display="none";return;}
   var d=new Date();var seed=d.getFullYear()*1000+(d.getMonth()*31+d.getDate());var g=GAMES[seed%GAMES.length];
-  el.innerHTML='<a class="daily" href="'+playHref(g)+'"><img loading="lazy" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'"><div><div class="dl-tag">'+t("daily")+'</div><div class="dl-title">'+esc(displayTitle(g))+'</div><div class="dl-meta">'+(g.year||"????")+(g.genre?" · "+esc(g.genre):"")+'</div></div></a>';
+  el.innerHTML='<a class="daily" href="'+playHref(g)+'"><img loading="lazy" alt="'+esc(displayTitle(g))+(g.year?" "+g.year+"년":"")+' 게임 표지" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'"><div><div class="dl-tag">'+t("daily")+'</div><div class="dl-title">'+esc(displayTitle(g))+'</div><div class="dl-meta">'+(g.year||"????")+(g.genre?" · "+esc(g.genre):"")+'</div></div></a>';
   el.querySelector("a").addEventListener("click",function(){recordRecent(g.id);});
 }
 function applyLang(){

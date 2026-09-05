@@ -3,6 +3,7 @@
 // Run: node scripts/build-pages.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -212,6 +213,40 @@ article h2{color:var(--accent-2);font-size:21px;margin:26px 0 10px;}
 // platform, genre, siblings in the same library) plus the hardware and genre
 // reference in game-page-content.mjs. No per-game claims are invented here.
 
+// Alt text is what Google Images uses to understand a thumbnail, and every
+// one of these was empty. Kept under ~120 characters so screen readers do
+// not truncate it.
+function thumbAlt(g, label) {
+  const parts = [label];
+  if (g.year) parts.push(`${g.year}년`);
+  parts.push(g.meta.ko);
+  return escHtml(`${parts.join(' ')} 게임 표지`).slice(0, 120);
+}
+
+// BreadcrumbList still produces rich results. The trail was already shown
+// visually on every page but never marked up.
+function breadcrumbLd(trail) {
+  return `<script type="application/ld+json">${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: trail.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.name, item: t.url })),
+  })}</script>`;
+}
+
+// og:site_name / og:locale were missing everywhere and the Twitter card tags
+// existed only on the home page, so shares of the 2,206 game pages rendered
+// without a card image.
+function socialMeta(title, desc) {
+  return [
+    '<meta property="og:site_name" content="게임다방">',
+    '<meta property="og:locale" content="ko_KR">',
+    '<meta name="twitter:card" content="summary_large_image">',
+    `<meta name="twitter:title" content="${escHtml(title)}">`,
+    `<meta name="twitter:description" content="${desc}">`,
+    `<meta name="twitter:image" content="${OG_IMAGE}">`,
+  ].join('\n');
+}
+
 function specTable(g, seo, genreLabel) {
   const rows = [
     seo ? ['한국어 제목', seo.koTitle] : null,
@@ -416,10 +451,13 @@ ${referenceSections(g, displayName, Boolean(sample), 'detail')}
 <meta property="og:description" content="${desc}">
 <meta property="og:url" content="${canonicalUrl}">
 <meta property="og:image" content="${OG_IMAGE}">
-<link rel="icon" type="image/svg+xml" href="../favicon.svg">\n<link rel="apple-touch-icon" href="../icon-192.png">
+${socialMeta(pageTitle, desc)}
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../icon-192.png">
 <link rel="stylesheet" href="../style.css">
 <style>${PAGE_CSS}${SAMPLE_CSS}</style>
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
+${breadcrumbLd([{ name: '홈', url: `${SITE_URL}/` }, { name: '게임소개', url: `${SITE_URL}/guide.html` }, { name: g.meta.ko, url: `${SITE_URL}/guide/${g.category}.html` }, { name: displayName, url: canonicalUrl }])}
 ${ADSENSE_SNIPPET}
 </head>
 <body>
@@ -441,7 +479,7 @@ ${relHtml}
 function guidePlatformPage(cat, list) {
   const meta = PLAT_META[cat] || { ko: '레트로', code: 'retro' };
   const sorted = [...list].sort((a, b) => (b.downloads || 0) - (a.downloads || 0));
-  const items = sorted.map((g) => { const seo = seoById.get(g.identifier); const label = seo ? `${seo.koTitle} (${seo.enTitle})` : g.title; return `<li><a href="../games/${escHtml(g.slug)}.html"><img loading="lazy" src="https://archive.org/services/img/${encodeURIComponent(g.identifier)}" alt="" onerror="this.style.display='none'"><span class="ti">${escHtml(label)}</span><span class="yr">${g.year || '????'}</span></a></li>`; }).join('');
+  const items = sorted.map((g) => { const seo = seoById.get(g.identifier); const label = seo ? `${seo.koTitle} (${seo.enTitle})` : g.title; return `<li><a href="../games/${escHtml(g.slug)}.html"><img loading="lazy" src="https://archive.org/services/img/${encodeURIComponent(g.identifier)}" alt="${thumbAlt(g, label)}" onerror="this.style.display='none'"><span class="ti">${escHtml(label)}</span><span class="yr">${g.year || '????'}</span></a></li>`; }).join('');
   return `<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -452,8 +490,12 @@ function guidePlatformPage(cat, list) {
 <link rel="canonical" href="${SITE_URL}/guide/${cat}.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${escHtml(meta.ko)} 게임 모음 | 게임다방">
+<meta property="og:url" content="${SITE_URL}/guide/${cat}.html">
 <meta property="og:image" content="${OG_IMAGE}">
-<link rel="icon" type="image/svg+xml" href="../favicon.svg">\n<link rel="apple-touch-icon" href="../icon-192.png">
+${socialMeta(`${meta.ko} 게임 모음 - 무료 온라인 플레이 | 게임다방`, `${escHtml(meta.ko)} 레트로 게임 ${list.length}개를 다운로드나 에뮬레이터 설치 없이 브라우저에서 무료로 플레이하세요.`)}
+${breadcrumbLd([{ name: '홈', url: `${SITE_URL}/` }, { name: '게임소개', url: `${SITE_URL}/guide.html` }, { name: meta.ko, url: `${SITE_URL}/guide/${cat}.html` }])}
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../icon-192.png">
 <link rel="stylesheet" href="../style.css">
 ${ADSENSE_SNIPPET}
 <style>${PAGE_CSS}
@@ -477,9 +519,15 @@ function guideIndexPage() {
   const cats = Object.keys(PLAT_META);
   const cards = cats.map((cat) => {
     const meta = PLAT_META[cat];
-    const count = (byCategory.get(cat) || []).length;
-    return `<a class="pcard" href="guide/${cat}.html"><div class="pname">${escHtml(meta.ko)}</div><div class="pcount">${count}개</div></a>`;
+    const list = byCategory.get(cat) || [];
+    const years = list.map((g) => g.year).filter(Boolean).sort((a, b) => a - b);
+    const span = years.length ? `${years[0]}~${years[years.length - 1]}년` : '';
+    const info = PLATFORM_INFO[cat];
+    const blurb = info ? info.summary.split('. ')[0] + '.' : '';
+    return `<a class="pcard" href="guide/${cat}.html"><div class="pname">${escHtml(meta.ko)}</div><div class="pcount">${list.length}개${span ? ` · ${span}` : ''}</div><p class="pblurb">${escHtml(blurb)}</p></a>`;
   }).join('');
+  const totalGames = games.length;
+  const allYears = games.map((g) => g.year).filter(Boolean).sort((a, b) => a - b);
   return `<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -490,8 +538,13 @@ function guideIndexPage() {
 <link rel="canonical" href="${SITE_URL}/guide.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="게임소개 - 플랫폼별 레트로 게임 목록 | 게임다방">
+<meta property="og:url" content="${SITE_URL}/guide.html">
 <meta property="og:image" content="${OG_IMAGE}">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">\n<link rel="apple-touch-icon" href="icon-192.png">
+${socialMeta('게임소개 - 플랫폼별 레트로 게임 목록 | 게임다방', '아케이드, MS-DOS, 세가 제네시스, 플레이스테이션 등 플랫폼별로 정리된 레트로 게임 소개 목록. 다운로드 없이 브라우저에서 무료로 플레이하세요.')}
+${breadcrumbLd([{ name: '홈', url: `${SITE_URL}/` }, { name: '게임소개', url: `${SITE_URL}/guide.html` }])}
+<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'ItemList', name: '플랫폼별 레트로 게임 목록', numberOfItems: cats.length, itemListElement: cats.map((cat, i) => ({ '@type': 'ListItem', position: i + 1, name: PLAT_META[cat].ko, url: `${SITE_URL}/guide/${cat}.html` })) })}</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="stylesheet" href="style.css">
 ${ADSENSE_SNIPPET}
 <style>${PAGE_CSS}
@@ -500,13 +553,24 @@ ${ADSENSE_SNIPPET}
 .pcard{display:block;border:1px solid var(--border);background:var(--bg-2);border-radius:10px;padding:16px;text-decoration:none;color:var(--fg);text-align:center;}
 .pcard:hover{border-color:var(--accent);color:var(--accent);}
 .pname{font-family:'Orbitron',sans-serif;font-size:16px;letter-spacing:1px;}
-.pcount{color:var(--dim);font-size:13px;margin-top:6px;}
+.pcard{text-align:left;}
+.pcount{color:var(--accent-2);font-size:13px;margin-top:6px;}
+.pblurb{color:var(--dim);font-size:13px;line-height:1.65;margin:9px 0 0;}
+.hub-intro p{line-height:1.8;font-size:15px;margin:0 0 14px;}
+.hub-intro h2{color:var(--accent-2);font-size:20px;margin:24px 0 10px;}
 </style>
 </head>
 <body><div class="wrap">
 <div class="crumb"><a href="index.html">홈</a> &rsaquo; 게임소개</div>
 <h1>🕹️ 게임소개</h1>
-<article><p>게임다방이 보존하고 있는 2,200여 개의 아케이드·콘솔·PC 레트로 게임을 플랫폼별로 소개합니다. 각 게임 소개 페이지에서 발매연도, 장르, 조작법을 확인하고 바로 무료로 온라인 플레이할 수 있습니다.</p></article>
+<article class="hub-intro">
+<p>게임다방이 보존하고 있는 ${totalGames.toLocaleString('en-US')}개의 아케이드·콘솔·PC 레트로 게임을 플랫폼별로 소개합니다. ${allYears.length ? `수록작은 ${allYears[0]}년부터 ${allYears[allYears.length - 1]}년까지 ${cats.length}개 기종에 걸쳐 있습니다.` : ''} 각 게임 소개 페이지에서 발매연도, 장르, 조작법을 확인하고 바로 무료로 온라인 플레이할 수 있습니다.</p>
+<h2>어떤 기종부터 보면 좋을까요</h2>
+<p>처음이라면 한 판이 짧고 규칙이 단순한 <a href="guide/internetarcade.html">아케이드</a>나 <a href="guide/atari_2600_library.html">아타리 2600</a>부터 시작하는 편이 부담이 적습니다. 어릴 때 오락실이나 가정용 게임기로 접했던 작품을 찾는다면 <a href="guide/sega_genesis_library.html">세가 제네시스</a>와 <a href="guide/softwarelibrary_msdos_games.html">MS-DOS</a>에 익숙한 이름이 가장 많습니다. 분량이 긴 작품을 원한다면 <a href="guide/psxgames.html">플레이스테이션(PS1)</a> 쪽이 맞지만, CD 이미지를 통째로 불러오기 때문에 첫 실행까지 시간이 걸립니다.</p>
+<h2>플레이 환경</h2>
+<p>모든 게임은 Internet Archive가 보존한 원본을 브라우저에서 그대로 실행합니다. 별도 에뮬레이터를 설치할 필요는 없지만, 첫 실행 때 원본 데이터를 내려받는 시간이 필요합니다. 터치 조작은 지원하지 않으므로 PC 키보드를 권장하며, 모바일에서는 블루투스 키보드나 게임패드를 연결해야 합니다. 기종마다 키 배치가 다르니 각 소개 페이지의 조작법 표를 먼저 확인하세요.</p>
+<h2>플랫폼별 목록</h2>
+</article>
 <div class="pgrid">${cards}</div>
 <footer><a href="index.html">전체 게임 갤러리로 돌아가기</a></footer>
 </div></body></html>`;
@@ -518,13 +582,37 @@ const guideDir = path.join(ROOT, 'guide');
 fs.mkdirSync(gamesDir, { recursive: true });
 fs.mkdirSync(guideDir, { recursive: true });
 
+// Keep every rendered page so the sitemap can hash it for lastmod.
+const renderedPages = new Map();
 for (const g of games) {
-  fs.writeFileSync(path.join(gamesDir, `${g.slug}.html`), gamePage(g));
+  const html = gamePage(g);
+  fs.writeFileSync(path.join(gamesDir, `${g.slug}.html`), html);
+  renderedPages.set(`${SITE_URL}/games/${g.slug}.html`, html);
 }
 for (const [cat, list] of byCategory) {
-  fs.writeFileSync(path.join(guideDir, `${cat}.html`), guidePlatformPage(cat, list));
+  const html = guidePlatformPage(cat, list);
+  fs.writeFileSync(path.join(guideDir, `${cat}.html`), html);
+  renderedPages.set(`${SITE_URL}/guide/${cat}.html`, html);
 }
-fs.writeFileSync(path.join(ROOT, 'guide.html'), guideIndexPage());
+const guideHtml = guideIndexPage();
+fs.writeFileSync(path.join(ROOT, 'guide.html'), guideHtml);
+renderedPages.set(`${SITE_URL}/guide.html`, guideHtml);
+renderedPages.set(`${SITE_URL}/`, fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8'));
+
+// --- lastmod ------------------------------------------------------------
+// Google uses lastmod to schedule recrawls, but only when the value is
+// honest. scripts/lastmod.json keeps { hash, date } per URL so a page's date
+// advances only when its rendered bytes actually change.
+const LASTMOD_PATH = path.join(__dirname, 'lastmod.json');
+let lastmodDb = {};
+try { lastmodDb = JSON.parse(fs.readFileSync(LASTMOD_PATH, 'utf8')); } catch { lastmodDb = {}; }
+const buildDate = new Date().toISOString().slice(0, 10);
+function recordLastmod(url, html) {
+  const hash = crypto.createHash('sha1').update(html).digest('hex').slice(0, 16);
+  const prev = lastmodDb[url];
+  if (!prev || prev.hash !== hash) lastmodDb[url] = { hash, date: buildDate };
+  return lastmodDb[url].date;
+}
 
 // sitemap.xml
 const urls = [
@@ -533,8 +621,14 @@ const urls = [
   ...Object.keys(PLAT_META).map((cat) => `${SITE_URL}/guide/${cat}.html`),
   ...games.filter((g) => !isNearDuplicate(g)).map((g) => `${SITE_URL}/games/${g.slug}.html`),
 ];
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${escXml(u)}</loc></url>`).join('\n')}\n</urlset>\n`;
+const sitemapRows = urls.map((u) => {
+  const html = renderedPages.get(u);
+  const mod = html ? recordLastmod(u, html) : null;
+  return `<url><loc>${escXml(u)}</loc>${mod ? `<lastmod>${mod}</lastmod>` : ''}</url>`;
+});
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapRows.join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
+fs.writeFileSync(LASTMOD_PATH, JSON.stringify(lastmodDb));
 
 // catalog.json - the gallery data index.html needs, as columnar rows with
 // category/genre dictionaries. index.html used to inline this as 338KB of
