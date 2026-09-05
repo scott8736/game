@@ -647,6 +647,7 @@ const catalog = {
     genreCodes.indexOf(g.genre || ''),
     g.downloads || 0,
     g.fav ? 1 : 0,
+    g.slug,
   ]),
 };
 fs.writeFileSync(path.join(ROOT, 'catalog.json'), JSON.stringify(catalog));

@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap">
 <link rel="stylesheet" href="style.css">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -135,7 +135,10 @@ h1.fx-chrome{background:linear-gradient(180deg,#fff,var(--accent-2) 45%,var(--ac
 .favtoggle{background:var(--bg-2);border:1px solid var(--border);color:var(--dim);padding:10px 14px;font-family:"JetBrains Mono",monospace;font-size:18px;cursor:pointer;border-radius:var(--radius);}
 .favtoggle.on{border-color:var(--accent-2);color:var(--accent-2);}
 .mobile-badge{position:absolute;left:8px;bottom:8px;z-index:3;background:rgba(4,16,26,.9);color:var(--accent-2);border:1px solid var(--accent-2);padding:3px 7px;font-size:11px;font-weight:700;}
-.fav-btn{position:absolute;top:8px;right:8px;z-index:3;width:34px;height:34px;border:0;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;font-size:16px;cursor:pointer;line-height:1;}
+.card-main{display:block;text-decoration:none;color:inherit;}
+.card-info{position:absolute;top:8px;left:8px;z-index:4;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;font-size:15px;line-height:34px;text-align:center;text-decoration:none;}
+.card-info:hover{background:var(--accent);color:var(--bg);}
+.fav-btn{position:absolute;top:8px;right:8px;z-index:4;width:34px;height:34px;border:0;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;font-size:16px;cursor:pointer;line-height:1;}
 .fav-btn.on{color:var(--accent-2);}
 .recent-row{margin-bottom:18px;}
 .recent-row .recent-title{font-family:var(--head-font);color:var(--accent-2);font-size:16px;margin-bottom:8px;letter-spacing:1px;}
@@ -302,11 +305,12 @@ function cardHtml(g){
   var _cc=g.category||"other";var badge='<div class="cat-badge" style="color:'+catColor(_cc)+';border-color:'+catColor(_cc)+'">'+esc(catShort(_cc))+'</div>';
   var mobileBadge=mobileCapable(g)?'<div class="mobile-badge">📱 외부 패드 가능</div>':"";
   var sn=seoName(g);
-  return '<a class="card" href="'+playHref(g)+'">'+
+  var info=g.slug?'<a class="card-info" href="games/'+g.slug+'.html" title="'+esc(displayTitle(g))+' 게임 정보" aria-label="'+esc(displayTitle(g))+' 게임 정보">\u2139</a>':"";
+  var overlayControls='<button class="fav-btn'+(favs.has(g.id)?" on":"")+'" data-fav="'+g.id+'" aria-label="즐겨찾기 토글">'+(favs.has(g.id)?"★":"☆")+'</button>'+info;
+  return '<div class="card" data-id="'+g.id+'">'+overlayControls+'<a class="card-main" href="'+playHref(g)+'">'+
     '<div class="card-thumb-wrap">'+
       badge+
       mobileBadge+
-      '<button class="fav-btn'+(favs.has(g.id)?" on":"")+'" data-fav="'+g.id+'" aria-label="즐겨찾기 토글">'+(favs.has(g.id)?"★":"☆")+'</button>'+
       '<img class="card-thumb" loading="lazy" decoding="async" alt="'+esc(displayTitle(g))+(g.year?" "+g.year+"년":"")+' '+esc(catShort(_cc))+' 게임 표지" src="https://archive.org/services/img/'+g.id+'" onerror="this.src=\''+FALLBACK+'\'">'+
       '<div class="card-overlay">'+t("play")+'</div>'+
     '</div>'+
@@ -314,7 +318,7 @@ function cardHtml(g){
       '<div class="card-title">'+esc(displayTitle(g))+'</div>'+
       (sn?'<div class="card-en-title">'+esc(sn.enTitle)+'</div>':"")+
       '<div class="card-meta">'+(g.year||"????")+(g.genre?" · "+esc(g.genre):"")+'</div>'+
-    '</div></a>';
+    '</div></a></div>';
 }
 function isSectionMode(){return !currentGenre&&!favOnly&&!mobileOnly&&!filter.value.trim();}
 function renderSections(catOnly){
@@ -409,8 +413,9 @@ function renderRecent(){
 grid.addEventListener("click",function(e){
   var fb=e.target.closest?e.target.closest(".fav-btn"):null;
   if(fb){e.preventDefault();var id=fb.dataset.fav;toggleFav(id);fb.classList.toggle("on");fb.textContent=favs.has(id)?"★":"☆";if(favOnly){applyFilter();}return;}
-  var card=e.target.closest?e.target.closest("a.card"):null;
-  if(card){var id=card.getAttribute("href").replace("games/","").replace(".html","");recordRecent(id);}
+  if(e.target.closest&&e.target.closest(".card-info"))return;
+  var card=e.target.closest?e.target.closest(".card"):null;
+  if(card&&card.dataset.id){recordRecent(card.dataset.id);}
 });
 filter.addEventListener("input",applyFilter);
 mobileOnlyBtn.addEventListener("click",function(){mobileOnly=!mobileOnly;this.classList.toggle("on",mobileOnly);this.setAttribute("aria-pressed",mobileOnly?"true":"false");applyFilter();});
@@ -443,7 +448,7 @@ document.getElementById("langSel").addEventListener("change",function(e){LANG=e.
 applyLang();
 fetch("catalog.json").then(function(r){return r.json();}).then(function(d){
   var C=d.c,G=d.g;
-  GAMES=d.r.map(function(x){return {id:x[0],title:x[1],year:x[2]||"",category:C[x[3]],genre:G[x[4]]||"",dl:x[5],fav:x[6]};});
+  GAMES=d.r.map(function(x){return {id:x[0],title:x[1],year:x[2]||"",category:C[x[3]],genre:G[x[4]]||"",dl:x[5],fav:x[6],slug:x[7]};});
   CATALOG_LOADED=true;
   // PRESET_FAVS is derived from the catalogue, which now arrives after
   // parse, so seed a first-time visitor's favourites here instead.
